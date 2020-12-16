@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ad370ea9.chunk.css",
+    "main.js": "/static/js/main.f82933dd.chunk.js",
+    "main.js.map": "/static/js/main.f82933dd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2843db83.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2843db83.js.map",
+    "static/css/2.d57b6a91.chunk.css": "/static/css/2.d57b6a91.chunk.css",
+    "static/js/2.a290584e.chunk.js": "/static/js/2.a290584e.chunk.js",
+    "static/js/2.a290584e.chunk.js.map": "/static/js/2.a290584e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.d57b6a91.chunk.css.map": "/static/css/2.d57b6a91.chunk.css.map",
+    "static/css/main.ad370ea9.chunk.css.map": "/static/css/main.ad370ea9.chunk.css.map",
+    "static/js/2.a290584e.chunk.js.LICENSE.txt": "/static/js/2.a290584e.chunk.js.LICENSE.txt",
+    "static/media/AWConquerorFreCarved-Regular.f0fafdf3.otf": "/static/media/AWConquerorFreCarved-Regular.f0fafdf3.otf",
+    "static/media/LandingPage.css": "/static/media/AWConquerorFreInline-Regular.f4ea2810.otf",
+    "static/media/chemistry.09cc873a.svg": "/static/media/chemistry.09cc873a.svg",
+    "static/media/keyboard.32cfda00.svg": "/static/media/keyboard.32cfda00.svg",
+    "static/media/music.b5da0a08.svg": "/static/media/music.b5da0a08.svg",
+    "static/media/pencil.21d15fdc.svg": "/static/media/pencil.21d15fdc.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2843db83.js",
+    "static/css/2.d57b6a91.chunk.css",
+    "static/js/2.a290584e.chunk.js",
+    "static/css/main.ad370ea9.chunk.css",
+    "static/js/main.f82933dd.chunk.js"
+  ]
+}
