@@ -1,3 +1,11 @@
+//
+//  LandingPage.js
+//  espitiaandres.github.io
+//
+//  Created by Andres Espitia.
+//  Copyright © 2020 Andres Espitia. All rights reserved.
+//
+
 import React from 'react';
 import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css'
@@ -67,9 +75,6 @@ const LandingPage = () => {
                 
                 <LandingPageIcons />
             </div>
-
-
-
         </div>
     )
 }

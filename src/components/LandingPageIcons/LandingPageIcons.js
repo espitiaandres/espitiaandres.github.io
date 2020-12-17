@@ -1,3 +1,11 @@
+//
+//  LandingPageIcons.js
+//  espitiaandres.github.io
+//
+//  Created by Andres Espitia.
+//  Copyright © 2020 Andres Espitia. All rights reserved.
+//
+
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -23,6 +31,11 @@ const LandingPageIcons = () => {
             <div className="icon">
                 <a href="mailto:afespiti@edu.uwaterloo.ca" target="_blank" className="icon">
                     <FontAwesomeIcon icon={["fas", "envelope"]} />
+                </a>
+            </div>
+            <div className="icon">
+                <a href="https://dribbble.com/espitiaandres" target="_blank" className="icon">
+                    <FontAwesomeIcon icon={["fab", "dribbble"]} />
                 </a>
             </div>
         </div>

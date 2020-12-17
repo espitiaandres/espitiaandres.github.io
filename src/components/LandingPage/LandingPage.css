@@ -109,9 +109,8 @@
 
     /* bottom right */
     .keyboardSVG {
-        bottom: -80px;
+        bottom: -120px;
         height: 340px;
-        margin-top: -180px;
         margin-left: -180px;
         position: absolute;
         right: -80px;
@@ -132,24 +131,22 @@
     /* bottom left */
     .chemistrySVG {
         bottom: -90px;
-        height: 340px;
+        height: 310px;
         position: absolute;
-        left: 10px;
-        margin-top: 240px;
-        margin-left: -40px;
+        left: 0px;
         transform: rotate(45deg);
-        width: 340px;
+        width: 310px;
     }
 
     /* top left */
     .musicSVG {
         height: 320px;
         position: absolute;
-        left: 20px;
+        left: -10px;
         margin-top: -80px;
         margin-left: -80px;
         transform: rotate(135deg);
-        top: 20px;
+        top: -10px;
         width: 320px;
     }
 }
