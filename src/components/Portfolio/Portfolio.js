@@ -7,7 +7,6 @@
 //
 
 import React from 'react';
-import ParticlesBg from "particles-bg";
 import LandingPage from '../LandingPage/LandingPage';
 import SkillsPage from '../SkillsPage/SkillsPage';
 
