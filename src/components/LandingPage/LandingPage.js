@@ -47,7 +47,7 @@ const LandingPage = () => {
                         <span className="bolded">
                             &nbsp;Chemical Engineering
                         </span>
-                        &nbsp;Student at the 
+                        &nbsp;student at the 
                         <span className="bolded">
                             &nbsp;University of Waterloo.
                         </span>
