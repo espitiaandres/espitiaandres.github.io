@@ -37,7 +37,15 @@
     -webkit-animation:spin 0.4s linear;
     -moz-animation:spin 0.4s linear;
     animation:spin 0.4s linear;
-} 
+}
+
+.hoverText {
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 20px 0px;
+}
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 

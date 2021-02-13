@@ -21,11 +21,6 @@ import './LandingPage.css';
 const LandingPage = () => {
     return (
         <div className="landingPageWrapper">
-            <img src={KeyboardSvg} alt="keyboardSVG" className="keyboardSVG"/>
-            <img src={PencilSvg} alt="pencilSVG" className="pencilSVG"/>
-            <img src={ChemistrySvg} alt="chemistrySVG" className="chemistrySVG"/>
-            <img src={MusicSvg} alt="musicSVG" className="musicSVG"/>
-
             <div>
                 <div className="helloWorld">
                     <Typist
@@ -69,12 +64,15 @@ const LandingPage = () => {
                         </span>
                         &nbsp;In my free time, I love to play piano, basketball, and soccer.
                     </div>
-                    <div className="description">
-                        &nbsp;I'm currently looking for my next job opportunity.
-                    </div>
+                    <LandingPageIcons />
                 </div>
-                
-                <LandingPageIcons />
+
+                <div className="animate__animated animate__fadeIn animate__delay-2s">
+                    <img src={KeyboardSvg} alt="keyboardSVG" className="keyboardSVG"/>
+                    <img src={PencilSvg} alt="pencilSVG" className="pencilSVG"/>
+                    <img src={ChemistrySvg} alt="chemistrySVG" className="chemistrySVG"/>
+                    <img src={MusicSvg} alt="musicSVG" className="musicSVG"/>
+                </div>
             </div>
         </div>
     )
