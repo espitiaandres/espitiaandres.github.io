@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a05f0830.chunk.css",
+    "main.css": "/static/css/main.89894fe9.chunk.css",
     "main.js": "/static/js/main.0f0d5e5a.chunk.js",
     "main.js.map": "/static/js/main.0f0d5e5a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2843db83.js",
@@ -10,7 +10,7 @@
     "static/js/2.4e23f1e9.chunk.js.map": "/static/js/2.4e23f1e9.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.d57b6a91.chunk.css.map": "/static/css/2.d57b6a91.chunk.css.map",
-    "static/css/main.a05f0830.chunk.css.map": "/static/css/main.a05f0830.chunk.css.map",
+    "static/css/main.89894fe9.chunk.css.map": "/static/css/main.89894fe9.chunk.css.map",
     "static/js/2.4e23f1e9.chunk.js.LICENSE.txt": "/static/js/2.4e23f1e9.chunk.js.LICENSE.txt",
     "static/media/AWConquerorFreCarved-Regular.f0fafdf3.otf": "/static/media/AWConquerorFreCarved-Regular.f0fafdf3.otf",
     "static/media/LandingPage.css": "/static/media/AWConquerorFreInline-Regular.f4ea2810.otf",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.2843db83.js",
     "static/css/2.d57b6a91.chunk.css",
     "static/js/2.4e23f1e9.chunk.js",
-    "static/css/main.a05f0830.chunk.css",
+    "static/css/main.89894fe9.chunk.css",
     "static/js/main.0f0d5e5a.chunk.js"
   ]
 }
