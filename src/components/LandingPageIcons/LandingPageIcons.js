@@ -18,6 +18,25 @@ const LandingPageIcons = () => {
     
     const defaultHoverText = "Currently, I'm looking for my next job opportunity.";
     const [hoverText, setHoverText] = useState(defaultHoverText);
+    const iconsProps = [{
+            hoverText: "Checkout my projects on github.",
+            href: "https://github.com/espitiaandres",
+            iconFA: ["fab", "github"]
+        }, {
+            hoverText: "Connect with my on LinkedIn.",
+            href: "https://ca.linkedin.com/in/andres-espitia-13912416a",
+            iconFA: ["fab", "linkedin-in"]
+        }, {
+            hoverText: "Click here to send me an email.",
+            href: "mailto:afespiti@edu.uwaterloo.ca",
+            iconFA: ["fas", "envelope"]
+        }, {
+            hoverText: "Let me throuw you an alley on Dribbble!.",
+            href: "https://dribbble.com/espitiaandres",
+            iconFA: ["fab", "dribbble"]
+        }
+    ]
+
     
     return (
         <div>
@@ -25,27 +44,25 @@ const LandingPageIcons = () => {
                 {hoverText}
             </div>
             <div className="icons">
-                <div className="icon" onMouseOver={() => setHoverText("Check out my projects on github.")} onMouseLeave={() => setHoverText(defaultHoverText)}>
-                    <a href="https://github.com/espitiaandres" target="_blank" className="icon">
-                        <FontAwesomeIcon icon={["fab", "github"]} />
-                    </a>
-                </div>
-                <div className="icon" onMouseOver={() => setHoverText("Connect with me on Linkedin.")} onMouseLeave={() => setHoverText(defaultHoverText)}>
-                    <a href="https://ca.linkedin.com/in/andres-espitia-13912416a" target="_blank" className="icon">
-                        <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
-                    </a>
-                </div>
-                <div className="icon" onMouseOver={() => setHoverText("Click here to send me an email.")} onMouseLeave={() => setHoverText(defaultHoverText)}>
-                    <a href="mailto:afespiti@edu.uwaterloo.ca" target="_blank" className="icon">
-                        <FontAwesomeIcon icon={["fas", "envelope"]} />
-                    </a>
-                </div>
-                <div className="icon" onMouseOver={() => setHoverText("Let me throw you an alley on Dribbble!")} onMouseLeave={() => setHoverText(defaultHoverText)}>
-                    <a href="https://dribbble.com/espitiaandres" target="_blank" className="icon">
-                        <FontAwesomeIcon icon={["fab", "dribbble"]} />
-                    </a>
-                </div>
-            </div>
+                {
+                    iconsProps.map((icon) => (
+                        <div 
+                            className="icon" 
+                            onMouseOver={() => setHoverText(icon.hoverText)} 
+                            onMouseLeave={() => setHoverText(defaultHoverText)}
+                        >
+                            <a 
+                                href={icon.href}
+                                target="_blank"
+                                className="icon"
+                                rel="noopener noreferrer"
+                            >
+                                <FontAwesomeIcon icon={icon.iconFA}/>
+                            </a>
+                        </div>
+                    ))
+                }
+            </div>            
         </div>
     )
 }
