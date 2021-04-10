@@ -55,6 +55,7 @@ function LandingPage() {
                         <span className="bolded">
                             &nbsp; Full Stack Web Development,
                         </span>
+                        &nbsp;
                         <span className="bolded">
                             &nbsp; Process Modelling,
                         </span>

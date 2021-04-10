@@ -31,12 +31,15 @@
 .description {
     color: white;
     font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    max-width: 320px;
+    margin: 0px auto;
     padding: 16px 0px;
     text-align: center;
 }
 
 .bolded {
     font-weight: 700;
+    margin: 0px -5px;
 }
 
 /* bottom right */
@@ -90,7 +93,7 @@
       url("../../font/AWConquerorFreInline-Regular.otf") format("opentype");
 }
 
-@media (min-width: 450px)  {
+@media (min-width: 450px) {
     .title {
         color: #1ED760;
         font-family: AWConquerorFreInline, Arial, Serif;
@@ -105,7 +108,7 @@
     .description {
         color: white;
         font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-        max-width: 450px;
+        max-width: 420px;
         padding: 20px 0px;
         text-align: center;
     }
