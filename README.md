@@ -1,3 +1,3 @@
 ## My personal website
 
-Live here: https://andres-espitia.com
+Built with React.js. See it live here: https://andres-espitia.com
