@@ -16,7 +16,7 @@ import './LandingPageIcons.css';
 const LandingPageIcons = () => {
     library.add(fab, fas);
     
-    const defaultHoverText = "Currently, I'm looking for my next job opportunity.";
+    const defaultHoverText = "Here are my links!";
     const [hoverText, setHoverText] = useState(defaultHoverText);
     const iconsProps = [{
             hoverText: "Checkout my projects on github.",
