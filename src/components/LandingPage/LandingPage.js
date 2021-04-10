@@ -18,7 +18,7 @@ import ChemistrySvg from '../../images/svg/chemistry.svg';
 import MusicSvg from '../../images/svg/music.svg';
 import './LandingPage.css';
 
-const LandingPage = () => {
+function LandingPage() {
     return (
         <div className="landingPageWrapper">
             <div>
@@ -45,37 +45,37 @@ const LandingPage = () => {
                     <div className="description">
                         I'm a third year 
                         <span className="bolded">
-                            &nbsp;Chemical Engineering
+                            &nbsp; Chemical Engineering
                         </span>
-                        &nbsp;student at the 
+                        &nbsp; student at the
                         <span className="bolded">
-                            &nbsp;University of Waterloo.
+                            &nbsp; University of Waterloo.
                         </span>
-                        &nbsp;I'm interested in 
+                        &nbsp; I'm interested in 
                         <span className="bolded">
-                            &nbsp;Full Stack Web Development, 
+                            &nbsp; Full Stack Web Development,
                         </span>
                         <span className="bolded">
-                            &nbsp;Process Modelling, 
+                            &nbsp; Process Modelling,
                         </span>
-                        &nbsp;and 
+                        &nbsp; and
                         <span className="bolded">
-                            &nbsp;Optimization.
+                            &nbsp; Optimization.
                         </span>
-                        &nbsp;In my free time, I love to play piano, basketball, and soccer.
+                        &nbsp; In my free time, I love to play piano, basketball, and soccer.
                     </div>
                     <LandingPageIcons />
                 </div>
 
                 <div className="animate__animated animate__fadeIn animate__delay-2s">
-                    <img src={KeyboardSvg} alt="keyboardSVG" className="keyboardSVG"/>
-                    <img src={PencilSvg} alt="pencilSVG" className="pencilSVG"/>
-                    <img src={ChemistrySvg} alt="chemistrySVG" className="chemistrySVG"/>
-                    <img src={MusicSvg} alt="musicSVG" className="musicSVG"/>
+                    <img src={KeyboardSvg} alt="keyboardSVG" className="keyboardSVG" />
+                    <img src={PencilSvg} alt="pencilSVG" className="pencilSVG" />
+                    <img src={ChemistrySvg} alt="chemistrySVG" className="chemistrySVG" />
+                    <img src={MusicSvg} alt="musicSVG" className="musicSVG" />
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default LandingPage;
