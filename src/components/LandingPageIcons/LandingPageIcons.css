@@ -44,8 +44,7 @@
     text-align: center;
 }
 
-/* 
-
+/*
 CSS animations to make icons spin.
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
