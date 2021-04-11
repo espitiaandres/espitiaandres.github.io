@@ -68,7 +68,7 @@ function LandingPage() {
                     <LandingPageIcons />
                 </div>
 
-                <div className="animate__animated animate__fadeIn animate__delay-2s">
+                <div>
                     <img src={KeyboardSvg} alt="keyboardSVG" className="keyboardSVG" />
                     <img src={PencilSvg} alt="pencilSVG" className="pencilSVG" />
                     <img src={ChemistrySvg} alt="chemistrySVG" className="chemistrySVG" />

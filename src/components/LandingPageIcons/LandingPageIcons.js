@@ -16,27 +16,26 @@ import './LandingPageIcons.css';
 const LandingPageIcons = () => {
     library.add(fab, fas);
     
-    const defaultHoverText = "Here are my links!";
+    const defaultHoverText = "Here are my links.";
     const [hoverText, setHoverText] = useState(defaultHoverText);
     const iconsProps = [{
             hoverText: "Checkout my projects on github.",
             href: "https://github.com/espitiaandres",
-            iconFA: ["fab", "github"]
+            fontAwesome: ["fab", "github"]
         }, {
             hoverText: "Connect with my on LinkedIn.",
             href: "https://ca.linkedin.com/in/andres-espitia-13912416a",
-            iconFA: ["fab", "linkedin-in"]
+            fontAwesome: ["fab", "linkedin-in"]
         }, {
             hoverText: "Click here to send me an email.",
             href: "mailto:afespiti@edu.uwaterloo.ca",
-            iconFA: ["fas", "envelope"]
+            fontAwesome: ["fas", "envelope"]
         }, {
             hoverText: "Let me throuw you an alley on Dribbble!.",
             href: "https://dribbble.com/espitiaandres",
-            iconFA: ["fab", "dribbble"]
+            fontAwesome: ["fab", "dribbble"]
         }
-    ]
-
+    ];
     
     return (
         <div>
@@ -57,7 +56,7 @@ const LandingPageIcons = () => {
                                 className="icon"
                                 rel="noopener noreferrer"
                             >
-                                <FontAwesomeIcon icon={icon.iconFA}/>
+                                <FontAwesomeIcon icon={icon.fontAwesome}/>
                             </a>
                         </div>
                     ))
