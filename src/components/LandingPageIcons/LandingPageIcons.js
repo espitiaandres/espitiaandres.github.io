@@ -19,11 +19,11 @@ const LandingPageIcons = () => {
     const defaultHoverText = "Here are my links.";
     const [hoverText, setHoverText] = useState(defaultHoverText);
     const iconsProps = [{
-            hoverText: "Checkout my projects on github.",
+            hoverText: "Check out my projects on github.",
             href: "https://github.com/espitiaandres",
             fontAwesome: ["fab", "github"]
         }, {
-            hoverText: "Connect with my on LinkedIn.",
+            hoverText: "Connect with me on LinkedIn.",
             href: "https://ca.linkedin.com/in/andres-espitia-13912416a",
             fontAwesome: ["fab", "linkedin-in"]
         }, {
@@ -31,7 +31,7 @@ const LandingPageIcons = () => {
             href: "mailto:afespiti@edu.uwaterloo.ca",
             fontAwesome: ["fas", "envelope"]
         }, {
-            hoverText: "Let me throuw you an alley on Dribbble!.",
+            hoverText: "Let me throw you an alley on Dribbble!.",
             href: "https://dribbble.com/espitiaandres",
             fontAwesome: ["fab", "dribbble"]
         }
