@@ -31,7 +31,7 @@ const LandingPageIcons = () => {
             href: "mailto:afespiti@edu.uwaterloo.ca",
             fontAwesome: ["fas", "envelope"]
         }, {
-            hoverText: "Let me throw you an alley on Dribbble!.",
+            hoverText: "Let me throw you an alley on Dribbble!",
             href: "https://dribbble.com/espitiaandres",
             fontAwesome: ["fab", "dribbble"]
         }
