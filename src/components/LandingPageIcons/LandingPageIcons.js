@@ -12,11 +12,10 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import './LandingPageIcons.css';
-
+    
 const LandingPageIcons = () => {
     library.add(fab, fas);
-    
-    const defaultHoverText = "Here are my links.";
+    const defaultHoverText = "Here are my links!";
     const [hoverText, setHoverText] = useState(defaultHoverText);
     const iconsProps = [{
             hoverText: "Check out my projects on github.",
@@ -24,7 +23,7 @@ const LandingPageIcons = () => {
             fontAwesome: ["fab", "github"]
         }, {
             hoverText: "Connect with me on LinkedIn.",
-            href: "https://ca.linkedin.com/in/andres-espitia-13912416a",
+            href: "https://www.linkedin.com/in/espitiaandres",
             fontAwesome: ["fab", "linkedin-in"]
         }, {
             hoverText: "Click here to send me an email.",
