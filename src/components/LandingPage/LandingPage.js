@@ -25,20 +25,20 @@ function LandingPage() {
                 <div className="helloWorld">
                     <Typist
                         avgTypingDelay={70}
-                        startDelay={400}
+                        startDelay={0}
                         cursor={{
                             show: true,
                             blink: true,
                             element: '_',
                             hideWhenDone: false,
-                            hideWhenDoneDelay: 0,
+                            // hideWhenDoneDelay: 0,
                         }}
                     >
                         Hello, world!
                     </Typist>
                 </div>
 
-                <div className="animate__animated animate__zoomIn animate__delay-2s">
+                <div /*className="animate__animated animate__zoomIn animate__delay-2s"*/>
                     <div className="title">
                         I'm Andres
                     </div>

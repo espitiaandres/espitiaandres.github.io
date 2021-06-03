@@ -18,7 +18,7 @@ const LandingPageIcons = () => {
     const defaultHoverText = "Here are my links!";
     const [hoverText, setHoverText] = useState(defaultHoverText);
     const iconsProps = [{
-            hoverText: "Check out my projects on github.",
+            hoverText: "Check out my projects on Github.",
             href: "https://github.com/espitiaandres",
             fontAwesome: ["fab", "github"]
         }, {
@@ -60,7 +60,7 @@ const LandingPageIcons = () => {
                         </div>
                     ))
                 }
-            </div>            
+            </div>       
         </div>
     )
 }
