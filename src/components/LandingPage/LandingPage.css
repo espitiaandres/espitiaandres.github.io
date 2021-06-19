@@ -1,158 +1,158 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 .landingPageWrapper {
-    align-items: center;
-    background-color: black;
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
+  align-items: center;
+  background-color: black;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .helloWorld {
-    color: white;
-    display: flex;
-    font-size: 28px;
-    justify-content: center;
+  color: white;
+  display: flex;
+  font-size: 28px;
+  justify-content: center;
 }
 
 .title {
-    color: #1ED760;
-    display: flex;
-    font-family: AWConquerorFreInline, Arial, Serif;
-    font-size: 44px;
-    justify-content: center;
+  color: #1ed760;
+  display: flex;
+  font-family: AWConquerorFreInline, Arial, Serif;
+  font-size: 44px;
+  justify-content: center;
 }
 
 .description {
-    color: white;
-    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-    max-width: 320px;
-    margin: 0px auto;
-    padding: 16px 0px;
-    text-align: center;
+  color: white;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  max-width: 320px;
+  margin: 0px auto;
+  padding: 16px 0px;
+  text-align: center;
 }
 
 .bolded {
-    font-weight: 700;
-    margin: 0px -5px;
+  font-weight: 700;
+  margin: 0px -5px;
 }
 
 /* bottom right */
 .keyboardSVG {
-    bottom: -40px;
-    height: 150px;
-    margin-top: -180px;
-    margin-left: -180px;
-    position: absolute;
-    right: -40px;
-    transform: rotate(-45deg);
-    width: 150px;
+  bottom: -40px;
+  height: 150px;
+  margin-top: -180px;
+  margin-left: -180px;
+  position: absolute;
+  right: -40px;
+  transform: rotate(-45deg);
+  width: 150px;
 }
 
 /* top right */
 .pencilSVG {
-    height: 120px;
-    position: absolute;
-    right: -20px;
-    transform: rotate(0deg);
-    top: -20px;
-    width: 120px;
+  height: 120px;
+  position: absolute;
+  right: -20px;
+  transform: rotate(0deg);
+  top: -20px;
+  width: 120px;
 }
 
 /* bottom left */
 .chemistrySVG {
-    bottom: -60px;
-    height: 170px;
-    position: absolute;
-    left: 30px;
-    margin-left: -80px;
-    transform: rotate(45deg);
-    width: 170px;
+  bottom: -60px;
+  height: 170px;
+  position: absolute;
+  left: 30px;
+  margin-left: -80px;
+  transform: rotate(45deg);
+  width: 170px;
 }
 
 /* top left */
 .musicSVG {
-    height: 170px;
-    position: absolute;
-    left: 20px;
-    margin-top: -60px;
-    margin-left: -60px;
-    transform: rotate(135deg);
-    top: 20px;
-    width: 170px;
+  height: 170px;
+  position: absolute;
+  left: 20px;
+  margin-top: -60px;
+  margin-left: -60px;
+  transform: rotate(135deg);
+  top: 20px;
+  width: 170px;
 }
 
 @font-face {
-    font-family: "AWConquerorFreInline";
-    src: local("AWConquerorFreInline"),
-      url("../../font/AWConquerorFreInline-Regular.otf") format("opentype");
+  font-family: "AWConquerorFreInline";
+  src: local("AWConquerorFreInline"),
+    url("../../font/AWConquerorFreInline-Regular.otf") format("opentype");
 }
 
 @media (min-width: 450px) {
-    .title {
-        color: #1ED760;
-        font-family: AWConquerorFreInline, Arial, Serif;
-        font-size: 64px;
-    }
+  .title {
+    color: #1ed760;
+    font-family: AWConquerorFreInline, Arial, Serif;
+    font-size: 64px;
+  }
 
-    .helloWorld {
-        color: white;
-        font-size: 40px;
-    }
+  .helloWorld {
+    color: white;
+    font-size: 40px;
+  }
 
-    .description {
-        color: white;
-        font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-        max-width: 420px;
-        padding: 20px 0px;
-        text-align: center;
-    }
+  .description {
+    color: white;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    max-width: 420px;
+    padding: 20px 0px;
+    text-align: center;
+  }
 
-    /* bottom right */
-    .keyboardSVG {
-        bottom: -120px;
-        height: 420px;
-        margin-left: -180px;
-        position: absolute;
-        right: -100px;
-        transform: rotate(-45deg);
-        width: 420px;
-    }
+  /* bottom right */
+  .keyboardSVG {
+    bottom: -120px;
+    height: 420px;
+    margin-left: -180px;
+    position: absolute;
+    right: -100px;
+    transform: rotate(-45deg);
+    width: 420px;
+  }
 
-    /* top right */
-    .pencilSVG {
-        height: 300px;
-        position: absolute;
-        right: -20px;
-        transform: rotate(0deg);
-        top: -20px;
-        width: 300px;
-    }
+  /* top right */
+  .pencilSVG {
+    height: 300px;
+    position: absolute;
+    right: -20px;
+    transform: rotate(0deg);
+    top: -20px;
+    width: 300px;
+  }
 
-    /* bottom left */
-    .chemistrySVG {
-        bottom: -80px;
-        height: 420px;
-        position: absolute;
-        left: 0px;
-        transform: rotate(45deg);
-        width: 400px;
-    }
+  /* bottom left */
+  .chemistrySVG {
+    bottom: -80px;
+    height: 420px;
+    position: absolute;
+    left: 0px;
+    transform: rotate(45deg);
+    width: 400px;
+  }
 
-    /* top left */
-    .musicSVG {
-        height: 370px;
-        position: absolute;
-        left: -10px;
-        margin-top: -80px;
-        margin-left: -80px;
-        transform: rotate(135deg);
-        top: -10px;
-        width: 370px;
-    }
+  /* top left */
+  .musicSVG {
+    height: 370px;
+    position: absolute;
+    left: -10px;
+    margin-top: -80px;
+    margin-left: -80px;
+    transform: rotate(135deg);
+    top: -10px;
+    width: 370px;
+  }
 }

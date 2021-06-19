@@ -1,47 +1,47 @@
 .icons {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 12px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 12px;
 }
 
 .icon {
-    color: #1ED760;
-    font-size: 40px;
-    margin: 0px 10px;
-    z-index: 1;
+  color: #1ed760;
+  font-size: 40px;
+  margin: 0px 10px;
+  z-index: 1;
 }
 
 .icon:active {
-    color: #1ED760;
-    font-size: 40px;
+  color: #1ed760;
+  font-size: 40px;
 }
 
 .icon:link {
-    color: #1ED760;
-    font-size: 40px;
+  color: #1ed760;
+  font-size: 40px;
 }
 
 .icon:visited {
-    color: #1ED760;
-    font-size: 40px;
+  color: #1ed760;
+  font-size: 40px;
 }
 
 .icon:hover {
-    color: white;
-    cursor: pointer;
+  color: white;
+  cursor: pointer;
 }
 
 .hoverText {
-    align-items: center;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin: 0px auto;
-    max-width: 320px;
-    padding: 0px 0px 20px 0px;
-    text-align: center;
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  max-width: 320px;
+  padding: 0px 0px 20px 0px;
+  text-align: center;
 }
 
 /*
