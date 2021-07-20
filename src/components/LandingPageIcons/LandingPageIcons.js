@@ -41,7 +41,7 @@ const LandingPageIcons = () => {
   ];
 
   return (
-    <div>
+    <div className="iconsWrapper">
       <div className="hoverText">{hoverText}</div>
       <div className="icons">
         {iconsProps.map((icon) => (

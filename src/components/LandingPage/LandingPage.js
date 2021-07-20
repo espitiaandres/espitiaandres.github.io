@@ -21,7 +21,10 @@ import "./LandingPage.css";
 function LandingPage() {
   return (
     <div className="landingPageWrapper">
-      <div>
+      <div
+        className="mainContentWrapper"
+        /*className="animate__animated animate__zoomIn animate__delay-2s"*/
+      >
         <div className="helloWorld">
           <Typist
             avgTypingDelay={70}
@@ -31,39 +34,35 @@ function LandingPage() {
               blink: true,
               element: "_",
               hideWhenDone: false,
-              // hideWhenDoneDelay: 0,
             }}
           >
             Hello, world!
           </Typist>
         </div>
-
-        <div /*className="animate__animated animate__zoomIn animate__delay-2s"*/
-        >
-          <div className="title">I'm Andres</div>
-          <div className="description">
-            I'm a fourth year
-            <span className="bolded">&nbsp; Engineering</span>
-            &nbsp; student at the
-            <span className="bolded">&nbsp; University of Waterloo.</span>
-            &nbsp; I'm interested in
-            <span className="bolded">&nbsp; Full Stack Web Development,</span>
-            &nbsp;
-            <span className="bolded">&nbsp; Process Modelling,</span>
-            &nbsp; and
-            <span className="bolded">&nbsp; Optimization.</span>
-            &nbsp; In my free time, I love to play piano, basketball, and
-            soccer.
-          </div>
+        <div className="title">I'm Andres</div>
+        <div className="description">
+          I'm a fourth year
+          <span className="bolded">&nbsp; Engineering</span>
+          &nbsp; student at the
+          <span className="bolded">&nbsp; University of Waterloo.</span>
+          &nbsp; I'm interested in
+          <span className="bolded">&nbsp; Full Stack Web Development,</span>
+          &nbsp;
+          <span className="bolded">&nbsp; Process Modelling,</span>
+          &nbsp; and
+          <span className="bolded">&nbsp; Optimization.</span>
+          &nbsp; In my free time, I love to play piano, basketball, and soccer.
+        </div>
+        <div>
           <LandingPageIcons />
         </div>
+      </div>
 
-        <div>
-          <img src={KeyboardSvg} alt="keyboardSVG" className="keyboardSVG" />
-          <img src={PencilSvg} alt="pencilSVG" className="pencilSVG" />
-          <img src={ChemistrySvg} alt="chemistrySVG" className="chemistrySVG" />
-          <img src={MusicSvg} alt="musicSVG" className="musicSVG" />
-        </div>
+      <div>
+        <img src={KeyboardSvg} alt="keyboardSVG" className="keyboardSVG" />
+        <img src={PencilSvg} alt="pencilSVG" className="pencilSVG" />
+        <img src={ChemistrySvg} alt="chemistrySVG" className="chemistrySVG" />
+        <img src={MusicSvg} alt="musicSVG" className="musicSVG" />
       </div>
     </div>
   );

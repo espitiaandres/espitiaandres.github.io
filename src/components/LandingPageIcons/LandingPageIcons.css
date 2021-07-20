@@ -1,3 +1,7 @@
+.iconsWrapper {
+  padding-bottom: 20px;
+}
+
 .icons {
   align-items: center;
   display: flex;
@@ -29,27 +33,43 @@
 }
 
 .icon:hover {
-  color: white;
+  /* color: white; */
+  color: black;
   cursor: pointer;
+
+  -webkit-animation: spin 0.5s linear;
+  -moz-animation: spin 0.5s linear;
+  animation: spin 0.5s linear;
 }
 
 .hoverText {
   align-items: center;
-  color: white;
+  /* color: white; */
+  color: black;
   display: flex;
   justify-content: center;
-  margin: 0px auto;
+  margin: 8px auto;
   max-width: 320px;
-  padding: 20px 0px 20px 0px;
   text-align: center;
 }
 
-/*
-CSS animations to make icons spin.
+/* CSS animations to make icons spin. */
 
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
 
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
 
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } } 
-*/
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

@@ -2,7 +2,8 @@
 
 .landingPageWrapper {
   align-items: center;
-  background-color: black;
+  /* background-color: black; */
+  background-color: white;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -14,10 +15,19 @@
 }
 
 .helloWorld {
-  color: white;
+  /* color: white; */
+  color: black;
   display: flex;
   font-size: 28px;
+  padding-top: 16px;
   justify-content: center;
+}
+
+.mainContentWrapper {
+  background-color: white;
+  box-shadow: 0 3px 9px hsla(0, 0%, 0%, 0.34);
+  border-radius: 10px;
+  padding: 0px 12px;
 }
 
 .title {
@@ -29,13 +39,14 @@
 }
 
 .description {
-  color: white;
+  /* color: white; */
+  color: black;
   font-family: "Segoe UI", "Helvetica Neue", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  max-width: 320px;
+  max-width: 300px;
   margin: 0px auto;
-  padding: 16px 0px;
+  padding: 16px 8px;
   text-align: center;
 }
 
@@ -64,6 +75,7 @@
   transform: rotate(0deg);
   top: -20px;
   width: 120px;
+  z-index: 0;
 }
 
 /* bottom left */
@@ -103,17 +115,26 @@
   }
 
   .helloWorld {
-    color: white;
+    /* color: white; */
+    color: black;
     font-size: 40px;
   }
 
+  .mainContentWrapper {
+    background-color: white;
+    box-shadow: 0 3px 9px hsla(0, 0%, 0%, 0.34);
+    border-radius: 10px;
+    padding: 0px 20px;
+  }
+
   .description {
-    color: white;
+    /* color: white; */
+    color: black;
     font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
     font-size: 16px;
     line-height: 22px;
-    max-width: 420px;
-    padding: 20px 0px;
+    max-width: 300px;
+    padding: 20px 12px;
     text-align: center;
   }
 
