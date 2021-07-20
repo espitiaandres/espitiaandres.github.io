@@ -33,7 +33,6 @@
 }
 
 .icon:hover {
-  /* color: white; */
   color: black;
   cursor: pointer;
 
@@ -44,7 +43,6 @@
 
 .hoverText {
   align-items: center;
-  /* color: white; */
   color: black;
   display: flex;
   justify-content: center;

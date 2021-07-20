@@ -32,7 +32,7 @@ function LandingPage() {
             cursor={{
               show: true,
               blink: true,
-              element: "_",
+              element: "",
               hideWhenDone: false,
             }}
           >
