@@ -1,5 +1,5 @@
 .iconsWrapper {
-  padding-bottom: 20px;
+  padding-bottom: 24px;
 }
 
 .icons {
@@ -35,10 +35,11 @@
 .icon:hover {
   color: black;
   cursor: pointer;
-
+  /* 
   -webkit-animation: spin 0.5s linear;
   -moz-animation: spin 0.5s linear;
-  animation: spin 0.5s linear;
+  animation: spin 0.5s linear; 
+  */
 }
 
 .hoverText {

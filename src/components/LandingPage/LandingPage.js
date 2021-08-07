@@ -10,12 +10,14 @@ import React from "react";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
 import "animate.css";
+
 import "../../font/AWConquerorFreCarved-Regular.otf";
 import LandingPageIcons from "../LandingPageIcons/LandingPageIcons";
 import KeyboardSvg from "../../images/svg/keyboard.svg";
 import PencilSvg from "../../images/svg/pencil.svg";
 import ChemistrySvg from "../../images/svg/chemistry.svg";
 import MusicSvg from "../../images/svg/music.svg";
+import RAMCover from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
 import "./LandingPage.css";
 
 function LandingPage() {
@@ -38,6 +40,9 @@ function LandingPage() {
           >
             Hello, world!
           </Typist>
+        </div>
+        <div className="headshot">
+          <img src={RAMCover} alt="headshot picture" />
         </div>
         <div className="title">I'm Andres</div>
         <div className="description">
