@@ -45,16 +45,14 @@ const LandingPageIcons = () => {
       <div className="hoverText">{hoverText}</div>
       <div className="icons">
         {iconsProps.map((icon) => (
-          <div
-            className="icon"
-            onMouseOver={() => setHoverText(icon.hoverText)}
-            onMouseLeave={() => setHoverText(defaultHoverText)}
-          >
+          <div className="icon">
             <a
               href={icon.href}
               target="_blank"
               className="icon"
               rel="noopener noreferrer"
+              onMouseOver={() => setHoverText(icon.hoverText)}
+              onMouseLeave={() => setHoverText(defaultHoverText)}
             >
               <FontAwesomeIcon icon={icon.fontAwesome} />
             </a>

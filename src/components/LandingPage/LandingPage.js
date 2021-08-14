@@ -46,17 +46,18 @@ function LandingPage() {
         </div>
         <div className="title">I'm Andres</div>
         <div className="description">
-          I'm a fourth year
-          <span className="bolded">&nbsp; Engineering</span>
+          I'm a fourth-year
+          <span className="bolded">&nbsp; engineering</span>
           &nbsp; student at the
           <span className="bolded">&nbsp; University of Waterloo.</span>
           &nbsp; I'm interested in
           <span className="bolded">&nbsp; Full Stack Web Development,</span>
           &nbsp;
-          <span className="bolded">&nbsp; Process Modelling,</span>
+          <span className="bolded">&nbsp; Machine Learning,</span>
           &nbsp; and
           <span className="bolded">&nbsp; Optimization.</span>
           &nbsp; In my free time, I love to play piano, basketball, and soccer.
+          Currently, I'm looking for new grad job opportunities.
         </div>
         <div>
           <LandingPageIcons />
