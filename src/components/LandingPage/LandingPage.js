@@ -6,19 +6,22 @@
 //  Copyright © 2020 Andres Espitia. All rights reserved.
 //
 
-import React from "react";
+import React, { Suspense } from "react";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
 import "animate.css";
 
 import "../../font/AWConquerorFreCarved-Regular.otf";
 import LandingPageIcons from "../LandingPageIcons/LandingPageIcons";
+import "./LandingPage.css";
+
+import CornerIcons from "../CornerIcons/CornerIcons";
+
 import KeyboardSvg from "../../images/svg/keyboard.svg";
 import PencilSvg from "../../images/svg/pencil.svg";
 import ChemistrySvg from "../../images/svg/chemistry.svg";
 import MusicSvg from "../../images/svg/music.svg";
 import RAMCover from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
-import "./LandingPage.css";
 
 function LandingPage() {
   return (
@@ -64,10 +67,18 @@ function LandingPage() {
       </div>
 
       <div>
-        <img src={KeyboardSvg} alt="keyboardSVG" className="keyboardSVG" />
-        <img src={PencilSvg} alt="pencilSVG" className="pencilSVG" />
-        <img src={ChemistrySvg} alt="chemistrySVG" className="chemistrySVG" />
-        <img src={MusicSvg} alt="musicSVG" className="musicSVG" />
+        <Suspense fallback={<div></div>}>
+          <CornerIcons src={KeyboardSvg} className="keyboardSVG" />
+        </Suspense>
+        <Suspense fallback={<div></div>}>
+          <CornerIcons src={PencilSvg} className="pencilSVG" />
+        </Suspense>
+        <Suspense fallback={<div></div>}>
+          <CornerIcons src={ChemistrySvg} className="chemistrySVG" />
+        </Suspense>
+        <Suspense fallback={<div></div>}>
+          <CornerIcons src={MusicSvg} alt="musicSVG" className="musicSVG" />
+        </Suspense>
       </div>
     </div>
   );
