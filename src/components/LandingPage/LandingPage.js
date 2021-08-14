@@ -13,9 +13,8 @@ import "animate.css";
 
 import "../../font/AWConquerorFreCarved-Regular.otf";
 import LandingPageIcons from "../LandingPageIcons/LandingPageIcons";
-import "./LandingPage.css";
-
 import CornerIcons from "../CornerIcons/CornerIcons";
+import "./LandingPage.css";
 
 import KeyboardSvg from "../../images/svg/keyboard.svg";
 import PencilSvg from "../../images/svg/pencil.svg";
