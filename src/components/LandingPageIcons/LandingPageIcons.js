@@ -53,6 +53,7 @@ const LandingPageIcons = () => {
               rel="noopener noreferrer"
               onMouseOver={() => setHoverText(icon.hoverText)}
               onMouseLeave={() => setHoverText(defaultHoverText)}
+              title={icon.href}
             >
               <FontAwesomeIcon icon={icon.fontAwesome} />
             </a>
