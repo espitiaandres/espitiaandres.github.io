@@ -26,12 +26,12 @@ import RAMCover from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
 function LandingPage() {
   return (
     <div className="landingPageWrapper">
-      <div className="mainContentWrapper animate__animated animate__zoomIn animate__delay-0.7s">
+      <div className="mainContentWrapper animate__animated animate__zoomIn animate__delay-0.8s">
         <div className="helloWorld">
           {
             <Typist
               avgTypingDelay={70}
-              startDelay={700}
+              startDelay={800}
               cursor={{
                 show: true,
                 blink: true,
