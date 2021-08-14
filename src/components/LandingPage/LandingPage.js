@@ -24,10 +24,12 @@ function LandingPage() {
   return (
     <div className="landingPageWrapper">
       <div
-        className="mainContentWrapper"
-        /*className="animate__animated animate__zoomIn animate__delay-2s"*/
+        // className="mainContentWrapper"
+        className="mainContentWrapper animate__animated animate__zoomIn animate__delay-0.7s"
       >
         <div className="helloWorld">
+          Hello, World!
+          {/*
           <Typist
             avgTypingDelay={70}
             startDelay={0}
@@ -40,6 +42,7 @@ function LandingPage() {
           >
             Hello, world!
           </Typist>
+            */}
         </div>
         <div className="headshot">
           <img src={RAMCover} alt="headshot picture" />
