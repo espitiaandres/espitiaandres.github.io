@@ -182,7 +182,7 @@
     box-shadow: 0 3px 9px hsla(0, 0%, 0%, 0.52);
     border-radius: 10px;
     opacity: 0.9;
-    padding: 0px 20px;
+    padding: 8px 32px;
     z-index: 1;
   }
 

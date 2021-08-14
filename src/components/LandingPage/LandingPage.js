@@ -23,26 +23,22 @@ import "./LandingPage.css";
 function LandingPage() {
   return (
     <div className="landingPageWrapper">
-      <div
-        // className="mainContentWrapper"
-        className="mainContentWrapper animate__animated animate__zoomIn animate__delay-0.7s"
-      >
+      <div className="mainContentWrapper animate__animated animate__zoomIn animate__delay-0.7s">
         <div className="helloWorld">
-          Hello, World!
-          {/*
-          <Typist
-            avgTypingDelay={70}
-            startDelay={0}
-            cursor={{
-              show: true,
-              blink: true,
-              element: "",
-              hideWhenDone: false,
-            }}
-          >
-            Hello, world!
-          </Typist>
-            */}
+          {
+            <Typist
+              avgTypingDelay={70}
+              startDelay={700}
+              cursor={{
+                show: true,
+                blink: true,
+                element: "",
+                hideWhenDone: false,
+              }}
+            >
+              Hello, world!
+            </Typist>
+          }
         </div>
         <div className="headshot">
           <img src={RAMCover} alt="headshot picture" />
