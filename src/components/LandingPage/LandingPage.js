@@ -47,8 +47,8 @@ function LandingPage() {
         </div>
         <div className="title">I'm Andres</div>
         <div className="description">
-          I'm a fourth-year
-          <span className="bolded">&nbsp; engineering</span>
+          I'm a Fourth-year
+          <span className="bolded">&nbsp; Engineering</span>
           &nbsp; student at the
           <span className="bolded">&nbsp; University of Waterloo.</span>
           &nbsp; I'm interested in
