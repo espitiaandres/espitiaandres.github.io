@@ -6,20 +6,15 @@
 //  Copyright © 2020 Andres Espitia. All rights reserved.
 //
 
-import React, { Suspense } from "react";
+import React from "react";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
 import "animate.css";
 
 import "../../font/AWConquerorFreCarved-Regular.otf";
 import LandingPageIcons from "../LandingPageIcons/LandingPageIcons";
-import CornerIcons from "../CornerIcons/CornerIcons";
 import "./LandingPage.css";
 
-import KeyboardSvg from "../../images/svg/keyboard.svg";
-import PencilSvg from "../../images/svg/pencil.svg";
-import ChemistrySvg from "../../images/svg/chemistry.svg";
-import MusicSvg from "../../images/svg/music.svg";
 import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
 import CornerIconsWrapper from "../CornerIconsWrapper/CornerIconsWrapper";
 
@@ -64,26 +59,9 @@ function LandingPage() {
           <LandingPageIcons />
         </div>
       </div>
-
       <div>
         <CornerIconsWrapper />
       </div>
-      {/*        
-      <div>
-        <Suspense fallback={<div></div>}>
-          <CornerIcons src={KeyboardSvg} className="keyboardSVG" />
-        </Suspense>
-        <Suspense fallback={<div></div>}>
-          <CornerIcons src={PencilSvg} className="pencilSVG" />
-        </Suspense>
-        <Suspense fallback={<div></div>}>
-          <CornerIcons src={ChemistrySvg} className="chemistrySVG" />
-        </Suspense>
-        <Suspense fallback={<div></div>}>
-          <CornerIcons src={MusicSvg} alt="musicSVG" className="musicSVG" />
-        </Suspense>
-      </div>
-        */}
     </div>
   );
 }
