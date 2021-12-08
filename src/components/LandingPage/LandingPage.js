@@ -21,6 +21,7 @@ import PencilSvg from "../../images/svg/pencil.svg";
 import ChemistrySvg from "../../images/svg/chemistry.svg";
 import MusicSvg from "../../images/svg/music.svg";
 import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
+import CornerIconsWrapper from "../CornerIconsWrapper/CornerIconsWrapper";
 
 function LandingPage() {
   return (
@@ -58,13 +59,16 @@ function LandingPage() {
           &nbsp; and
           <span className="bolded">&nbsp; Optimization.</span>
           &nbsp; In my free time, I love to play piano, basketball, and soccer.
-          Currently, I'm looking for new grad job opportunities.
         </div>
         <div>
           <LandingPageIcons />
         </div>
       </div>
 
+      <div>
+        <CornerIconsWrapper />
+      </div>
+      {/*        
       <div>
         <Suspense fallback={<div></div>}>
           <CornerIcons src={KeyboardSvg} className="keyboardSVG" />
@@ -79,6 +83,7 @@ function LandingPage() {
           <CornerIcons src={MusicSvg} alt="musicSVG" className="musicSVG" />
         </Suspense>
       </div>
+        */}
     </div>
   );
 }
