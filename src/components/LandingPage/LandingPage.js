@@ -20,7 +20,7 @@ import KeyboardSvg from "../../images/svg/keyboard.svg";
 import PencilSvg from "../../images/svg/pencil.svg";
 import ChemistrySvg from "../../images/svg/chemistry.svg";
 import MusicSvg from "../../images/svg/music.svg";
-import RAMCover from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
+import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
 
 function LandingPage() {
   return (
@@ -43,7 +43,7 @@ function LandingPage() {
           }
         </div>
         <div className="headshot">
-          <img src={RAMCover} alt="headshot picture" />
+          <img src={Headshot} alt="headshot picture" />
         </div>
         <div className="title">I'm Andres</div>
         <div className="description">
