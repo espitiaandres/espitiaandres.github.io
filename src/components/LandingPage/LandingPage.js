@@ -18,7 +18,7 @@ import "./LandingPage.css";
 import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
 import CornerIconsWrapper from "../CornerIconsWrapper/CornerIconsWrapper";
 
-function LandingPage() {
+const LandingPage = () => {
   return (
     <div className="landingPageWrapper">
       <div className="mainContentWrapper animate__animated animate__zoomIn animate__delay-0.8s">
@@ -64,6 +64,6 @@ function LandingPage() {
       </div>
     </div>
   );
-}
+};
 
 export default LandingPage;
