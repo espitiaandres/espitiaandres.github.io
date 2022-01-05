@@ -13,6 +13,7 @@ import LandingPage from "../LandingPage/LandingPage";
 import SkillsPage from "../SkillsPage/SkillsPage";
 
 const Portfolio = ({}) => {
+  const frontendNames = ["studyfi", "pokedex"];
   return (
     <Router basename="/">
       {/*
@@ -23,8 +24,9 @@ const Portfolio = ({}) => {
       <Routes>
         <Route path="/" exact element={<LandingPage />} />
         {/* HTTP Redirect to other FE projects hosted on andres-espitia.com */}
-        <Route path="/studyfi" exact element={<HrefLink route="studyfi" />} />
-        <Route path="/pokedex" exact element={<HrefLink route="pokedex" />} />
+        {frontendNames.map((fe) => (
+          <Route path={`/${fe}`} exact element={<HrefLink route={fe} />} />
+        ))}
         <Route exact path="/*" element={<div>404 page</div>} />
       </Routes>
     </Router>
