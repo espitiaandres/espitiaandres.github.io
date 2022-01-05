@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HrefLink from "../HrefLink/HrefLink";
 import LandingPage from "../LandingPage/LandingPage";
 import SkillsPage from "../SkillsPage/SkillsPage";
+import NotFoundPage from "../NotFoundPage/NotFoundPage";
 
 const Portfolio = ({}) => {
   const frontendNames = ["studyfi", "pokedex"];
@@ -27,7 +28,7 @@ const Portfolio = ({}) => {
         {frontendNames.map((fe) => (
           <Route path={`/${fe}`} exact element={<HrefLink route={fe} />} />
         ))}
-        <Route exact path="/*" element={<div>404 page</div>} />
+        <Route exact path="/*" element={<NotFoundPage />} />
       </Routes>
     </Router>
   );
