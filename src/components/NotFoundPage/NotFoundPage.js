@@ -17,7 +17,7 @@ const NotFoundPage = () => {
       navigate("/", {
         replace: true,
       });
-    }, 6500);
+    }, 5000);
   }, []);
 
   return (
