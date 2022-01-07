@@ -15,6 +15,7 @@ import NotFoundPage from "../NotFoundPage/NotFoundPage";
 
 const Portfolio = ({}) => {
   const frontendNames = ["studyfi", "pokedex"];
+
   return (
     <Router basename="/">
       {/*

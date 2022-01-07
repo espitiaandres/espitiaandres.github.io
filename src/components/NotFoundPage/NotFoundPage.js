@@ -17,27 +17,25 @@ const NotFoundPage = () => {
       navigate("/", {
         replace: true,
       });
-    }, 5000);
+    }, 4800);
   }, []);
 
   return (
     <div className="landingPageWrapper">
       <div className="mainContentWrapper animate__animated animate__zoomIn animate__delay-0.8s">
         <div className="helloWorld">
-          {
-            <Typist
-              avgTypingDelay={70}
-              startDelay={800}
-              cursor={{
-                show: true,
-                blink: true,
-                element: "",
-                hideWhenDone: false,
-              }}
-            >
-              404
-            </Typist>
-          }
+          <Typist
+            avgTypingDelay={70}
+            startDelay={800}
+            cursor={{
+              show: true,
+              blink: true,
+              element: "",
+              hideWhenDone: false,
+            }}
+          >
+            404
+          </Typist>
         </div>
         <div className="description">
           Hey fellow space traveller! Looks like you're heading to the wrong
