@@ -41,11 +41,9 @@ const LandingPage = ({}) => {
         </div>
         <div className="title">I'm Andres</div>
         <div className="description">
-          I'm a Fourth-year
+          I'm a University of Waterloo
           <span className="bolded">&nbsp; Engineering</span>
-          &nbsp; student at the
-          <span className="bolded">&nbsp; University of Waterloo.</span>
-          &nbsp; I'm interested in
+          &nbsp; graduate interested in
           <span className="bolded">&nbsp; Full Stack Web Development,</span>
           &nbsp;
           <span className="bolded">&nbsp; Machine Learning,</span>
