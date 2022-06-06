@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://espitiaandres.github.io/",
   "dependencies": {
+    "@craco/craco": "^6.4.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
@@ -14,13 +15,14 @@
     "@testing-library/user-event": "^12.1.10",
     "animate.css": "^4.1.1",
     "axios": "^0.21.2",
+    "daisyui": "^2.15.2",
     "gh-pages": "^3.1.0",
     "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-loader-spinner": "^4.0.0",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "^4.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -48,5 +50,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.24"
   }
 }

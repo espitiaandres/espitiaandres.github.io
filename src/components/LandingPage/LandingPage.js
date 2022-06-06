@@ -19,7 +19,10 @@ import CornerIconsWrapper from "../CornerIconsWrapper/CornerIconsWrapper";
 const LandingPage = ({}) => {
   return (
     <div className="landingPageWrapper">
-      <div className="mainContentWrapper animate__animated animate__zoomIn animate__delay-0.8s">
+      <div
+        // className="mainContentWrapper animate__animated animate__zoomIn animate__delay-0.8s"
+        className="py-1 bg-white rounded-xl opacity-90 px-5 z-10"
+      >
         <div className="helloWorld">Hello World!</div>
         <div className="headshot">
           <img src={Headshot} alt="headshot picture" />
@@ -40,9 +43,14 @@ const LandingPage = ({}) => {
           <LandingPageIcons />
         </div>
       </div>
+
+      <div className="text-bermuda">asdsada</div>
+      <button class="btn btn-primary">Button</button>
+      {/*
       <div>
         <CornerIconsWrapper />
       </div>
+        */}
     </div>
   );
 };
