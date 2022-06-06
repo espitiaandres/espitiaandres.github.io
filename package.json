@@ -20,9 +20,7 @@
     "react-dom": "^17.0.1",
     "react-loader-spinner": "^4.0.0",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "4.0.1",
-    "react-typist": "^2.0.5",
-    "react-typist-loop": "0.0.5",
+    "react-scripts": "^4.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
