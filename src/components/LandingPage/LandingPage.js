@@ -91,11 +91,11 @@ const LandingPage = ({}) => {
           <div className="drawer-side">
             <label for="my-drawer-2" className="drawer-overlay"></label>
             <div className="menu p-4 overflow-y-auto w-96 bg-secondary text-white">
-              <div className="flex justify-center font-bold text-4xl mb-6">
+              <div className="flex justify-center font-bold text-4xl mb-8">
                 Andres Espitia
               </div>
 
-              <div className="avatar flex flex-row justify-center mb-6">
+              <div className="avatar flex flex-row justify-center mb-8">
                 <div className="w-40 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                   <img src={Headshot} />
                 </div>
