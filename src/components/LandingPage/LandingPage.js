@@ -59,21 +59,33 @@ const LandingPage = ({}) => {
           <div className="drawer-side">
             <label for="my-drawer-2" className="drawer-overlay"></label>
             <div className="menu p-4 overflow-y-auto w-80 bg-secondary text-white">
-              <div className="flex justify-center font-bold text-4xl">
+              <div className="flex justify-center font-bold text-4xl mb-6">
                 Andres Espitia
               </div>
 
-              <div class="avatar flex flex-row justify-center">
-                <div class="w-24 rounded-full">
+              <div class="avatar flex flex-row justify-center mb-6">
+                <div class="w-40 rounded-full">
                   <img src={Headshot} />
                 </div>
               </div>
+
+              <div className="text-center leading-tight mb-6">
+                Hi, my name is Andres Espitia and I'm a Software Engineer.
+                Welcome to my personal website!
+              </div>
+
               <ul>
                 <li>
-                  <a>Sidebar Item 1</a>
+                  <a>About Me</a>
                 </li>
                 <li>
-                  <a>Sidebar Item 2</a>
+                  <a>Portfolio</a>
+                </li>
+                <li>
+                  <a>Resume</a>
+                </li>
+                <li>
+                  <a>Blog</a>
                 </li>
               </ul>
             </div>
