@@ -6,8 +6,13 @@
 //  Copyright © 2020 Andres Espitia. All rights reserved.
 //
 
-import React from "react";
+import React, { useState } from "react";
 import "animate.css";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
 
 import "../../font/AWConquerorFreCarved-Regular.otf";
 import LandingPageIcons from "../LandingPageIcons/LandingPageIcons";
@@ -18,7 +23,34 @@ import CornerIconsWrapper from "../CornerIconsWrapper/CornerIconsWrapper";
 import Headshot from "../../images/jpg/astronaut jellyfish.jpg";
 // import
 
+const iconsProps = [
+  {
+    hoverText: "Check out my projects on Github.",
+    href: "https://github.com/espitiaandres",
+    fontAwesome: ["fab", "github"],
+  },
+  {
+    hoverText: "Connect with me on LinkedIn.",
+    href: "https://www.linkedin.com/in/espitiaandres",
+    fontAwesome: ["fab", "linkedin-in"],
+  },
+  {
+    hoverText: "Click here to send me an email.",
+    href: "mailto:afespiti@edu.uwaterloo.ca",
+    fontAwesome: ["fas", "envelope"],
+  },
+  {
+    hoverText: "Let me throw you an alley on Dribbble!",
+    href: "https://dribbble.com/espitiaandres",
+    fontAwesome: ["fab", "dribbble"],
+  },
+];
+
 const LandingPage = ({}) => {
+  library.add(fab, fas);
+  const defaultHoverText = "I'm active on these platforms.";
+  const [hoverText, setHoverText] = useState(defaultHoverText);
+
   return (
     <div>
       <div
@@ -74,7 +106,28 @@ const LandingPage = ({}) => {
                 Welcome to my personal website!
               </div>
 
-              <ul>
+              <div className="text-white flex justify-center">{hoverText}</div>
+
+              <div className="flex flex-row justify-center">
+                {iconsProps.map((icon) => (
+                  <div className="icon">
+                    <a
+                      href={icon.href}
+                      target="_blank"
+                      // className="icon"
+                      className="text-white hover:opacity-75"
+                      rel="noopener noreferrer"
+                      onMouseOver={() => setHoverText(icon.hoverText)}
+                      onMouseLeave={() => setHoverText(defaultHoverText)}
+                      title={icon.href}
+                    >
+                      <FontAwesomeIcon icon={icon.fontAwesome} />
+                    </a>
+                  </div>
+                ))}
+              </div>
+
+              <ul class="menu overflow-y-auto w-100 bg-secondary text-white">
                 <li>
                   <a>About Me</a>
                 </li>
