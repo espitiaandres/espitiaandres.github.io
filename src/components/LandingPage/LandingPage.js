@@ -69,7 +69,7 @@ const LandingPage = ({}) => {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            class="inline-block h-5 w-5 stroke-current md:h-6 md:w-6"
+            className="inline-block h-5 w-5 stroke-current md:h-6 md:w-6"
           >
             <path
               stroke-linecap="round"
@@ -90,44 +90,50 @@ const LandingPage = ({}) => {
           </div>
           <div className="drawer-side">
             <label for="my-drawer-2" className="drawer-overlay"></label>
-            <div className="menu p-4 overflow-y-auto w-80 bg-secondary text-white">
+            <div className="menu p-4 overflow-y-auto w-96 bg-secondary text-white">
               <div className="flex justify-center font-bold text-4xl mb-6">
                 Andres Espitia
               </div>
 
-              <div class="avatar flex flex-row justify-center mb-6">
-                <div class="w-40 rounded-full">
+              <div className="avatar flex flex-row justify-center mb-6">
+                <div className="w-40 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                   <img src={Headshot} />
                 </div>
               </div>
 
               <div className="text-center leading-tight mb-6">
-                Hi, my name is Andres Espitia and I'm a Software Engineer.
+                I'm a University of Waterloo Engineering graduate interested in
+                Full Stack Web Development, Machine Learning, and Optimization.
                 Welcome to my personal website!
               </div>
 
-              <div className="text-white flex justify-center">{hoverText}</div>
+              <div className="text-white flex justify-center mb-6">
+                {hoverText}
+              </div>
 
-              <div className="flex flex-row justify-center">
+              <div className="flex flex-row justify-center mb-6 space-x-4">
                 {iconsProps.map((icon) => (
-                  <div className="icon">
+                  <div>
                     <a
                       href={icon.href}
                       target="_blank"
-                      // className="icon"
-                      className="text-white hover:opacity-75"
+                      className="bg-white border-2 border-white text-primary rounded-full text-4xl w-14 h-14 flex justify-center hover:opacity-75"
+                      // className="text-white hover:opacity-75 rounded-full border-white border-2 text-4xl"
                       rel="noopener noreferrer"
                       onMouseOver={() => setHoverText(icon.hoverText)}
                       onMouseLeave={() => setHoverText(defaultHoverText)}
                       title={icon.href}
                     >
-                      <FontAwesomeIcon icon={icon.fontAwesome} />
+                      <FontAwesomeIcon
+                        className="mt-2"
+                        icon={icon.fontAwesome}
+                      />
                     </a>
                   </div>
                 ))}
               </div>
 
-              <ul class="menu overflow-y-auto w-100 bg-secondary text-white">
+              <ul className="menu overflow-y-auto w-100 bg-secondary text-white">
                 <li>
                   <a>About Me</a>
                 </li>
