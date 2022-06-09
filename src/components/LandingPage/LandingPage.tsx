@@ -1,62 +1,20 @@
 //
-//  LandingPage.js
+//  LandingPage.tsx
 //  espitiaandres.github.io
 //
 //  Created by Andres Espitia.
 //  Copyright © 2020 Andres Espitia. All rights reserved.
 //
 
-import React, { useState } from "react";
 import "animate.css";
-
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import { fas } from "@fortawesome/free-solid-svg-icons";
-// import { fab } from "@fortawesome/free-brands-svg-icons";
-
 import "../../font/AWConquerorFreCarved-Regular.otf";
 import LandingPageIcons from "../LandingPageIcons/LandingPageIcons.tsx";
-import "./LandingPage.css";
+import SidebarDescription from "../SidebarDescription/SidebarDescription.tsx";
 
 // import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
 import CornerIconsWrapper from "../CornerIconsWrapper/CornerIconsWrapper";
-import Headshot from "../../images/jpg/astronaut jellyfish.jpg";
-// import
-
-// interface IIConsProp {
-//   hoverText: string;
-//   href: string;
-//   fontAwesome: string[];
-// }
-
-// const iconsProps: IIConsProp[] = [
-//   {
-//     hoverText: "Check out my projects on Github.",
-//     href: "https://github.com/espitiaandres",
-//     fontAwesome: ["fab", "github"],
-//   },
-//   {
-//     hoverText: "Connect with me on LinkedIn.",
-//     href: "https://www.linkedin.com/in/espitiaandres",
-//     fontAwesome: ["fab", "linkedin-in"],
-//   },
-//   {
-//     hoverText: "Click here to send me an email.",
-//     href: "mailto:afespiti@edu.uwaterloo.ca",
-//     fontAwesome: ["fas", "envelope"],
-//   },
-//   {
-//     hoverText: "Let me throw you an alley on Dribbble!",
-//     href: "https://dribbble.com/espitiaandres",
-//     fontAwesome: ["fab", "dribbble"],
-//   },
-// ];
 
 const LandingPage = ({}) => {
-  // // library.add(fab, fas);
-  // const defaultHoverText = "I'm active on these platforms.";
-  // const [hoverText, setHoverText] = useState(defaultHoverText);
-
   return (
     <div>
       <div
@@ -97,22 +55,7 @@ const LandingPage = ({}) => {
           <div className="drawer-side">
             <label for="my-drawer-2" className="drawer-overlay"></label>
             <div className="menu p-4 overflow-y-auto w-80 bg-secondary text-white">
-              <div className="flex justify-center font-bold text-4xl mb-8">
-                Andres Espitia
-              </div>
-
-              <div className="avatar flex flex-row justify-center mb-8">
-                <div className="w-40 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 hover:brightness-125">
-                  <img src={Headshot} />
-                </div>
-              </div>
-
-              <div className="text-center leading-tight mb-6">
-                I'm a University of Waterloo Engineering graduate interested in
-                Full Stack Web Development, Machine Learning, and Optimization.
-                Welcome to my personal website!
-              </div>
-
+              <SidebarDescription />
               <LandingPageIcons />
 
               <ul className="menu overflow-y-auto w-100 bg-secondary text-white">
