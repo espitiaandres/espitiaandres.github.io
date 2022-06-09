@@ -67,9 +67,10 @@ const LandingPage = ({}) => {
               .
             </div>
             <div className="text-black text-base mb-2">
-              I like to spend my free time listening to music, playing and
-              watching basketball and soccer. I also like running, cooking,
-              cryptography, playing video games, and dabbling in FL Studio.
+              I like to spend my free time listening to music, playing piano,
+              and playing and watching basketball and soccer. I also like to
+              run, cook, and play video games. Recently, I've dabbled in FL
+              Studio and cryptography!
             </div>
             <div className="text-black">
               Here are some achievements I'm proud of!
