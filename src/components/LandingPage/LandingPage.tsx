@@ -84,6 +84,8 @@ const LandingPage = ({}) => {
             <div className="text-black">Fantasy Basketball MLR Analyzer</div>
             <div className="text-black">Antoine Equation Calculator</div>
             <div className="text-black">Hypatia contest Top 25%</div>
+            <div className="text-black">Porespy GUI (FE/BE)</div>
+            <div className="text-black">Edmonton NRC Research Paper</div>
           </div>
 
           <div className="drawer-side">
