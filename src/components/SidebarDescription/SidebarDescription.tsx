@@ -20,9 +20,9 @@ const SidebarDescription = () => {
         </div>
       </div>
       <div className="text-center leading-tight mb-6">
-        I'm a University of Waterloo Engineering graduate interested in Full
-        Stack Web Development, Machine Learning, and Optimization. Welcome to my
-        personal website!
+        I'm an Engineering '22 graduate from the University of Waterloo
+        interested in Full Stack Web Development, Machine Learning, and
+        Optimization.
       </div>
     </div>
   );
