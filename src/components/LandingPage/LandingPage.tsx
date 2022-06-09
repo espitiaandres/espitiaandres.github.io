@@ -75,8 +75,12 @@ const LandingPage = ({}) => {
               Here are some achievements I'm proud of!
             </div>
 
-            <div className="text-black">Studyfi</div>
+            <div className="text-black">Studyfi (CWF)</div>
             <div className="text-black">Graduation with honours?</div>
+            <div className="text-black">Udemy courses completed/working on</div>
+            <div className="text-black">Pokedex</div>
+            <div className="text-black">Fantasy Basketball MLR Analyzer</div>
+            <div className="text-black">Antoine Equation Calculator</div>
           </div>
 
           <div className="drawer-side">
