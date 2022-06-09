@@ -9,7 +9,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HrefLink from "../HrefLink/HrefLink";
-import LandingPage from "../LandingPage/LandingPage";
+import LandingPage from "../LandingPage/LandingPage.tsx";
 import SkillsPage from "../SkillsPage/SkillsPage";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
 

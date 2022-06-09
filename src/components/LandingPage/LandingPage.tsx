@@ -23,7 +23,13 @@ import CornerIconsWrapper from "../CornerIconsWrapper/CornerIconsWrapper";
 import Headshot from "../../images/jpg/astronaut jellyfish.jpg";
 // import
 
-const iconsProps = [
+interface IIConsProp {
+  hoverText: string;
+  href: string;
+  fontAwesome: string[];
+}
+
+const iconsProps: IIConsProp[] = [
   {
     hoverText: "Check out my projects on Github.",
     href: "https://github.com/espitiaandres",
@@ -90,13 +96,13 @@ const LandingPage = ({}) => {
           </div>
           <div className="drawer-side">
             <label for="my-drawer-2" className="drawer-overlay"></label>
-            <div className="menu p-4 overflow-y-auto w-96 bg-secondary text-white">
+            <div className="menu p-4 overflow-y-auto w-80 bg-secondary text-white">
               <div className="flex justify-center font-bold text-4xl mb-8">
                 Andres Espitia
               </div>
 
               <div className="avatar flex flex-row justify-center mb-8">
-                <div className="w-40 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                <div className="w-40 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 hover:brightness-125">
                   <img src={Headshot} />
                 </div>
               </div>
@@ -118,7 +124,6 @@ const LandingPage = ({}) => {
                       href={icon.href}
                       target="_blank"
                       className="bg-white border-2 border-white text-primary rounded-full text-4xl w-14 h-14 flex justify-center hover:opacity-75"
-                      // className="text-white hover:opacity-75 rounded-full border-white border-2 text-4xl"
                       rel="noopener noreferrer"
                       onMouseOver={() => setHoverText(icon.hoverText)}
                       onMouseLeave={() => setHoverText(defaultHoverText)}
