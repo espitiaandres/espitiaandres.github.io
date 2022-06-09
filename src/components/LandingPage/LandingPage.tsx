@@ -50,31 +50,47 @@ const LandingPage = ({}) => {
             className="drawer-toggle accent-secondary"
           />
 
-          <div className="drawer-content px-20 py-20">
+          <div className="drawer-content px-12 py-20">
             <div className="text-black text-5xl mb-12">Andres Espitia</div>
-            <div className="text-black text-base">
-              I'm a University of Waterloo Engineering graduate interested in
-              Full Stack Web Development, Machine Learning, and Optimization.
-              Currently, I'm working as a Full-Stack Software Engineer at
-              Federato.
+            <div className="text-black text-base mb-2">
+              I'm a University of Waterloo Engineering '22 graduate interested
+              in Full Stack Web Development, Machine Learning, and Optimization.
+              Currently, I'm working as a Full-Stack Software Engineer at&nbsp;
+              <a
+                className="link"
+                href="https://federato.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Federato
+              </a>
+              .
             </div>
+            <div className="text-black text-base mb-2">
+              I like to spend my free time listening to music, playing and
+              watching basketball and soccer. I also like running, cooking,
+              cryptography, playing video games, and dabbling in FL Studio.
+            </div>
+            <div className="text-black">
+              Here are some achievements I'm proud of!
+            </div>
+
+            <div className="text-black">Studyfi</div>
+            <div className="text-black">Graduation with honours?</div>
           </div>
 
           <div className="drawer-side">
             <label for="my-drawer-2" className="drawer-overlay"></label>
-            <div className="menu p-4 overflow-y-auto w-80 bg-secondary text-white">
+            <div className="menu px-5 overflow-y-auto w-80 bg-secondary text-white">
               <SidebarDescription />
               <LandingPageIcons />
 
               <ul className="menu overflow-y-auto w-100 bg-secondary text-white">
                 <li>
-                  <a>About Me</a>
+                  <a>Home</a>
                 </li>
                 <li>
-                  <a>Portfolio</a>
-                </li>
-                <li>
-                  <a>Resume</a>
+                  <a>Projects</a>
                 </li>
                 <li>
                   <a>Blog</a>

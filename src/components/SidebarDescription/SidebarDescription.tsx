@@ -10,7 +10,7 @@ import Headshot from "../../images/jpg/astronaut jellyfish.jpg";
 
 const SidebarDescription = () => {
   return (
-    <div>
+    <div className="mt-20">
       <div className="flex justify-center font-bold text-4xl mb-8">
         Andres Espitia
       </div>
@@ -20,9 +20,8 @@ const SidebarDescription = () => {
         </div>
       </div>
       <div className="text-center leading-tight mb-6">
-        I'm an Engineering '22 graduate from the University of Waterloo
-        interested in Full Stack Web Development, Machine Learning, and
-        Optimization.
+        I'm a University of Waterloo Engineering '22 graduate interested in Full
+        Stack Web Development, Machine Learning, and Optimization.
       </div>
     </div>
   );
