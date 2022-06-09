@@ -82,7 +82,7 @@ const LandingPage = ({}) => {
             <div className="text-black">Pokedex</div>
             <div className="text-black">Fantasy Basketball MLR Analyzer</div>
             <div className="text-black">Antoine Equation Calculator</div>
-            <div className="text-black">Hypatia contest</div>
+            <div className="text-black">Hypatia contest Top 25%</div>
           </div>
 
           <div className="drawer-side">
