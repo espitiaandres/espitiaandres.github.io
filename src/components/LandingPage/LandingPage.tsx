@@ -77,10 +77,12 @@ const LandingPage = ({}) => {
 
             <div className="text-black">Studyfi (CWF)</div>
             <div className="text-black">Graduation with honours?</div>
+            <div className="text-black">Dean's honour list?</div>
             <div className="text-black">Udemy courses completed/working on</div>
             <div className="text-black">Pokedex</div>
             <div className="text-black">Fantasy Basketball MLR Analyzer</div>
             <div className="text-black">Antoine Equation Calculator</div>
+            <div className="text-black">Hypatia contest</div>
           </div>
 
           <div className="drawer-side">
