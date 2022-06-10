@@ -76,9 +76,6 @@ const LandingPage = ({}) => {
               soccer. I also like to run, cook, and play video games. Recently,
               I've dabbled in FL Studio.
             </div>
-            <div className="text-black mb-2">
-              Here are some achievements I'm proud of:
-            </div>
 
             <Achievements />
           </div>

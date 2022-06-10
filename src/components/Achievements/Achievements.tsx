@@ -70,17 +70,11 @@ const Achievements = () => {
     },
   ];
 
-  // <a
-  //   className="link text-secondary ml-2"
-  //   href="https://federato.ai"
-  //   target="_blank"
-  //   rel="noopener noreferrer"
-  // >
-  //   {l}
-  // </a>
-
   return (
     <div>
+      <div className="text-black mb-2">
+        Here are some projects and achievements I'm proud of:
+      </div>
       {achievements.map(({ text, links, description, image }) => (
         <div className="animate__animated animate__fadeIn animate__delay-0.8s">
           <div
