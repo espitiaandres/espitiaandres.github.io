@@ -8,6 +8,7 @@
 
 import "animate.css";
 import "../../font/AWConquerorFreCarved-Regular.otf";
+import Achievements from "../Achievements/Achievements.tsx";
 import LandingPageIcons from "../LandingPageIcons/LandingPageIcons.tsx";
 import SidebarDescription from "../SidebarDescription/SidebarDescription.tsx";
 
@@ -50,42 +51,36 @@ const LandingPage = ({}) => {
             className="drawer-toggle accent-secondary"
           />
 
-          <div className="drawer-content px-12 py-20">
-            <div className="text-black text-5xl mb-12">Andres Espitia</div>
+          <div className="drawer-content px-12 py-16">
+            <div className="text-black text-5xl mb-6">Andres Espitia</div>
+            <div className="text-zinc-500 text-2xl mb-12">
+              Full-Stack Software Engineer
+            </div>
             <div className="text-black text-base mb-2">
               I'm a University of Waterloo Engineering '22 graduate interested
               in Full Stack Web Development, Machine Learning, and Optimization.
               Currently, I'm working as a Full-Stack Software Engineer at&nbsp;
               <a
-                className="link"
+                className="link text-secondary"
                 href="https://federato.ai"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Federato
               </a>
-              .
+              , helping improve the underwriting workflow.
             </div>
             <div className="text-black text-base mb-2">
-              I like to spend my free time listening to music, playing piano,
-              and playing and watching basketball and soccer. I also like to
-              run, cook, and play video games. Recently, I've dabbled in FL
-              Studio and cryptography!
+              When I'm not coding, I like to spend my free time listening to
+              music, playing piano, and playing and watching basketball and
+              soccer. I also like to run, cook, and play video games. Recently,
+              I've dabbled in FL Studio.
             </div>
-            <div className="text-black">
-              Here are some achievements I'm proud of!
+            <div className="text-black mb-2">
+              Here are some achievements I'm proud of:
             </div>
 
-            <div className="text-black">Studyfi (CWF)</div>
-            <div className="text-black">Graduation with honours?</div>
-            <div className="text-black">Dean's honour list?</div>
-            <div className="text-black">Udemy courses completed/working on</div>
-            <div className="text-black">Pokedex</div>
-            <div className="text-black">Fantasy Basketball MLR Analyzer</div>
-            <div className="text-black">Antoine Equation Calculator</div>
-            <div className="text-black">Hypatia contest Top 25%</div>
-            <div className="text-black">Porespy GUI (FE/BE)</div>
-            <div className="text-black">Edmonton NRC Research Paper</div>
+            <Achievements />
           </div>
 
           <div className="drawer-side">

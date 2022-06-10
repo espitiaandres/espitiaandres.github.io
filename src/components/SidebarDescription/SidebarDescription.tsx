@@ -10,7 +10,7 @@ import Headshot from "../../images/jpg/astronaut jellyfish.jpg";
 
 const SidebarDescription = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-16">
       <div className="flex justify-center font-bold text-4xl mb-8">
         Andres Espitia
       </div>
