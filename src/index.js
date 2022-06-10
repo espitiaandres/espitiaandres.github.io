@@ -9,7 +9,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Portfolio from "./components/Portfolio/Portfolio";
+import Portfolio from "./components/Portfolio/Portfolio.tsx";
 
 ReactDOM.render(
   <React.StrictMode>

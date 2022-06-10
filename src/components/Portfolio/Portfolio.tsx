@@ -7,12 +7,7 @@
 //
 
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Switch,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HrefLink from "../HrefLink/HrefLink";
 import LandingPage from "../LandingPage/LandingPage.tsx";
 import SkillsPage from "../SkillsPage/SkillsPage";
@@ -26,8 +21,13 @@ const Portfolio = ({}) => {
   return (
     <Router basename="/">
       <Routes>
-        <Route path="/projects" exact element={<LandingPage />} />
-        <Route path="/" exact element={<LandingPage />} />
+        <Route path="/blog" exact element={<LandingPage component="blog" />} />
+        <Route
+          path="/projects"
+          exact
+          element={<LandingPage component="projects" />}
+        />
+        <Route path="/" exact element={<LandingPage component="" />} />
         {/* HTTP Redirect to other FE projects hosted on andres-espitia.com */}
         {frontendNames.map((fe) => (
           <Route path={`/${fe}`} exact element={<HrefLink route={fe} />} />

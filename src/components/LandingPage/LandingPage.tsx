@@ -6,6 +6,7 @@
 //  Copyright © 2020 Andres Espitia. All rights reserved.
 //
 
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "animate.css";
 import "../../font/AWConquerorFreCarved-Regular.otf";
 import AboutMe from "../AboutMe/AboutMe.tsx";
@@ -16,7 +17,7 @@ import SidebarDescription from "../SidebarDescription/SidebarDescription.tsx";
 // import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
 // import CornerIconsWrapper from "../CornerIconsWrapper/CornerIconsWrapper";
 
-const LandingPage = ({}) => {
+const LandingPage = ({ component }) => {
   return (
     <div>
       <div
@@ -53,8 +54,12 @@ const LandingPage = ({}) => {
           />
 
           <div className="drawer-content px-12 py-16">
-            <AboutMe />
-            <Achievements />
+            <div className="text-black text-5xl mb-6">Andres Espitia</div>
+            <div className="text-zinc-500 text-2xl mb-12">
+              Full-Stack Software Engineer
+            </div>
+            {component === "" && <AboutMe />}
+            {component === "projects" && <Achievements />}
           </div>
 
           <div className="drawer-side">
@@ -65,13 +70,13 @@ const LandingPage = ({}) => {
 
               <ul className="menu overflow-y-auto w-100 bg-secondary text-white">
                 <li>
-                  <a>Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a>Projects</a>
+                  <Link to="/projects">Projects</Link>
                 </li>
                 <li>
-                  <a>Blog</a>
+                  <Link to="/blog">Blog</Link>
                 </li>
               </ul>
             </div>
