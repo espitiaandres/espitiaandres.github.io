@@ -26,7 +26,7 @@ const Portfolio = ({}) => {
   return (
     <Router basename="/">
       <Routes>
-        <Route path="/skills" exact element={<Achievements />} />
+        <Route path="/projects" exact element={<LandingPage />} />
         <Route path="/" exact element={<LandingPage />} />
         {/* HTTP Redirect to other FE projects hosted on andres-espitia.com */}
         {frontendNames.map((fe) => (
