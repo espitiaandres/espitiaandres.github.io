@@ -6,6 +6,7 @@
 //  Copyright © 2020 Andres Espitia. All rights reserved.
 //
 
+import { useState } from "react";
 import Headshot from "../../images/jpg/astronaut jellyfish.jpg";
 
 const SidebarDescription = () => {
