@@ -71,21 +71,21 @@ const Achievements = () => {
   ];
 
   return (
-    <div>
+    <div className="animate__animated animate__fadeIn animate__delay-0.5s">
       <div className="text-black mb-2">
         Here are some projects and achievements I'm proud of:
       </div>
       {achievements.map(({ text, links, description, image }) => (
-        <div className="animate__animated animate__fadeIn animate__delay-0.8s">
+        <div>
           <div
             tabindex="0"
-            class="collapse collapse-plus rounded-box text-black"
+            class="collapse collapse-plus rounded-box text-black border-2 hover:border-primary ease-in duration-100"
           >
             <input type="checkbox" />
-            <div className="collapse-title text-lg font-medium text-secondary">
+            <div className="collapse-title text-lg font-medium text-secondary rounded-full truncate">
               {text}
             </div>
-            <div className="collapse-content">
+            <div className="collapse-content ease-in duration-100">
               <div>{description}</div>
               {links.map((l) => (
                 <div>
