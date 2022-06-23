@@ -4,7 +4,7 @@ import { achievementsList, IAchievement } from "./AchievementsStaticData.ts";
 const Achievements = () => {
   return (
     <div className="animate__animated animate__fadeIn animate__delay-0.5s">
-      <div className="text-black mb-2">
+      <div className="text-black mb-4">
         Here are some projects and achievements I'm proud of:
       </div>
       {achievementsList.map(({ text, links, description, image }) => (
@@ -23,10 +23,10 @@ const Achievements = () => {
                 <div>
                   <div>See more:</div>
                   {links.map((l: IAchievement) => (
-                    <div>
-                      -{" "}
+                    <div className="flex flex-row space-x-2">
+                      <div>-</div>
                       <a
-                        className="link link-hover hover:text-secondary"
+                        className="link link-hover hover:text-secondary break-words"
                         href={l}
                         target="_blank"
                         rel="noopener noreferrer"
