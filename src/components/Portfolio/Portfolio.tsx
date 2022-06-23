@@ -1,5 +1,5 @@
 //
-//  Portfolio.js
+//  Portfolio.tsx
 //  espitiaandres.github.io
 //
 //  Created by Andres Espitia.

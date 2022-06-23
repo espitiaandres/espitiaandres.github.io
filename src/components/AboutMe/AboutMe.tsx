@@ -19,7 +19,7 @@ const AboutMe = () => {
         When I'm not coding, I like to spend my free time listening to music,
         playing piano, and playing and watching basketball and soccer. I also
         like to run, cook, and play video games. Recently, I've dabbled in FL
-        Studio.
+        Studio and Origami.
       </div>
     </div>
   );

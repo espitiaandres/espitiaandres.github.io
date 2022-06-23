@@ -34,7 +34,7 @@ const Achievements = () => {
       image: AstronautJellyfish,
     },
     {
-      text: "Porespy GUI Full-Stack Web App",
+      text: "Porespy Full-Stack Web App",
       links: [
         "https://github.com/PMEAL/porespy-frontend",
         "https://github.com/PMEAL/porespy-backend",

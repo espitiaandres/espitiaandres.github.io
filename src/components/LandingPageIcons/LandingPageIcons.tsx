@@ -18,6 +18,8 @@ interface IIConsProp {
   fontAwesome: string[] | any;
 }
 
+// TODO: add twitter, medium...?
+
 const iconsProps: IIConsProp[] = [
   {
     hoverText: "Check out my projects on Github.",
