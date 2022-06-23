@@ -1,5 +1,5 @@
 import "animate.css";
-import { achievementsList } from "./AchievementsStaticData.ts";
+import { achievementsList, IAchievement } from "./AchievementsStaticData.ts";
 
 const Achievements = () => {
   return (
@@ -18,11 +18,11 @@ const Achievements = () => {
               {text}
             </div>
             <div className="collapse-content ease-in duration-100">
-              <div>{description}</div>
+              <div className="mb-2">{description}</div>
               {links.length > 0 && (
                 <div>
                   <div>See more:</div>
-                  {links.map((l) => (
+                  {links.map((l: IAchievement) => (
                     <div>
                       -{" "}
                       <a

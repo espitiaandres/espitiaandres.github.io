@@ -1,6 +1,6 @@
 import AstronautJellyfish from "../../images/jpg/astronaut jellyfish.jpg";
 
-interface IAchievement {
+export interface IAchievement {
   text: string;
   links: string[];
   description: string;
