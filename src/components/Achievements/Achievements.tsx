@@ -11,7 +11,7 @@ const Achievements = () => {
   }, []);
 
   return (
-    <div className="animate__animated animate__fadeIn animate__delay-0.5s">
+    <div className="animate__animated animate__fadeIn animate__delay-0.3s">
       <div className="flex flex-row justify-between">
         <div className="text-black mb-4">
           Here are some projects and achievements I'm proud of:
@@ -21,9 +21,6 @@ const Achievements = () => {
           onClick={() => {
             setIsExpanded(!isExpanded);
             inputsRef?.current?.map((d) => d.click());
-            // console.log(inputsRef);
-            // inputsRef?.current?.click();
-            // inputsRef?.current?.((d) => d.click)
           }}
         >
           {isExpanded ? "Collapse" : "Expand"} All
@@ -38,7 +35,6 @@ const Achievements = () => {
             >
               <input
                 type="checkbox"
-                // ref={inputRef}
                 ref={(el) => ((inputsRef as any).current[i] = el)}
               />
               <div className="collapse-title text-lg font-medium text-secondary rounded-full truncate">
