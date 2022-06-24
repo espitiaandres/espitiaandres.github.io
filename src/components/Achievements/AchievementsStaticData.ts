@@ -20,17 +20,24 @@ export const achievementsList: IAchievement[] = [
   },
   {
     text: "Udemy Courses",
-    links: [],
-    description: "",
+    links: [
+      "https://www.udemy.com/certificate/UC-7d6aa75a-4b43-4ce4-ac8d-6be29fd5ca76/",
+      "https://www.udemy.com/certificate/UC-fff41949-10a7-46ea-8803-b2a83e27b456/",
+      "https://www.udemy.com/certificate/UC-1edea84a-855a-4d1d-9f9b-e5c1d48fda7c/",
+    ],
+    description:
+      "Here are some interesting courses I've completed that I recommend.",
     image: AstronautJellyfish,
   },
   {
     text: "Porespy Full-Stack Web App",
     links: [
+      "https://porespy.org/",
       "https://github.com/PMEAL/porespy-frontend",
       "https://github.com/PMEAL/porespy-backend",
     ],
-    description: "",
+    description:
+      "PoreSpy is a collection of image analysis functions used to extract information from 3D images of porous materials (typically obtained from X-ray tomography). To make this python library into a full-stack web app, I used React, Redux, and Django.",
     image: AstronautJellyfish,
   },
   {
