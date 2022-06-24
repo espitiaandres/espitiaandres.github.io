@@ -20,7 +20,22 @@ const Achievements = () => {
           className="btn btn-outline btn-primary -mt-2 mb-2 w-40"
           onClick={() => {
             setIsExpanded(!isExpanded);
-            inputsRef?.current?.map((d) => d.click());
+
+            const openedAccordions = inputsRef?.current?.every(
+              (d) => d?.checked
+            );
+
+            if (openedAccordions) {
+              inputsRef?.current?.map((d) => {
+                d?.click();
+              });
+            } else {
+              inputsRef?.current?.map((d) => {
+                !d?.checked && d?.click();
+              });
+
+              setIsExpanded(true);
+            }
           }}
         >
           {isExpanded ? "Collapse" : "Expand"} All
@@ -30,12 +45,13 @@ const Achievements = () => {
         ({ text, links, description, image }: IAchievement, i: number) => (
           <div>
             <div
-              tabindex="0"
+              tabIndex={0}
               className="collapse collapse-arrow rounded-box text-black border-2 hover:border-primary ease-in duration-100"
             >
               <input
                 type="checkbox"
                 ref={(el) => ((inputsRef as any).current[i] = el)}
+                onClick={() => setIsExpanded(false)}
               />
               <div className="collapse-title text-lg font-medium text-secondary rounded-full truncate">
                 {text}
