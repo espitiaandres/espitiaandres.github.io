@@ -1,6 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import "animate.css";
-import { achievementsList, IAchievement } from "./AchievementsStaticData.ts";
+import {
+  achievementsList,
+  IAchievement,
+  onExpandCollapse,
+} from "./AchievementsStaticData.ts";
+import Link from "./Link.tsx";
 
 const Achievements = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -10,24 +15,6 @@ const Achievements = () => {
     inputsRef.current = inputsRef.current.slice(0, achievementsList.length);
   }, []);
 
-  const onExpandCollapse = () => {
-    const openedAccordions = inputsRef?.current?.every((d) => d?.checked);
-
-    if (openedAccordions) {
-      inputsRef?.current?.map((d) => {
-        d?.click();
-      });
-
-      setIsExpanded(!isExpanded);
-    } else {
-      inputsRef?.current?.map((d) => {
-        !d?.checked && d?.click();
-      });
-
-      setIsExpanded(true);
-    }
-  };
-
   return (
     <div className="animate__animated animate__fadeIn animate__delay-0.3s">
       <div className="text-black mb-4">
@@ -36,7 +23,9 @@ const Achievements = () => {
       <div className="flex flex-row justify-start">
         <button
           className="btn btn-outline btn-primary border-2 -mt-2 mb-2 w-40"
-          onClick={() => onExpandCollapse()}
+          onClick={() =>
+            onExpandCollapse({ inputsRef, isExpanded, setIsExpanded })
+          }
         >
           {isExpanded ? "Collapse" : "Expand"} All
         </button>
@@ -66,18 +55,8 @@ const Achievements = () => {
                 {links?.length > 0 && (
                   <div>
                     <div>See more:</div>
-                    {links?.map((l: IAchievement) => (
-                      <div className="flex flex-row space-x-2">
-                        <div>-</div>
-                        <a
-                          className="link link-hover hover:text-secondary break-words"
-                          href={l}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {l}
-                        </a>
-                      </div>
+                    {links?.map((l: string, i: number) => (
+                      <Link l={l} key={i} />
                     ))}
                   </div>
                 )}

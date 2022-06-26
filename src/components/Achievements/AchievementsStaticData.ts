@@ -10,7 +10,6 @@ export interface IAchievement {
 /*
 TODO: 
 - Waterloo math contests?
-
 */
 
 export const achievementsList: IAchievement[] = [
@@ -25,17 +24,6 @@ export const achievementsList: IAchievement[] = [
     image: AstronautJellyfish,
   },
   {
-    text: "Udemy Courses",
-    links: [
-      "https://www.udemy.com/certificate/UC-7d6aa75a-4b43-4ce4-ac8d-6be29fd5ca76/",
-      "https://www.udemy.com/certificate/UC-fff41949-10a7-46ea-8803-b2a83e27b456/",
-      "https://www.udemy.com/certificate/UC-1edea84a-855a-4d1d-9f9b-e5c1d48fda7c/",
-    ],
-    description:
-      "Here are some interesting courses I've completed that I recommend.",
-    image: AstronautJellyfish,
-  },
-  {
     text: "Porespy Full-Stack Web App",
     links: [
       "https://porespy.org/",
@@ -47,9 +35,21 @@ export const achievementsList: IAchievement[] = [
     image: AstronautJellyfish,
   },
   {
-    text: "Publication: Electrochemical Formation of Four Al-Li Phases (β-AlLi, Al2Li3, AlLi2−x, Al4Li9) at Intermediate Temperatures",
+    text: "Udemy Courses",
+    links: [
+      "https://www.udemy.com/certificate/UC-7d6aa75a-4b43-4ce4-ac8d-6be29fd5ca76/",
+      "https://www.udemy.com/certificate/UC-fff41949-10a7-46ea-8803-b2a83e27b456/",
+      "https://www.udemy.com/certificate/UC-1edea84a-855a-4d1d-9f9b-e5c1d48fda7c/",
+    ],
+    description:
+      "Here are some interesting courses I've completed that I recommend.",
+    image: AstronautJellyfish,
+  },
+  {
+    text: "Research Papers",
     links: ["https://iopscience.iop.org/article/10.1149/2.0061916jes/meta"],
-    description: "",
+    description:
+      "Electrochemical Formation of Four Al-Li Phases (β-AlLi, Al2Li3, AlLi2−x, Al4Li9) at Intermediate Temperatures",
     image: AstronautJellyfish,
   },
   {
@@ -67,3 +67,21 @@ export const achievementsList: IAchievement[] = [
     image: AstronautJellyfish,
   },
 ];
+
+export const onExpandCollapse = ({ inputsRef, isExpanded, setIsExpanded }) => {
+  const openedAccordions = inputsRef?.current?.every((d) => d?.checked);
+
+  if (openedAccordions) {
+    inputsRef?.current?.map((d) => {
+      d?.click();
+    });
+
+    setIsExpanded(!isExpanded);
+  } else {
+    inputsRef?.current?.map((d) => {
+      !d?.checked && d?.click();
+    });
+
+    setIsExpanded(true);
+  }
+};
