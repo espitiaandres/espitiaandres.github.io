@@ -7,7 +7,7 @@
 //
 
 import { useState } from "react";
-import Headshot from "../../images/jpg/astronaut jellyfish.jpg";
+import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
 
 const SidebarDescription = () => {
   return (
@@ -16,8 +16,8 @@ const SidebarDescription = () => {
         Andres Espitia
       </div>
       <div className="avatar flex flex-row justify-center mb-8">
-        <div className="w-44 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 hover:brightness-125">
-          <img src={Headshot} />
+        <div className="w-44 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+          <img className="object-fill" src={Headshot} />
         </div>
       </div>
       <div className="text-center leading-tight mb-6">

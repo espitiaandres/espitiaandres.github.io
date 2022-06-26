@@ -10,33 +10,33 @@ const Achievements = () => {
     inputsRef.current = inputsRef.current.slice(0, achievementsList.length);
   }, []);
 
+  const onExpandCollapse = () => {
+    const openedAccordions = inputsRef?.current?.every((d) => d?.checked);
+
+    if (openedAccordions) {
+      inputsRef?.current?.map((d) => {
+        d?.click();
+      });
+
+      setIsExpanded(!isExpanded);
+    } else {
+      inputsRef?.current?.map((d) => {
+        !d?.checked && d?.click();
+      });
+
+      setIsExpanded(true);
+    }
+  };
+
   return (
     <div className="animate__animated animate__fadeIn animate__delay-0.3s">
-      <div className="flex flex-row justify-between">
-        <div className="text-black mb-4">
-          Here are some projects and achievements I'm proud of:
-        </div>
+      <div className="text-black mb-4">
+        Here are some projects and achievements I'm proud of:
+      </div>
+      <div className="flex flex-row justify-start">
         <button
-          className="btn btn-outline btn-primary -mt-2 mb-2 w-40"
-          onClick={() => {
-            setIsExpanded(!isExpanded);
-
-            const openedAccordions = inputsRef?.current?.every(
-              (d) => d?.checked
-            );
-
-            if (openedAccordions) {
-              inputsRef?.current?.map((d) => {
-                d?.click();
-              });
-            } else {
-              inputsRef?.current?.map((d) => {
-                !d?.checked && d?.click();
-              });
-
-              setIsExpanded(true);
-            }
-          }}
+          className="btn btn-outline btn-primary border-2 -mt-2 mb-2 w-40"
+          onClick={() => onExpandCollapse()}
         >
           {isExpanded ? "Collapse" : "Expand"} All
         </button>

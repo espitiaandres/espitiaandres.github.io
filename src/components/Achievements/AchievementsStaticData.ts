@@ -60,10 +60,4 @@ export const achievementsList: IAchievement[] = [
     description: "",
     image: AstronautJellyfish,
   },
-  {
-    text: "Hypatia Contest Top 25%",
-    links: [],
-    description: "",
-    image: AstronautJellyfish,
-  },
 ];
