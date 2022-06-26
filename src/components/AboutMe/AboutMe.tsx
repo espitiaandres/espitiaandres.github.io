@@ -20,8 +20,8 @@ const AboutMe = () => {
       <div className="text-black text-base mb-2">
         When I'm not coding, I like to spend my free time listening to music,
         playing piano, and playing and watching basketball and soccer. I also
-        like to run, cook, and play video games. Recently, I've dabbled in FL
-        Studio and Origami.
+        like to run, cook, and play video games. Recently, I've been interested
+        in FL Studio and Origami.
       </div>
     </div>
   );

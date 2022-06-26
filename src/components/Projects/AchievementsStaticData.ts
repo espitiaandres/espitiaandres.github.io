@@ -28,7 +28,7 @@ export const achievementsList: IAchievement[] = [
       "https://github.com/espitiaandres/studyfi-backend",
     ],
     description:
-      "A place to study, listen to music, and chat with friends. Getting work done while listening to music on one page.",
+      "A place to study, listen to music, and chat with friends. Getting work done while listening to music on Spotify on one page. To build this, I used Node, Express, React, Redux, Web sockets, Material UI, and the Spotify API.",
     image: AstronautJellyfish,
   },
   {
@@ -49,8 +49,7 @@ export const achievementsList: IAchievement[] = [
       "https://www.udemy.com/certificate/UC-fff41949-10a7-46ea-8803-b2a83e27b456/",
       "https://www.udemy.com/certificate/UC-1edea84a-855a-4d1d-9f9b-e5c1d48fda7c/",
     ],
-    description:
-      "Here are some interesting courses I've completed that I recommend.",
+    description: "Some interesting courses I've completed that I recommend.",
     image: AstronautJellyfish,
   },
   {

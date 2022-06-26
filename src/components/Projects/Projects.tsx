@@ -26,7 +26,7 @@ const Achievements = () => {
   return (
     <div className="animate__animated animate__fadeIn animate__delay-0.3s">
       <div className="text-black mb-4">
-        Here are some projects and achievements I'm proud of:
+        Here are some projects and achievements I've worked on:
       </div>
       <div className="flex flex-row justify-start">
         <button

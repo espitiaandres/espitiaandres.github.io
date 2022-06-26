@@ -6,7 +6,6 @@
 //  Copyright © 2020 Andres Espitia. All rights reserved.
 //
 
-import { useState } from "react";
 import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
 
 const SidebarDescription = () => {
@@ -16,7 +15,7 @@ const SidebarDescription = () => {
         Andres Espitia
       </div>
       <div className="avatar flex flex-row justify-center mb-8">
-        <div className="w-44 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+        <div className="w-44 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 hover:brightness-110">
           <img className="object-fill" src={Headshot} />
         </div>
       </div>
