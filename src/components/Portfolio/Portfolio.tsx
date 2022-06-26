@@ -30,7 +30,7 @@ const Portfolio = ({}) => {
         <Route
           path="/blog"
           exact
-          element={<LandingPage children={<AboutMe />} />}
+          element={<LandingPage children={<Construction />} />}
         />
         <Route
           path="/personal"
@@ -40,7 +40,7 @@ const Portfolio = ({}) => {
         <Route
           path="/"
           exact
-          element={<LandingPage children={<Construction />} />}
+          element={<LandingPage children={<AboutMe />} />}
         />
         {/* HTTP Redirect to other FE projects hosted on andres-espitia.com */}
         {frontendNames.map((fe) => (

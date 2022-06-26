@@ -3,7 +3,7 @@ import "animate.css";
 const AboutMe = () => {
   return (
     <div className="animate__animated animate__fadeIn animate__delay-0.3s">
-      <div className="text-black text-base mb-2">
+      <div className="text-black text-base md:text-lg mb-2">
         I'm a University of Waterloo Engineering '22 graduate interested in Full
         Stack Web Development, Machine Learning, and Optimization. Currently,
         I'm working as a Full-Stack Software Engineer at&nbsp;
@@ -17,7 +17,7 @@ const AboutMe = () => {
         </a>
         , helping improve the underwriting workflow.
       </div>
-      <div className="text-black text-base mb-2">
+      <div className="text-black text-base md:text-lg mb-2">
         When I'm not coding, I like to listen to music, play piano and violin,
         and play/watch basketball and soccer. Recently, I've been interested in
         FL Studio and Origami.

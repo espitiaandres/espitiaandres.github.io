@@ -50,11 +50,14 @@ const LandingPage = ({ children }) => {
             className="drawer-toggle accent-secondary"
           />
           <div className="drawer-content px-12 py-16">
-            <div className="text-black text-5xl mb-6">Andres Espitia</div>
-            <div className="text-zinc-500 text-2xl mb-12">
+            <div className="text-black text-6xl mb-6">Andres Espitia</div>
+            <div className="text-zinc-500 text-3xl mb-12">
               Full-Stack Software Engineer
             </div>
             <div>{children}</div>
+            <div className="text-black flex fixed bottom-0 py-2 lg:w-[calc(100%_-_24rem)] bg-white">
+              Made with ❤️ using React, Tailwind, DaisyUI, and Github Pages
+            </div>
           </div>
           <div className="drawer-side flex flex-col">
             <label for="my-drawer-2" className="drawer-overlay"></label>
@@ -75,9 +78,6 @@ const LandingPage = ({ children }) => {
                   <Link to="/personal">Personal</Link>
                 </li>
               </ul>
-              <div className="fixed bottom-4">
-                Made with ❤️ using React, Tailwind, DaisyUI, and Github Pages
-              </div>
             </div>
           </div>
         </div>

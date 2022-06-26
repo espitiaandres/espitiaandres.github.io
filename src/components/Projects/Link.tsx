@@ -15,7 +15,7 @@ const Link = ({ l }: ILink) => {
     <div className="flex flex-row space-x-2">
       <div>-</div>
       <a
-        className="link link-hover hover:text-secondary break-words"
+        className="link link-hover hover:text-secondary break-all"
         href={l}
         target="_blank"
         rel="noopener noreferrer"
