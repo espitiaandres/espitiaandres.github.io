@@ -1,3 +1,11 @@
+//
+//  Achievement.tsx
+//  espitiaandres.github.io
+//
+//  Created by Andres Espitia.
+//  Copyright © 2020 Andres Espitia. All rights reserved.
+//
+
 import { IAchievement } from "./AchievementsStaticData.ts";
 import Link from "./Link.tsx";
 

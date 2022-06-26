@@ -1,3 +1,11 @@
+//
+//  Link.tsx
+//  espitiaandres.github.io
+//
+//  Created by Andres Espitia.
+//  Copyright © 2020 Andres Espitia. All rights reserved.
+//
+
 interface ILink {
   l: string;
 }

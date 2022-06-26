@@ -1,3 +1,11 @@
+//
+//  AchievementsStaticData.ts
+//  espitiaandres.github.io
+//
+//  Created by Andres Espitia.
+//  Copyright © 2020 Andres Espitia. All rights reserved.
+//
+
 import AstronautJellyfish from "../../images/jpg/astronaut jellyfish.jpg";
 
 export interface IAchievement {

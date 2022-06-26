@@ -4,7 +4,6 @@ import Loader from "react-loader-spinner";
 import "animate.css";
 
 import NotFoundGif from "../../images/gif/lostAstronaut.gif";
-import CornerIconsWrapper from "../CornerIconsWrapper/CornerIconsWrapper";
 import "./NotFoundPage.css";
 
 const NotFoundPage = () => {
@@ -32,9 +31,6 @@ const NotFoundPage = () => {
         <div className="notfoundgif">
           <img src={NotFoundGif} alt="Lost traveller" />
         </div>
-      </div>
-      <div>
-        <CornerIconsWrapper />
       </div>
     </div>
   );

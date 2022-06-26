@@ -15,7 +15,7 @@ const AboutMe = () => {
         >
           Federato
         </a>
-        , helping improve the underwriting workflow.
+        , helping improve the underwriting workflow in the Insurtech industry.
       </div>
       <div className="text-black text-base mb-2">
         When I'm not coding, I like to spend my free time listening to music,

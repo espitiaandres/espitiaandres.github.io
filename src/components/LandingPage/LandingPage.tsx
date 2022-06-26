@@ -14,7 +14,6 @@ import LandingPageIcons from "../LandingPageIcons/LandingPageIcons.tsx";
 import SidebarDescription from "../SidebarDescription/SidebarDescription.tsx";
 
 // import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
-// import CornerIconsWrapper from "../CornerIconsWrapper/CornerIconsWrapper";
 
 const LandingPage = ({ children }) => {
   return (
