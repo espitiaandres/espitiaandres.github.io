@@ -18,9 +18,9 @@ const AboutMe = () => {
         , helping improve the underwriting workflow.
       </div>
       <div className="text-black text-base mb-2">
-        When I'm not coding, I like to listen to music, play piano, and play and
-        watch basketball and soccer. I also like to run, cook, and play video
-        games. Recently, I've been interested in FL Studio and Origami.
+        When I'm not coding, I like to listen to music, play piano and violin,
+        and play/watch basketball and soccer. Recently, I've been interested in
+        FL Studio and Origami.
       </div>
     </div>
   );

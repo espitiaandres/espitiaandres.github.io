@@ -25,12 +25,12 @@ const Achievements = () => {
 
   return (
     <div className="animate__animated animate__fadeIn animate__delay-0.3s">
-      <div className="text-black mb-8">
+      <div className="text-black mb-4">
         Here are some achievements and projects I've worked on:
       </div>
-      <div className="flex flex-row justify-start">
+      <div className="flex flex-row justify-end">
         <button
-          className="btn btn-outline btn-primary border-2 -mt-2 mb-2 w-40"
+          className="btn btn-outline btn-primary border-2 -mt-2 mb-4 w-40"
           onClick={() =>
             onExpandCollapse({ inputsRef, isExpanded, setIsExpanded })
           }
