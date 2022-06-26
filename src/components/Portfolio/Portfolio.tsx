@@ -13,6 +13,7 @@ import LandingPage from "../LandingPage/LandingPage.tsx";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
 import AboutMe from "../AboutMe/AboutMe.tsx";
 import Projects from "../Projects/Projects.tsx";
+import Construction from "../Construction/Construction.tsx";
 
 const Portfolio = ({}) => {
   const frontendNames = ["studyfi", "pokedex"];
@@ -27,9 +28,19 @@ const Portfolio = ({}) => {
           element={<LandingPage children={<Projects />} />}
         />
         <Route
-          path="/"
+          path="/blog"
           exact
           element={<LandingPage children={<AboutMe />} />}
+        />
+        <Route
+          path="/personal"
+          exact
+          element={<LandingPage children={<Construction />} />}
+        />
+        <Route
+          path="/"
+          exact
+          element={<LandingPage children={<Construction />} />}
         />
         {/* HTTP Redirect to other FE projects hosted on andres-espitia.com */}
         {frontendNames.map((fe) => (

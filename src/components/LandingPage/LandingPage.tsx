@@ -69,10 +69,10 @@ const LandingPage = ({ children }) => {
                   <Link to="/projects">Projects</Link>
                 </li>
                 <li>
-                  <Link to="/">Blog</Link>
+                  <Link to="/blog">Blog</Link>
                 </li>
                 <li>
-                  <Link to="/">Personal</Link>
+                  <Link to="/personal">Personal</Link>
                 </li>
               </ul>
               <div className="fixed bottom-4">
