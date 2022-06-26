@@ -13,6 +13,7 @@ import LandingPage from "../LandingPage/LandingPage.tsx";
 import SkillsPage from "../SkillsPage/SkillsPage";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
 
+import AboutMe from "../AboutMe/AboutMe.tsx";
 import Achievements from "../Achievements/Achievements.tsx";
 
 const Portfolio = ({}) => {
@@ -21,13 +22,17 @@ const Portfolio = ({}) => {
   return (
     <Router basename="/">
       <Routes>
-        <Route path="/blog" exact element={<LandingPage component="blog" />} />
+        {/* <Route path="/blog" exact element={<LandingPage component={}/>} /> */}
         <Route
           path="/projects"
           exact
-          element={<LandingPage component="projects" />}
+          element={<LandingPage children={<Achievements />} />}
         />
-        <Route path="/" exact element={<LandingPage component="" />} />
+        <Route
+          path="/"
+          exact
+          element={<LandingPage children={<AboutMe />} />}
+        />
         {/* HTTP Redirect to other FE projects hosted on andres-espitia.com */}
         {frontendNames.map((fe) => (
           <Route path={`/${fe}`} exact element={<HrefLink route={fe} />} />

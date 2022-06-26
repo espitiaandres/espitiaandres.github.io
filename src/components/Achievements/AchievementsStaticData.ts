@@ -7,6 +7,12 @@ export interface IAchievement {
   image?: string;
 }
 
+/*
+TODO: 
+- Waterloo math contests?
+
+*/
+
 export const achievementsList: IAchievement[] = [
   {
     text: "Studyfi",

@@ -17,7 +17,7 @@ import SidebarDescription from "../SidebarDescription/SidebarDescription.tsx";
 // import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
 // import CornerIconsWrapper from "../CornerIconsWrapper/CornerIconsWrapper";
 
-const LandingPage = ({ component }) => {
+const LandingPage = ({ children }) => {
   return (
     <div>
       <div
@@ -58,8 +58,9 @@ const LandingPage = ({ component }) => {
             <div className="text-zinc-500 text-2xl mb-12">
               Full-Stack Software Engineer
             </div>
-            {component === "" && <AboutMe />}
-            {component === "projects" && <Achievements />}
+            {/* {component === "" && <AboutMe />}
+            {component === "projects" && <Achievements />} */}
+            {children}
           </div>
 
           <div className="drawer-side">
