@@ -54,7 +54,7 @@ const LandingPage = ({ children }) => {
             <div className="text-zinc-500 text-2xl mb-12">
               Full-Stack Software Engineer
             </div>
-            {children}
+            <div>{children}</div>
           </div>
           <div className="drawer-side flex flex-col">
             <label for="my-drawer-2" className="drawer-overlay"></label>
