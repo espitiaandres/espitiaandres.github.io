@@ -6,10 +6,9 @@
 //  Copyright © 2020 Andres Espitia. All rights reserved.
 //
 
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "animate.css";
 import "../../font/AWConquerorFreCarved-Regular.otf";
-import AboutMe from "../AboutMe/AboutMe.tsx";
 import LandingPageIcons from "../LandingPageIcons/LandingPageIcons.tsx";
 import SidebarDescription from "../SidebarDescription/SidebarDescription.tsx";
 
@@ -50,23 +49,18 @@ const LandingPage = ({ children }) => {
             type="checkbox"
             className="drawer-toggle accent-secondary"
           />
-
           <div className="drawer-content px-12 py-16">
             <div className="text-black text-5xl mb-6">Andres Espitia</div>
             <div className="text-zinc-500 text-2xl mb-12">
               Full-Stack Software Engineer
             </div>
-            {/* {component === "" && <AboutMe />}
-            {component === "projects" && <Achievements />} */}
             {children}
           </div>
-
-          <div className="drawer-side">
+          <div className="drawer-side flex flex-col">
             <label for="my-drawer-2" className="drawer-overlay"></label>
             <div className="menu px-5 overflow-y-auto w-80 bg-secondary text-white">
               <SidebarDescription />
               <LandingPageIcons />
-
               <ul className="menu overflow-y-auto w-100 bg-secondary text-white">
                 <li>
                   <Link to="/">Home</Link>
@@ -75,9 +69,15 @@ const LandingPage = ({ children }) => {
                   <Link to="/projects">Projects</Link>
                 </li>
                 <li>
-                  <Link to="/blog">Blog</Link>
+                  <Link to="/">Blog</Link>
+                </li>
+                <li>
+                  <Link to="/">Personal</Link>
                 </li>
               </ul>
+              <div className="fixed bottom-4">
+                Made with ❤️ using React, Tailwind, DaisyUI, and Github Pages
+              </div>
             </div>
           </div>
         </div>
