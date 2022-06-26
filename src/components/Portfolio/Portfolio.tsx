@@ -14,7 +14,7 @@ import SkillsPage from "../SkillsPage/SkillsPage";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
 
 import AboutMe from "../AboutMe/AboutMe.tsx";
-import Achievements from "../Achievements/Achievements.tsx";
+import Projects from "../Projects/Projects.tsx";
 
 const Portfolio = ({}) => {
   const frontendNames = ["studyfi", "pokedex"];
@@ -26,7 +26,7 @@ const Portfolio = ({}) => {
         <Route
           path="/projects"
           exact
-          element={<LandingPage children={<Achievements />} />}
+          element={<LandingPage children={<Projects />} />}
         />
         <Route
           path="/"

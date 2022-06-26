@@ -10,7 +10,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "animate.css";
 import "../../font/AWConquerorFreCarved-Regular.otf";
 import AboutMe from "../AboutMe/AboutMe.tsx";
-import Achievements from "../Achievements/Achievements.tsx";
 import LandingPageIcons from "../LandingPageIcons/LandingPageIcons.tsx";
 import SidebarDescription from "../SidebarDescription/SidebarDescription.tsx";
 
