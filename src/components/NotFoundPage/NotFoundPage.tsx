@@ -18,11 +18,11 @@ const NotFoundPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    setTimeout(() => {
-      navigate("/", {
-        replace: true,
-      });
-    }, 5000);
+    // setTimeout(() => {
+    //   navigate("/", {
+    //     replace: true,
+    //   });
+    // }, 5000);
   }, []);
 
   return (
@@ -31,7 +31,7 @@ const NotFoundPage = () => {
         Hey fellow space traveller! Looks like you're heading to the wrong
         planet. Let me take you back to safety...
       </div>
-      <div className="flex flex-row justify-center my-4">
+      <div className="flex flex-row justify-center my-5 md:my-7">
         <Loader type="Bars" color="#1ed760" height={36} width={100} />
       </div>
       <div class="avatar flex flex-row justify-center">
@@ -39,7 +39,7 @@ const NotFoundPage = () => {
           <img src={NotFoundGif} alt="Lost traveller" />
         </div>
       </div>
-      <div className="flex flex-row justify-center my-4">
+      <div className="flex flex-row justify-center my-5 md:my-7">
         <Loader type="Bars" color="#1ed760" height={36} width={100} />
       </div>
     </div>
