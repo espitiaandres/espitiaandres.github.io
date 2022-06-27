@@ -12,7 +12,6 @@ import Loader from "react-loader-spinner";
 import "animate.css";
 
 import NotFoundGif from "../../images/gif/lostAstronaut.gif";
-// import "./NotFoundPage.css";
 
 const NotFoundPage = () => {
   const navigate = useNavigate();
