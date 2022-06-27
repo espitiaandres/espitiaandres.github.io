@@ -18,6 +18,8 @@ export interface IAchievement {
 /*
 TODO: 
 - Waterloo math contests?
+- IB Diploma?
+
 */
 
 export const achievementsList: IAchievement[] = [

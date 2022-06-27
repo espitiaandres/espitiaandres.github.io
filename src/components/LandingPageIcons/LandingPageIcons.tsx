@@ -19,6 +19,7 @@ interface IIConsProp {
 }
 
 // TODO: add twitter, medium...?
+// TODO: remove old unused dependences like sass?
 
 const iconsProps: IIConsProp[] = [
   {
