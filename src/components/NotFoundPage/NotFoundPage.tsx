@@ -18,11 +18,11 @@ const NotFoundPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // setTimeout(() => {
-    //   navigate("/", {
-    //     replace: true,
-    //   });
-    // }, 5000);
+    setTimeout(() => {
+      navigate("/", {
+        replace: true,
+      });
+    }, 5000);
   }, []);
 
   return (
