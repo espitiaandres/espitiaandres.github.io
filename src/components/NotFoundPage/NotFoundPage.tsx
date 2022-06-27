@@ -33,8 +33,8 @@ const NotFoundPage = () => {
       <div className="flex flex-row justify-center my-5 md:my-7">
         <Loader type="Bars" color="#1ed760" height={36} width={100} />
       </div>
-      <div class="avatar flex flex-row justify-center">
-        <div class="w-52 md:w-72 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+      <div className="avatar flex flex-row justify-center">
+        <div className="w-52 md:w-72 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
           <img src={NotFoundGif} alt="Lost traveller" />
         </div>
       </div>
@@ -42,21 +42,6 @@ const NotFoundPage = () => {
         <Loader type="Bars" color="#1ed760" height={36} width={100} />
       </div>
     </div>
-    // <div className="landingPageWrapper">
-    //   <div className="mainContentWrapper animate__animated animate__zoomIn animate__delay-0.8s">
-    //     <div className="helloWorld">404</div>
-    //     <div className="description">
-    //       Hey fellow space traveller! Looks like you're heading to the wrong
-    //       6
-    //     </div>
-    //     <div className="notfoundloader">
-    //       <Loader type="Bars" color="#1ed760" height={36} width={100} />
-    //     </div>
-    //     <div className="notfoundgif">
-    //       <img src={NotFoundGif} alt="Lost traveller" />
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 
