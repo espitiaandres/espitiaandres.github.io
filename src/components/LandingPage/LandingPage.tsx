@@ -49,7 +49,7 @@ const LandingPage = ({ children }) => {
             type="checkbox"
             className="drawer-toggle accent-secondary"
           />
-          <div className="drawer-content px-12 py-16">
+          <div className="drawer-content px-12 py-8">
             <div className="text-black text-6xl mb-6">Andres Espitia</div>
             <div className="text-zinc-500 text-3xl mb-12">
               Full-Stack Software Engineer
