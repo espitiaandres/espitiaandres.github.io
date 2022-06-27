@@ -10,7 +10,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HrefLink from "../HrefLink/HrefLink";
 import LandingPage from "../LandingPage/LandingPage.tsx";
-import NotFoundPage from "../NotFoundPage/NotFoundPage";
+import NotFoundPage from "../NotFoundPage/NotFoundPage.tsx";
 import AboutMe from "../AboutMe/AboutMe.tsx";
 import Projects from "../Projects/Projects.tsx";
 import Construction from "../Construction/Construction.tsx";
@@ -46,7 +46,12 @@ const Portfolio = ({}) => {
         {frontendNames.map((fe) => (
           <Route path={`/${fe}`} exact element={<HrefLink route={fe} />} />
         ))}
-        <Route exact path="/*" element={<NotFoundPage />} />
+        {/* <Route exact path="/*" element={<NotFoundPage />} /> */}
+        <Route
+          exact
+          path="/*"
+          element={<LandingPage children={<NotFoundPage />} />}
+        />
       </Routes>
     </Router>
   );
