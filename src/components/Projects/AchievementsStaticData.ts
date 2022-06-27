@@ -61,8 +61,12 @@ export const achievementsList: IAchievement[] = [
   },
   {
     text: "Pokedex",
-    links: ["https://github.com/espitiaandres/pokedex"],
-    description: "",
+    links: [
+      "https://github.com/espitiaandres/pokedex",
+      "https://andres-espitia.com/pokedex/",
+    ],
+    description:
+      "An interactive pokedex that lets the user catch and remove wild pokemon, and displays their statistics such as type, abilities, move, and so on",
     image: AstronautJellyfish,
   },
   {
@@ -70,7 +74,8 @@ export const achievementsList: IAchievement[] = [
     links: [
       "https://github.com/espitiaandres/Multiple-Linear-Regression-Analyzer",
     ],
-    description: "",
+    description:
+      "A multiple linear regression in C# and Python that analyzes a given set amount of regressors to one dependent variable. Using gnuplot, it also creates plots of each regressor with the dependent variable, and plots of how the regressors changed chronologically at different data points. I used this throughout the 2018-2019 fantasy basketball season and it helped me get 1st place!",
     image: AstronautJellyfish,
   },
 ];
