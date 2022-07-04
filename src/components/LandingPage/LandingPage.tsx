@@ -23,7 +23,7 @@ const LandingPage = ({ children }) => {
         "
       >
         <label
-          for="my-drawer-2"
+          htmlFor="my-drawer-2"
           className="btn btn-secondary drawer-button lg:hidden drawer-overlay"
         >
           <svg
@@ -54,12 +54,12 @@ const LandingPage = ({ children }) => {
               Full-Stack Software Engineer
             </div>
             <div className="pb-8">{children}</div>
-            <div className="text-black flex fixed bottom-0 py-2 md:w-[calc(100%_-_24rem)] bg-white">
+            <div className="text-black flex fixed bottom-0 py-2 lg:w-[calc(100%_-_24rem)] md:w-[calc(100%_-_8rem)] bg-white">
               Made with ❤️ using React, Tailwind, DaisyUI, and Github Pages
             </div>
           </div>
           <div className="drawer-side flex flex-col">
-            <label for="my-drawer-2" className="drawer-overlay"></label>
+            <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
             <div className="menu px-5 overflow-y-auto w-80 bg-secondary text-white">
               <SidebarDescription />
               <LandingPageIcons />
