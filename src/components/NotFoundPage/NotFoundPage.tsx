@@ -26,10 +26,10 @@ const NotFoundPage = () => {
 
   return (
     <div
-      // className="animate__animated animate__fadeIn animate__delay-0.3s"
+    // className="animate__animated animate__fadeIn animate__delay-0.3s"
     >
       <div className="text-black">
-        Hey fellow space traveller! Looks like you're heading to the wrong
+        Hi fellow space traveller! Looks like you're heading to the wrong
         planet. Let me take you back to safety...
       </div>
       <div className="flex flex-row justify-center my-5 md:my-7">

@@ -6,14 +6,16 @@
 //  Copyright © 2020 Andres Espitia. All rights reserved.
 //
 
+import { useRef } from "react";
 import "../../font/AWConquerorFreCarved-Regular.otf";
 import LandingPageIcons from "../LandingPageIcons/LandingPageIcons.tsx";
 import SidebarDescription from "../SidebarDescription/SidebarDescription.tsx";
 import SidebarLinks from "../SidebarLinks/SidebarLinks.tsx";
-
 // import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
 
 const LandingPage = ({ children }) => {
+  const refSidebarController = useRef(null);
+
   return (
     <div>
       <div
@@ -25,6 +27,7 @@ const LandingPage = ({ children }) => {
         <label
           htmlFor="my-drawer-2"
           className="btn btn-secondary drawer-button lg:hidden drawer-overlay"
+          ref={refSidebarController}
         >
           <svg
             width="20"
@@ -48,7 +51,7 @@ const LandingPage = ({ children }) => {
             type="checkbox"
             className="drawer-toggle accent-secondary"
           />
-          <div className="drawer-content px-12 py-8">
+          <div className="drawer-content px-12 py-16">
             <div className="text-black text-6xl mb-6">Andres Espitia</div>
             <div className="text-zinc-500 text-3xl mb-12">
               Full-Stack Software Engineer
@@ -63,7 +66,7 @@ const LandingPage = ({ children }) => {
             <div className="menu px-5 overflow-y-auto w-80 bg-secondary text-white">
               <SidebarDescription />
               <LandingPageIcons />
-              <SidebarLinks />
+              <SidebarLinks refSidebarController={refSidebarController} />
             </div>
           </div>
         </div>
