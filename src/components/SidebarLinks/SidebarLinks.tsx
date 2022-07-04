@@ -1,9 +1,38 @@
 import { Link } from "react-router-dom";
 
 const SidebarLinks = () => {
+  interface ISidebarLink {
+    redirectLink: string;
+    label: string;
+  }
+
+  const sidebarLinksList: ISidebarLink[] = [
+    {
+      redirectLink: "/",
+      label: "Home",
+    },
+    {
+      redirectLink: "/projects",
+      label: "Projects",
+    },
+    {
+      redirectLink: "/blog",
+      label: "Blog",
+    },
+    {
+      redirectLink: "/personal",
+      label: "Personal",
+    },
+  ];
+
   return (
     <ul className="menu overflow-y-auto w-100 bg-secondary text-white">
-      <li>
+      {sidebarLinksList.map((sb: ISidebarLink) => (
+        <li>
+          <Link to={sb.redirectLink}>{sb.label}</Link>
+        </li>
+      ))}
+      {/* <li>
         <Link to="/">Home</Link>
       </li>
       <li>
@@ -14,7 +43,7 @@ const SidebarLinks = () => {
       </li>
       <li>
         <Link to="/personal">Personal</Link>
-      </li>
+      </li> */}
     </ul>
   );
 };
