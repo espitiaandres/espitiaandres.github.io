@@ -36,6 +36,7 @@ const Achievement = ({
           const openedAccordions = inputsRef?.current?.every((d) => d?.checked);
           setIsExpanded(openedAccordions);
         }}
+        name={text}
       />
       <div className="collapse-title text-lg font-medium text-secondary rounded-full truncate">
         {text}
