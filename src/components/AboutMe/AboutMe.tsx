@@ -11,7 +11,7 @@
 const AboutMe = () => {
   return (
     <div
-      // className="animate__animated animate__fadeIn animate__delay-0.3s"
+    // className="animate__animated animate__fadeIn animate__delay-0.3s"
     >
       <div className="text-black text-base md:text-lg mb-2">
         I'm a University of Waterloo Engineering '22 graduate interested in Full
@@ -28,7 +28,7 @@ const AboutMe = () => {
         , helping improve the underwriting workflow.
       </div>
       <div className="text-black text-base md:text-lg mb-2">
-        When I'm not coding, I like to listen to music, play piano and violin,
+        When I'm not coding I like to listen to music, play piano and violin,
         and play/watch basketball and soccer. Recently, I've been interested in
         FL Studio and Origami.
       </div>

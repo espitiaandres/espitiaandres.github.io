@@ -19,7 +19,7 @@ interface IIConsProp {
 }
 
 // TODO: add twitter, medium...?
-// TODO: remove old unused dependences like sass?
+// TODO: move this out into the AboutMe.tsx component
 
 const iconsProps: IIConsProp[] = [
   {
