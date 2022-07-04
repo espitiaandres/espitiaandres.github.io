@@ -56,7 +56,7 @@ const LandingPage = ({ children }) => {
               Full-Stack Software Engineer
             </div>
             <div className="pb-8">{children}</div>
-            <div className="text-black flex fixed bottom-0 py-2 lg:w-[calc(100%_-_24rem)] md:w-[calc(100%_-_8rem)] bg-white">
+            <div className="text-black flex fixed bottom-0 py-1 lg:w-[calc(100%_-_24rem)] md:w-[calc(100%_-_8rem)] bg-white">
               Made with ❤️ using React, Tailwind, DaisyUI, and Github Pages
             </div>
           </div>
