@@ -19,7 +19,7 @@ const SidebarDescription = () => {
           <img className="object-fill" src={Headshot} alt="Headshot" />
         </div>
       </div>
-      <div className="text-center leading-tight mb-6">
+      <div className="text-center leading-tight mb-4">
         I'm a University of Waterloo Engineering '22 graduate interested in Full
         Stack Web Development, Machine Learning, and Optimization.
       </div>

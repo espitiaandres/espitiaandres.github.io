@@ -7,6 +7,7 @@
 //
 
 // import "animate.css";
+import LandingPageIcons from "../LandingPageIcons/LandingPageIcons.tsx";
 
 const AboutMe = () => {
   return (
@@ -32,6 +33,8 @@ const AboutMe = () => {
         and play/watch basketball and soccer. Recently, I've been interested in
         FL Studio and Origami.
       </div>
+      
+      <LandingPageIcons />
     </div>
   );
 };

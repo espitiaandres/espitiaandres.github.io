@@ -8,7 +8,6 @@
 
 import { useRef } from "react";
 import "../../font/AWConquerorFreCarved-Regular.otf";
-import LandingPageIcons from "../LandingPageIcons/LandingPageIcons.tsx";
 import SidebarDescription from "../SidebarDescription/SidebarDescription.tsx";
 import SidebarLinks from "../SidebarLinks/SidebarLinks.tsx";
 // import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
@@ -65,7 +64,6 @@ const LandingPage = ({ children }) => {
             <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
             <div className="menu px-5 overflow-y-auto w-80 bg-secondary text-white">
               <SidebarDescription />
-              <LandingPageIcons />
               <SidebarLinks refSidebarController={refSidebarController} />
             </div>
           </div>

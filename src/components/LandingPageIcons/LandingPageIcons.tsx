@@ -6,16 +6,15 @@
 //  Copyright © 2020 Andres Espitia. All rights reserved.
 //
 
-import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 
 interface IIConsProp {
-  hoverText: string;
   href: string;
   fontAwesome: string[] | any;
+  label: string;
 }
 
 // TODO: add twitter, medium...?
@@ -23,35 +22,60 @@ interface IIConsProp {
 
 const iconsProps: IIConsProp[] = [
   {
-    hoverText: "Check out my projects on Github.",
     href: "https://github.com/espitiaandres",
-    fontAwesome: ["fab", "github"],
+    fontAwesome: ["fab", "github-alt"],
+    label: "Github",
   },
   {
-    hoverText: "Connect with me on LinkedIn.",
     href: "https://www.linkedin.com/in/espitiaandres",
     fontAwesome: ["fab", "linkedin-in"],
+    label: "LinkedIn",
   },
   {
-    hoverText: "Click here to send me an email.",
     href: "mailto:afespiti@edu.uwaterloo.ca",
     fontAwesome: ["fas", "envelope"],
+    label: "Email",
   },
   {
-    hoverText: "Let me throw you an alley on Dribbble!",
     href: "https://dribbble.com/espitiaandres",
     fontAwesome: ["fab", "dribbble"],
+    label: "Dribbble",
+  },
+  {
+    href: "https://medium.com/@espitiaandres123",
+    fontAwesome: ["fab", "medium"],
+    label: "Medium",
+  },
+  {
+    href: "https://stackoverflow.com/users/13973201/espitiaandres",
+    fontAwesome: ["fab", "stack-overflow"],
+    label: "Stack Overflow",
   },
 ];
 
 const LandingPageIcons = () => {
   library.add(fab, fas);
-  const defaultHoverText = "I'm active on these platforms.";
-  const [hoverText, setHoverText] = useState(defaultHoverText);
 
   return (
-    <div>
-      <div className="text-white flex justify-center mb-6">{hoverText}</div>
+    <div className="text-base md:text-lg mb-2">
+      <div className="text-black mb-2">I'm active on these platforms:</div>
+      {iconsProps.map((icon: IIConsProp) => (
+        <a
+          href={icon.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={icon.href}
+        >
+          <div className="flex flex-row items-center">
+            <FontAwesomeIcon
+              className="text-secondary mr-2"
+              icon={icon.fontAwesome}
+            />
+            <div className="text-black">{icon.label}</div>
+          </div>
+        </a>
+      ))}
+      {/* <div className="text-black flex justify-center mb-6">{hoverText}</div>
       <div className="flex flex-row justify-center mb-6 space-x-4">
         {iconsProps.map((icon) => (
           <div>
@@ -68,7 +92,7 @@ const LandingPageIcons = () => {
             </a>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
