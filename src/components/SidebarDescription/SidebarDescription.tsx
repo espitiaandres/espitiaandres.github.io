@@ -10,7 +10,7 @@ import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
 
 const SidebarDescription = () => {
   return (
-    <div className="mt-8">
+    <div className="mt-12">
       <div className="flex justify-center font-bold text-4xl mb-8">
         Andres Espitia
       </div>

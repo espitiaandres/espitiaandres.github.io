@@ -6,7 +6,7 @@ export interface ISidebarLink {
 export const sidebarLinksList: ISidebarLink[] = [
   {
     redirectLink: "/",
-    label: "Home",
+    label: "About Me",
   },
   {
     redirectLink: "/projects",
