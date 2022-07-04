@@ -16,7 +16,7 @@ const SidebarDescription = () => {
       </div>
       <div className="avatar flex flex-row justify-center mb-8">
         <div className="w-44 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 hover:brightness-110">
-          <img className="object-fill" src={Headshot} />
+          <img className="object-fill" src={Headshot} alt="Headshot" />
         </div>
       </div>
       <div className="text-center leading-tight mb-6">
