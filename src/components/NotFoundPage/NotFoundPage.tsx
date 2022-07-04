@@ -9,7 +9,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Loader from "react-loader-spinner";
-import "animate.css";
+// import "animate.css";
 
 import NotFoundGif from "../../images/gif/lostAstronaut.gif";
 
@@ -25,7 +25,9 @@ const NotFoundPage = () => {
   }, []);
 
   return (
-    <div className="animate__animated animate__fadeIn animate__delay-0.3s">
+    <div
+      // className="animate__animated animate__fadeIn animate__delay-0.3s"
+    >
       <div className="text-black">
         Hey fellow space traveller! Looks like you're heading to the wrong
         planet. Let me take you back to safety...

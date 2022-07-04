@@ -7,7 +7,7 @@
 //
 
 import { useState, useEffect, useRef } from "react";
-import "animate.css";
+// import "animate.css";
 import {
   achievementsList,
   IAchievement,
@@ -24,7 +24,9 @@ const Achievements = () => {
   }, []);
 
   return (
-    <div className="animate__animated animate__fadeIn animate__delay-0.3s">
+    <div
+      // className="animate__animated animate__fadeIn animate__delay-0.3s"
+    >
       <div className="text-black mb-4">
         Here are some achievements and projects I've worked on:
       </div>

@@ -7,7 +7,6 @@
 //
 
 import { Link } from "react-router-dom";
-import "animate.css";
 import "../../font/AWConquerorFreCarved-Regular.otf";
 import LandingPageIcons from "../LandingPageIcons/LandingPageIcons.tsx";
 import SidebarDescription from "../SidebarDescription/SidebarDescription.tsx";
