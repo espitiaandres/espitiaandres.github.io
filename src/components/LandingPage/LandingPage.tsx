@@ -6,10 +6,10 @@
 //  Copyright © 2020 Andres Espitia. All rights reserved.
 //
 
-import { Link } from "react-router-dom";
 import "../../font/AWConquerorFreCarved-Regular.otf";
 import LandingPageIcons from "../LandingPageIcons/LandingPageIcons.tsx";
 import SidebarDescription from "../SidebarDescription/SidebarDescription.tsx";
+import SidebarLinks from "../SidebarLinks/SidebarLinks.tsx";
 
 // import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
 
@@ -63,20 +63,7 @@ const LandingPage = ({ children }) => {
             <div className="menu px-5 overflow-y-auto w-80 bg-secondary text-white">
               <SidebarDescription />
               <LandingPageIcons />
-              <ul className="menu overflow-y-auto w-100 bg-secondary text-white">
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/projects">Projects</Link>
-                </li>
-                <li>
-                  <Link to="/blog">Blog</Link>
-                </li>
-                <li>
-                  <Link to="/personal">Personal</Link>
-                </li>
-              </ul>
+              <SidebarLinks />
             </div>
           </div>
         </div>
