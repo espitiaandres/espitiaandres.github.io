@@ -28,7 +28,7 @@ const NotFoundPage = () => {
     <div
     // className="animate__animated animate__fadeIn animate__delay-0.3s"
     >
-      <div className="text-black">
+      <div className="text-black text-lg">
         Hi fellow space traveller! Looks like you're heading to the wrong
         planet. Let me take you back to safety...
       </div>

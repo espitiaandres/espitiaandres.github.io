@@ -45,7 +45,6 @@ const Achievement = ({
         <div className="mb-2">{description ?? ""}</div>
         {links?.length > 0 && (
           <div>
-            <div className="font-semibold">See more:</div>
             {links?.map((l: string, i: number) => (
               <Link l={l} key={i} />
             ))}
