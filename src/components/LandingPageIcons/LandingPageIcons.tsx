@@ -19,20 +19,21 @@ const LandingPageIcons = () => {
     <div className="text-base md:text-lg mb-2">
       <div className="text-black mb-2">I'm active on these platforms:</div>
       {iconsProps.map((icon: IIConsProp) => (
-        <a
-          href={icon.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          title={icon.href}
-        >
-          <div className="flex flex-row items-center">
-            <FontAwesomeIcon
-              className="text-secondary mr-2"
-              icon={icon.fontAwesome}
-            />
-            <div className="text-black">{icon.label}</div>
-          </div>
-        </a>
+        <div className="flex flex-row items-center">
+          <FontAwesomeIcon
+            className="text-secondary mr-2"
+            icon={icon.fontAwesome}
+          />
+          <a
+            href={icon.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={icon.href}
+            className="text-black"
+          >
+            {icon.label}
+          </a>
+        </div>
       ))}
     </div>
   );
