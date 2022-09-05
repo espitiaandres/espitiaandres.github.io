@@ -14,6 +14,7 @@ import NotFoundPage from "../NotFoundPage/NotFoundPage.tsx";
 import AboutMe from "../AboutMe/AboutMe.tsx";
 import Projects from "../Projects/Projects.tsx";
 import Construction from "../Construction/Construction.tsx";
+import Personal from "../Personal/Personal.tsx"
 
 const Portfolio = ({}) => {
   const frontendNames = ["studyfi", "pokedex"];
@@ -35,6 +36,7 @@ const Portfolio = ({}) => {
         <Route
           path="/personal"
           exact
+          // element={<LandingPage children={<Personal />} />}
           element={<LandingPage children={<Construction />} />}
         />
         <Route
