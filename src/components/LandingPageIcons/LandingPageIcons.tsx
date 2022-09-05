@@ -17,7 +17,7 @@ const LandingPageIcons = () => {
 
   return (
     <div className="text-base md:text-lg mb-2">
-      <div className="text-black mb-2">I'm active on these platforms:</div>
+      <div className="text-black mb-2">You can find me on these platforms:</div>
       {iconsProps.map((icon: IIConsProp) => (
         <div className="flex flex-row items-center">
           <FontAwesomeIcon
