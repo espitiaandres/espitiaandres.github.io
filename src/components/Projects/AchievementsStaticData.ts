@@ -65,7 +65,7 @@ export const achievementsList: IAchievement[] = [
     text: "Pokedex",
     links: [
       "https://github.com/espitiaandres/pokedex",
-      "https://andres-espitia.com/pokedex/",
+      "https://espitiaandres.com/pokedex/",
     ],
     description:
       "An interactive pokedex that lets the user catch and remove wild pokemon, and displays their statistics such as type, abilities, move, and so on",
