@@ -7,7 +7,7 @@
 //
 
 // import "animate.css";
-// import LandingPageIcons from "../LandingPageIcons/LandingPageIcons.tsx";
+import LandingPageIcons from "../LandingPageIcons/LandingPageIcons";
 
 const AboutMe = () => {
   return (
@@ -20,7 +20,7 @@ const AboutMe = () => {
         Stack Web Development, Machine Learning, and Optimization. Currently,
         I'm working as a Full-Stack Software Engineer at&nbsp;
         <a
-          className="link text-secondary"
+          className="link text-primary"
           href="https://federato.ai"
           target="_blank"
           rel="noopener noreferrer"
@@ -34,12 +34,12 @@ const AboutMe = () => {
         and play/watch basketball and soccer. Recently, I've been interested in
         FL Studio and Origami.
       </div>
-      {/* <LandingPageIcons /> */}
+      <LandingPageIcons />
       <div
       // className="text-black flex fixed bottom-0 py-1 lg:w-[calc(100%_-_24rem)] md:w-[calc(100%_-_8rem)] bg-white"
         className="fixed bottom-0 bg-white pr-12"
       >
-        Made with ❤️ using React, Tailwind, DaisyUI, and Github Pages
+        Made with ❤️ using React, Vite, Tailwind, DaisyUI, and Github Pages
       </div>
     </div>
   );
