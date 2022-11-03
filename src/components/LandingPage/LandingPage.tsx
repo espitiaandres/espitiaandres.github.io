@@ -21,7 +21,7 @@ const LandingPage = ({ children }: LandingPageProps) => {
 
   return (
     <div>
-      <div className="drawer-content px-12 py-16">
+      <div className="p-12 lg:p-64">
         <div className="text-black text-6xl mb-6">Andres Espitia</div>
         <div className="text-zinc-500 text-3xl mb-12">
           Full-Stack Software Engineer
