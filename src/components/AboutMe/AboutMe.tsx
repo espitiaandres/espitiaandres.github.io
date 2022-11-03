@@ -7,7 +7,7 @@
 //
 
 // import "animate.css";
-import LandingPageIcons from "../LandingPageIcons/LandingPageIcons.tsx";
+// import LandingPageIcons from "../LandingPageIcons/LandingPageIcons.tsx";
 
 const AboutMe = () => {
   return (
@@ -33,7 +33,7 @@ const AboutMe = () => {
         and play/watch basketball and soccer. Recently, I've been interested in
         FL Studio and Origami.
       </div>
-      <LandingPageIcons />
+      {/* <LandingPageIcons /> */}
       <div className="text-black flex fixed bottom-0 py-1 lg:w-[calc(100%_-_24rem)] md:w-[calc(100%_-_8rem)] bg-white">
         Made with ❤️ using React, Tailwind, DaisyUI, and Github Pages
       </div>

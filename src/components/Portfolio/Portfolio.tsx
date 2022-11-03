@@ -8,12 +8,13 @@
 
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HrefLink from "../HrefLink/HrefLink";
-import LandingPage from "../LandingPage/LandingPage.tsx";
-import NotFoundPage from "../NotFoundPage/NotFoundPage.tsx";
-import AboutMe from "../AboutMe/AboutMe.tsx";
-import Projects from "../Projects/Projects.tsx";
-import Construction from "../Construction/Construction.tsx";
+// import HrefLink from "../HrefLink/HrefLink";
+import LandingPage from "../LandingPage/LandingPage";
+// import NotFoundPage from "../NotFoundPage/NotFoundPage.tsx";
+import AboutMe from "../AboutMe/AboutMe";
+// import Projects from "../Projects/Projects.tsx";
+// import Construction from "../Construction/Construction.tsx";
+// import Personal from "../Personal/Personal.tsx";
 
 const Portfolio = ({}) => {
   const frontendNames = ["studyfi", "pokedex"];
@@ -22,7 +23,7 @@ const Portfolio = ({}) => {
     <Router basename="/">
       <Routes>
         {/* <Route path="/blog" exact element={<LandingPage component={}/>} /> */}
-        <Route
+        {/* <Route
           path="/projects"
           exact
           element={<LandingPage children={<Projects />} />}
@@ -35,23 +36,24 @@ const Portfolio = ({}) => {
         <Route
           path="/personal"
           exact
+          // element={<LandingPage children={<Personal />} />}
           element={<LandingPage children={<Construction />} />}
-        />
+        /> */}
         <Route
           path="/"
-          exact
+          exact={true}
           element={<LandingPage children={<AboutMe />} />}
         />
-        {/* HTTP Redirect to other FE projects hosted on andres-espitia.com */}
-        {frontendNames.map((fe) => (
+        {/* HTTP Redirect to other FE projects hosted on espitiaandres.com */}
+        {/* {frontendNames.map((fe) => (
           <Route path={`/${fe}`} exact element={<HrefLink route={fe} />} />
-        ))}
+        ))} */}
         {/* <Route exact path="/*" element={<NotFoundPage />} /> */}
-        <Route
+        {/* <Route
           exact
           path="/*"
           element={<LandingPage children={<NotFoundPage />} />}
-        />
+        /> */}
       </Routes>
     </Router>
   );
