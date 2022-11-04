@@ -1,13 +1,3 @@
-//
-//  AchievementsStaticData.ts
-//  espitiaandres.github.io
-//
-//  Created by Andres Espitia.
-//  Copyright © 2020 Andres Espitia. All rights reserved.
-//
-
-// import AstronautJellyfish from "../../images/jpg/astronaut jellyfish.jpg";
-
 export type Achievement = {
   text: string;
   links: string[];
@@ -49,6 +39,7 @@ export const achievementsList: Achievement[] = [
       "https://www.udemy.com/certificate/UC-7d6aa75a-4b43-4ce4-ac8d-6be29fd5ca76/",
       "https://www.udemy.com/certificate/UC-fff41949-10a7-46ea-8803-b2a83e27b456/",
       "https://www.udemy.com/certificate/UC-1edea84a-855a-4d1d-9f9b-e5c1d48fda7c/",
+      "https://www.udemy.com/certificate/UC-4cf5bf40-8b5b-4917-a0f7-d8a375650fff/",
     ],
     description: "Some interesting courses I've completed that I recommend.",
     // image: AstronautJellyfish,
@@ -80,25 +71,3 @@ export const achievementsList: Achievement[] = [
     // image: AstronautJellyfish,
   },
 ];
-
-export const onExpandCollapse = ({
-  inputsRef,
-  isExpanded,
-  setIsExpanded,
-}: any) => {
-  const openedAccordions = inputsRef?.current?.every((d) => d?.checked);
-
-  if (openedAccordions) {
-    inputsRef?.current?.map((d) => {
-      d?.click();
-    });
-
-    setIsExpanded(!isExpanded);
-  } else {
-    inputsRef?.current?.map((d) => {
-      !d?.checked && d?.click();
-    });
-
-    setIsExpanded(true);
-  }
-};

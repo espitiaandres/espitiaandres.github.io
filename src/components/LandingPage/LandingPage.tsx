@@ -1,17 +1,10 @@
-//
-//  LandingPage.tsx
-//  espitiaandres.github.io
-//
-//  Created by Andres Espitia.
-//  Copyright © 2020 Andres Espitia. All rights reserved.
-//
-
 // import "../../font/AWConquerorFreCarved-Regular.otf";
 // import SidebarDescription from "../SidebarDescription/SidebarDescription.tsx";
 // import SidebarLinks from "../SidebarLinks/SidebarLinks.tsx";
 // import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
 import { ReactNode } from "react";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 type LandingPageProps = {
   children: ReactNode;
@@ -59,6 +52,7 @@ const LandingPage = ({ children }: LandingPageProps) => {
           Full-Stack Software Engineer
         </div>
         <div className="pb-8">{children}</div>
+        <Footer />
       </div>
     </div>
   );
