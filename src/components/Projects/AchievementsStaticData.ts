@@ -8,12 +8,12 @@
 
 // import AstronautJellyfish from "../../images/jpg/astronaut jellyfish.jpg";
 
-export interface IAchievement {
+export type Achievement = {
   text: string;
   links: string[];
   description: string;
   image?: string;
-}
+};
 
 /*
 TODO: 
@@ -21,7 +21,7 @@ TODO:
 - IB Diploma?
 */
 
-export const achievementsList: IAchievement[] = [
+export const achievementsList: Achievement[] = [
   {
     text: "Studyfi",
     links: [
@@ -33,7 +33,7 @@ export const achievementsList: IAchievement[] = [
     // image: AstronautJellyfish,
   },
   {
-    text: "Porespy Full-Stack Web App",
+    text: "Porespy Web App",
     links: [
       "https://porespy.org/",
       "https://github.com/PMEAL/porespy-frontend",
@@ -81,7 +81,11 @@ export const achievementsList: IAchievement[] = [
   },
 ];
 
-export const onExpandCollapse = ({ inputsRef, isExpanded, setIsExpanded }: any) => {
+export const onExpandCollapse = ({
+  inputsRef,
+  isExpanded,
+  setIsExpanded,
+}: any) => {
   const openedAccordions = inputsRef?.current?.every((d) => d?.checked);
 
   if (openedAccordions) {

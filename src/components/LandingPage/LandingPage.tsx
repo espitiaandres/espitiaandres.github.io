@@ -55,7 +55,7 @@ const LandingPage = ({ children }: LandingPageProps) => {
         <div className="text-black text-6xl mb-6 font-medium">
           Andres Espitia
         </div>
-        <div className="text-zinc-500 text-3xl mb-8">
+        <div className="text-zinc-500 text-3xl mb-4">
           Full-Stack Software Engineer
         </div>
         <div className="pb-8">{children}</div>

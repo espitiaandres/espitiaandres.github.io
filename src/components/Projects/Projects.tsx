@@ -10,13 +10,14 @@ import { useState, useEffect, useRef } from "react";
 // import "animate.css";
 import {
   achievementsList,
-  IAchievement,
+  // IAchievement,
+  Achievement,
   onExpandCollapse,
-} from "./AchievementsStaticData.ts";
-import Achievement from "./Achievement";
+} from "./AchievementsStaticData";
+// import Achievement from "./Achievement";
+import Modal from "../Modal/Modal";
 
 const Achievements = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
   const inputsRef = useRef([]);
 
   useEffect(() => {
@@ -25,33 +26,16 @@ const Achievements = () => {
 
   return (
     <div
+    // className="w-5/6"
     // className="animate__animated animate__fadeIn animate__delay-0.3s"
     >
-      <div className="text-black mb-4">
+      <div className="text-black mb-8">
         Here are some achievements and projects I've worked on:
-      </div>
-      <div className="flex flex-row justify-end">
-        <button
-          className="btn btn-outline btn-primary border-2 -mt-2 mb-4 w-40"
-          onClick={() =>
-            onExpandCollapse({ inputsRef, isExpanded, setIsExpanded })
-          }
-        >
-          {isExpanded ? "Collapse" : "Expand"} All
-        </button>
       </div>
       <div className="grid gap-x-8 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
         {achievementsList.map(
-          ({ text, links, description, image }: IAchievement, i: number) => (
-            <Achievement
-              text={text}
-              links={links}
-              description={description}
-              image={image}
-              inputsRef={inputsRef}
-              setIsExpanded={setIsExpanded}
-              i={i}
-            />
+          ({ text, links, description, image }: Achievement, i: number) => (
+            <Modal header={text} description={description} />
           )
         )}
       </div>
