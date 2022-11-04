@@ -8,11 +8,11 @@
 
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import HrefLink from "../HrefLink/HrefLink";
+import HrefLink from "../HrefLink/HrefLink";
 import LandingPage from "../LandingPage/LandingPage";
 // import NotFoundPage from "../NotFoundPage/NotFoundPage.tsx";
 import AboutMe from "../AboutMe/AboutMe";
-// import Projects from "../Projects/Projects.tsx";
+import Projects from "../Projects/Projects";
 // import Construction from "../Construction/Construction.tsx";
 // import Personal from "../Personal/Personal.tsx";
 
@@ -23,12 +23,12 @@ const Portfolio = ({}) => {
     <Router basename="/">
       <Routes>
         {/* <Route path="/blog" exact element={<LandingPage component={}/>} /> */}
-        {/* <Route
+        <Route
           path="/projects"
           exact
           element={<LandingPage children={<Projects />} />}
         />
-        <Route
+        {/* <Route
           path="/blog"
           exact
           element={<LandingPage children={<Construction />} />}
@@ -41,7 +41,7 @@ const Portfolio = ({}) => {
         /> */}
         <Route
           path="/"
-          exact={true}
+          exact
           element={<LandingPage children={<AboutMe />} />}
         />
         {/* HTTP Redirect to other FE projects hosted on espitiaandres.com */}
