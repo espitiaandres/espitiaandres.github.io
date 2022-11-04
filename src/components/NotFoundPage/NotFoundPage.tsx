@@ -16,13 +16,13 @@ import { Bars } from "react-loader-spinner";
 const NotFoundPage = () => {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    setTimeout(() => {
-      navigate("/", {
-        replace: true,
-      });
-    }, 5000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     navigate("/", {
+  //       replace: true,
+  //     });
+  //   }, 5000);
+  // }, []);
 
   return (
     <div

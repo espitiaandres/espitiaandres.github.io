@@ -44,9 +44,9 @@ const Portfolio = ({}) => {
           element={<LandingPage children={<AboutMe />} />}
         />
         {/* HTTP Redirect to other FE projects hosted on espitiaandres.com */}
-        {/* {frontendNames.map((fe) => (
+        {frontendNames.map((fe) => (
           <Route path={`/${fe}`} exact element={<HrefLink route={fe} />} />
-        ))} */}
+        ))}
         {/* <Route path="/*" element={<NotFoundPage />} /> */}
         <Route
           // exact

@@ -44,10 +44,10 @@ export const routes: RouteLink[] = [
 const LandingPage = ({ children }: LandingPageProps) => {
   return (
     <div>
-      <div className="p-12 md:px-32 lg:px-64 fixed top-4 md:top-12 lg:top-16">
+      <div className="w-full p-12 md:px-32 lg:px-64 absolute top-4 md:top-12 lg:top-16">
         <div className="flex flex-row justify-end mb-4">
           {routes.map((r) => (
-            <div className="mr-2 link link-primary link-hover md:mr-4">
+            <div className="mr-2 font-medium link link-primary link-hover md:mr-4">
               <Link to={r.redirectLink}>{r.label}</Link>
             </div>
           ))}

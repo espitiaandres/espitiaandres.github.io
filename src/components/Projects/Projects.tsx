@@ -40,19 +40,21 @@ const Achievements = () => {
           {isExpanded ? "Collapse" : "Expand"} All
         </button>
       </div>
-      {achievementsList.map(
-        ({ text, links, description, image }: IAchievement, i: number) => (
-          <Achievement
-            text={text}
-            links={links}
-            description={description}
-            image={image}
-            inputsRef={inputsRef}
-            setIsExpanded={setIsExpanded}
-            i={i}
-          />
-        )
-      )}
+      <div className="grid gap-x-8 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
+        {achievementsList.map(
+          ({ text, links, description, image }: IAchievement, i: number) => (
+            <Achievement
+              text={text}
+              links={links}
+              description={description}
+              image={image}
+              inputsRef={inputsRef}
+              setIsExpanded={setIsExpanded}
+              i={i}
+            />
+          )
+        )}
+      </div>
     </div>
   );
 };
