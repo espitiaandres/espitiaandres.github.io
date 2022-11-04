@@ -10,21 +10,46 @@
 // import SidebarDescription from "../SidebarDescription/SidebarDescription.tsx";
 // import SidebarLinks from "../SidebarLinks/SidebarLinks.tsx";
 // import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
+import { ReactNode } from "react";
+import { Link } from "react-router-dom";
 
 type LandingPageProps = {
-  children: any;
-}
+  children: ReactNode;
+};
 
-const routes = ["projects", "blog", "personal"];
+export type RouteLink = {
+  redirectLink: string;
+  label: string;
+};
+
+export const routes: RouteLink[] = [
+  {
+    redirectLink: "/",
+    label: "About Me",
+  },
+  {
+    redirectLink: "/projects",
+    label: "Projects",
+  },
+  {
+    redirectLink: "/blog",
+    label: "Blog",
+  },
+  {
+    redirectLink: "/personal",
+    label: "Personal",
+  },
+];
 
 const LandingPage = ({ children }: LandingPageProps) => {
-
   return (
     <div>
-      <div className="p-12 md:px-32 lg:px-64">
-        <div className="flex flex-row">
+      <div className="p-12 md:px-32 lg:px-64 fixed top-4 md:top-12 lg:top-16">
+        <div className="flex flex-row justify-end mb-4">
           {routes.map((r) => (
-            <div>{r}</div>
+            <div className="mr-2 link link-primary link-hover md:mr-4">
+              <Link to={r.redirectLink}>{r.label}</Link>
+            </div>
           ))}
         </div>
         <div className="text-black text-6xl mb-6 font-medium">

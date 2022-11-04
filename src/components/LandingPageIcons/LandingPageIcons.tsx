@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { icons, Icon } from "./LandingPageIconsHelpers"
+import { icons, Icon } from "./LandingPageIconsHelpers";
 
 const LandingPageIcons = () => {
   library.add(fab, fas);
@@ -30,7 +30,7 @@ const LandingPageIcons = () => {
               target="_blank"
               rel="noopener noreferrer"
               title={icon.href}
-              className="text-black truncate ..."
+              className="text-black truncate ... hover:underline hover:underline-offset-4 hover:decoration-secondary"
             >
               {icon.label}
             </a>
