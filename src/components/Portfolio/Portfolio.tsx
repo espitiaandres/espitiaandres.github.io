@@ -1,11 +1,3 @@
-//
-//  Portfolio.tsx
-//  espitiaandres.github.io
-//
-//  Created by Andres Espitia.
-//  Copyright © 2020 Andres Espitia. All rights reserved.
-//
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HrefLink from "../HrefLink/HrefLink";
 import LandingPage from "../LandingPage/LandingPage";

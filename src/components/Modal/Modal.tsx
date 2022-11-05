@@ -1,8 +1,11 @@
+import { Link } from "../Projects/AchievementsStaticData";
+
 type ModalProps = {
   header: string;
   description: string;
   buttonText?: string;
   i: number;
+  links: Link[];
 };
 
 const Modal = ({
@@ -10,6 +13,7 @@ const Modal = ({
   description,
   buttonText = "Close",
   i,
+  links,
 }: ModalProps) => {
   return (
     <div>
@@ -19,6 +23,18 @@ const Modal = ({
         <div className="modal-box">
           <div className="font-bold text-3xl pt-8">{header}</div>
           <div className="py-4">{description}</div>
+          {links.map((l) => (
+            <div>
+              <a
+                className="link link-primary link-hover font-medium"
+                href={l.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                - {l.name}
+              </a>
+            </div>
+          ))}
           <div className="modal-action">
             <label
               htmlFor={`my-modal-${i}`}

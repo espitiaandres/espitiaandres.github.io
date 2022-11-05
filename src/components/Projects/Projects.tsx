@@ -13,7 +13,13 @@ const Achievements = () => {
       <div className="grid lg:gap-x-8 gap-y-6 md:grid-cols-2 lg:grid-cols-3">
         {achievementsList.map(
           ({ text, links, description, image }: Achievement, i: number) => (
-            <Card header={text} description={description} i={i} key={i} />
+            <Card
+              header={text}
+              description={description}
+              i={i}
+              key={i}
+              links={links}
+            />
           )
         )}
       </div>
