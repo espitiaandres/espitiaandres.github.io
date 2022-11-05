@@ -8,13 +8,13 @@ import { Bars } from "react-loader-spinner";
 const NotFoundPage = () => {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    setTimeout(() => {
-      navigate("/", {
-        replace: true,
-      });
-    }, 5000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     navigate("/", {
+  //       replace: true,
+  //     });
+  //   }, 5000);
+  // }, []);
 
   return (
     <div
@@ -24,7 +24,7 @@ const NotFoundPage = () => {
         Hi fellow space traveller! Looks like you're heading to the wrong
         planet. Let me take you back to safety...
       </div>
-      <div className="flex flex-row justify-center my-5 md:my-7">
+      <div className="flex flex-row justify-center my-12 md:my-20">
         {/* <Loader type="Bars" color="#1ed760" height={36} width={100} /> */}
         <Bars
           height="80"
@@ -36,14 +36,6 @@ const NotFoundPage = () => {
           visible={true}
         />
       </div>
-      {/* <div className="avatar flex flex-row justify-center">
-        <div className="w-52 md:w-72 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-          <img src={NotFoundGif} alt="Lost traveller" />
-        </div>
-      </div> */}
-      {/* <div className="flex flex-row justify-center my-5 md:my-7">
-        <Loader type="Bars" color="#1ed760" height={36} width={100} />
-      </div> */}
     </div>
   );
 };

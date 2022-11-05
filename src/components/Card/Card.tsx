@@ -25,7 +25,6 @@ const Card = ({
         <div className="text-2xl font-semibold truncate ...">{header}</div>
         <div className="line-clamp-4">{description}</div>
         <div className="card-actions justify-end absolute bottom-4 right-4">
-          {/* <button className="btn btn-primary">{buttonText}</button> */}
           <label
             htmlFor={`my-modal-${i}`}
             className="btn btn-outline btn-primary"
