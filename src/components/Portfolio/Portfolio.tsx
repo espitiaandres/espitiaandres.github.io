@@ -13,18 +13,12 @@ const Portfolio = ({}) => {
   return (
     <Router basename="/">
       <Routes>
-        {/* <Route path="/blog" exact element={<LandingPage component={}/>} /> */}
         <Route
           path="/projects"
           exact
           element={<LandingPage children={<Projects />} />}
         />
         {/* <Route
-          path="/blog"
-          exact
-          element={<LandingPage children={<Construction />} />}
-        />
-        <Route
           path="/personal"
           exact
           // element={<LandingPage children={<Personal />} />}

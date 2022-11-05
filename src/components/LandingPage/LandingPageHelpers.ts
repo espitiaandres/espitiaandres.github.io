@@ -19,10 +19,6 @@ export const routes: RouteLink[] = [
     label: "Projects",
   },
   {
-    redirectLink: "/blog",
-    label: "Blog",
-  },
-  {
     redirectLink: "/personal",
     label: "Personal",
   },
