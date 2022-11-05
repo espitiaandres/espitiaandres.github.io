@@ -1,11 +1,3 @@
-//
-//  NotFoundPage.ts
-//  espitiaandres.github.io
-//
-//  Created by Andres Espitia.
-//  Copyright © 2020 Andres Espitia. All rights reserved.
-//
-
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Bars } from "react-loader-spinner";

@@ -2,10 +2,9 @@ export type Icon = {
   href: string;
   fontAwesome: string[] | any;
   label: string;
-}
+};
 
 // TODO: add twitter, medium...?
-// TODO: move this out into the AboutMe.tsx component
 
 export const icons: Icon[] = [
   {

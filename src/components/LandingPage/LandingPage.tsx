@@ -2,45 +2,18 @@
 // import SidebarDescription from "../SidebarDescription/SidebarDescription.tsx";
 // import SidebarLinks from "../SidebarLinks/SidebarLinks.tsx";
 // import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
-import { ReactNode } from "react";
+
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
-
-type LandingPageProps = {
-  children: ReactNode;
-};
-
-export type RouteLink = {
-  redirectLink: string;
-  label: string;
-};
-
-export const routes: RouteLink[] = [
-  {
-    redirectLink: "/",
-    label: "About Me",
-  },
-  {
-    redirectLink: "/projects",
-    label: "Projects",
-  },
-  {
-    redirectLink: "/blog",
-    label: "Blog",
-  },
-  {
-    redirectLink: "/personal",
-    label: "Personal",
-  },
-];
+import { LandingPageProps, routes } from "./LandingPageHelpers";
 
 const LandingPage = ({ children }: LandingPageProps) => {
   return (
     <div>
-      <div className="w-full p-12 md:px-32 lg:px-64 absolute top-4 md:top-12 lg:top-16">
+      <div className="flex flex-col h-screen justify-between w-full pt-8 md:pt-16 px-12 md:px-32 lg:px-64 absolute top-0">
         <div className="flex flex-row justify-end mb-4">
           {routes.map((r) => (
-            <div className="mr-2 font-medium link link-primary link-hover md:mr-4">
+            <div className="mr-2 font-medium text-lg link link-primary link-hover md:mr-4">
               <Link to={r.redirectLink}>{r.label}</Link>
             </div>
           ))}
@@ -51,7 +24,7 @@ const LandingPage = ({ children }: LandingPageProps) => {
         <div className="text-zinc-500 text-3xl mb-4">
           Full-Stack Software Engineer
         </div>
-        <div className="pb-8">{children}</div>
+        <div className="mb-auto pb-12">{children}</div>
         <Footer />
       </div>
     </div>

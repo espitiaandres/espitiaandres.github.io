@@ -1,11 +1,3 @@
-//
-//  LandingPageIcons.tsx
-//  espitiaandres.github.io
-//
-//  Created by Andres Espitia.
-//  Copyright © 2020 Andres Espitia. All rights reserved.
-//
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -18,7 +10,7 @@ const LandingPageIcons = () => {
   return (
     <div className="text-base md:text-lg mb-2">
       <div className="text-black mb-2">You can find me on these platforms:</div>
-      <div className="grid grid-cols-3 space-y-1">
+      <div className="grid grid-cols-2 md:grid-cols-3 space-y-1">
         {icons.map((icon: Icon) => (
           <div className="flex flex-row items-center">
             <FontAwesomeIcon
