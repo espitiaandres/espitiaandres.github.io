@@ -1,14 +1,6 @@
-//
-//  Projects.tsx
-//  espitiaandres.github.io
-//
-//  Created by Andres Espitia.
-//  Copyright © 2020 Andres Espitia. All rights reserved.
-//
-
 // import "animate.css";
 import { achievementsList, Achievement } from "./AchievementsStaticData";
-import Modal from "../Modal/Modal";
+import Card from "../Card/Card";
 
 const Achievements = () => {
   return (
@@ -21,7 +13,7 @@ const Achievements = () => {
       <div className="grid lg:gap-x-8 gap-y-6 md:grid-cols-2 lg:grid-cols-3">
         {achievementsList.map(
           ({ text, links, description, image }: Achievement, i: number) => (
-            <Modal header={text} description={description} />
+            <Card header={text} description={description} i={i} key={i} />
           )
         )}
       </div>
