@@ -22,7 +22,7 @@ const Card = ({
   return (
     <div className="card bg-base-100 shadow-xl text-black w-8/12 md:w-11/12 lg:w-full">
       <figure>
-        <img src={image} className="object-cover h-40 w-full" alt={image} />
+        <img src={image} className="object-cover h-48 w-full" alt={image} />
       </figure>
       <div className="card-body h-64">
         <div className="text-2xl font-semibold truncate ..." title={header}>
