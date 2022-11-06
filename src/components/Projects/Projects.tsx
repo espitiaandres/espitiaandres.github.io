@@ -1,8 +1,11 @@
 // import "animate.css";
+import { useTitle } from "react-use";
 import { achievementsList, Achievement } from "./ProjectsHelpers";
 import Card from "../Card/Card";
 
 const Achievements = () => {
+  useTitle("Andres Espitia | Projects");
+
   return (
     <div
     // className="animate__animated animate__fadeIn animate__delay-0.3s"

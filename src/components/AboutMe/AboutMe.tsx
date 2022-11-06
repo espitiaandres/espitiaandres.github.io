@@ -1,7 +1,10 @@
 // import "animate.css";
+import { useTitle } from "react-use";
 import LandingPageIcons from "../LandingPageIcons/LandingPageIcons";
 
 const AboutMe = () => {
+  useTitle("Andres Espitia | About Me");
+
   return (
     <div
       // className="animate__animated animate__fadeIn animate__delay-0.3s"

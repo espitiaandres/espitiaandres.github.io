@@ -4,7 +4,7 @@ import LandingPage from "../LandingPage/LandingPage";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
 import AboutMe from "../AboutMe/AboutMe";
 import Projects from "../Projects/Projects";
-// import Construction from "../Construction/Construction.tsx";
+import Construction from "../Construction/Construction";
 // import Personal from "../Personal/Personal.tsx";
 
 const Portfolio = ({}) => {
@@ -18,12 +18,12 @@ const Portfolio = ({}) => {
           exact
           element={<LandingPage children={<Projects />} />}
         />
-        {/* <Route
+        <Route
           path="/personal"
           exact
           // element={<LandingPage children={<Personal />} />}
           element={<LandingPage children={<Construction />} />}
-        /> */}
+        />
         <Route
           path="/"
           exact

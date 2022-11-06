@@ -1,13 +1,18 @@
-// import "../../font/AWConquerorFreCarved-Regular.otf";
-// import SidebarDescription from "../SidebarDescription/SidebarDescription.tsx";
-// import SidebarLinks from "../SidebarLinks/SidebarLinks.tsx";
-// import Headshot from "../../images/jpg/RAM-cover-no-writing-cropped.jpg";
-
+import { useEffect } from "react";
+import { useEffectOnce } from "react-use";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import { LandingPageProps, routes } from "./LandingPageHelpers";
 
 const LandingPage = ({ children }: LandingPageProps) => {
+  // useEffect(() => {
+  //   console.log("render");
+  // }, []);
+
+  useEffectOnce(() => {
+    console.log("render");
+  });
+
   return (
     <div className="flex flex-col h-screen justify-between w-full pt-16 md:pt-16 px-12 md:px-32 lg:px-64 absolute top-0">
       <div className="flex flex-row justify-end mb-4">
