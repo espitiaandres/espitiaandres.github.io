@@ -1,4 +1,5 @@
 import Studyfi from "../../assets/images/studyfi.png";
+import PenguinPyLogo from "../../assets/images/penguin_py_logo.jpg";
 
 export type Achievement = {
   header: string;
@@ -50,6 +51,7 @@ export const achievementsList: Achievement[] = [
     description:
       "Penguin is a lightweight, customizable stopwatch ⏱ decorator that helps you determine how long it takes for your functions to run. It supports both synchronous and asynchronous functions.",
     // image: AstronautJellyfish,
+    image: PenguinPyLogo,
   },
   {
     header: "Porespy Web App",
