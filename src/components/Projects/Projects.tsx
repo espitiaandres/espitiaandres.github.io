@@ -1,5 +1,5 @@
 // import "animate.css";
-import { achievementsList, Achievement } from "./AchievementsStaticData";
+import { achievementsList, Achievement } from "./ProjectsHelpers";
 import Card from "../Card/Card";
 
 const Achievements = () => {

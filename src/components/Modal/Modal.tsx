@@ -1,4 +1,4 @@
-import { Link } from "../Projects/AchievementsStaticData";
+import { Link } from "../Projects/ProjectsHelpers";
 
 type ModalProps = {
   header: string;
