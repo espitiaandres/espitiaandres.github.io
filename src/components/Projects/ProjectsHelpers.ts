@@ -1,5 +1,7 @@
+import Studyfi from "../../assets/images/studyfi.png";
+
 export type Achievement = {
-  text: string;
+  header: string;
   links: Link[];
   description: string;
   image?: string;
@@ -18,7 +20,7 @@ TODO:
 
 export const achievementsList: Achievement[] = [
   {
-    text: "Studyfi",
+    header: "Studyfi",
     links: [
       {
         url: "https://github.com/espitiaandres/studyfi",
@@ -31,10 +33,10 @@ export const achievementsList: Achievement[] = [
     ],
     description:
       "A place to study, listen to music, and chat with friends. Getting work done while listening to music on Spotify on one page. To build this, I used Node, Express, React, Redux, Web sockets, Material UI, and the Spotify API.",
-    // image: AstronautJellyfish,
+    image: Studyfi,
   },
   {
-    text: "penguin_py",
+    header: "penguin_py",
     links: [
       {
         url: "https://pypi.org/project/penguin-py/",
@@ -50,7 +52,7 @@ export const achievementsList: Achievement[] = [
     // image: AstronautJellyfish,
   },
   {
-    text: "Porespy Web App",
+    header: "Porespy Web App",
     links: [
       {
         url: "https://porespy.org/",
@@ -70,7 +72,7 @@ export const achievementsList: Achievement[] = [
     // image: AstronautJellyfish,
   },
   {
-    text: "Udemy Courses",
+    header: "Udemy Courses",
     links: [
       {
         url: "https://www.udemy.com/certificate/UC-7d6aa75a-4b43-4ce4-ac8d-6be29fd5ca76/",
@@ -93,7 +95,7 @@ export const achievementsList: Achievement[] = [
     // image: AstronautJellyfish,
   },
   {
-    text: "Research Papers",
+    header: "Research Papers",
     links: [
       {
         url: "https://iopscience.iop.org/article/10.1149/2.0061916jes/meta",
@@ -109,7 +111,7 @@ export const achievementsList: Achievement[] = [
     // image: AstronautJellyfish,
   },
   {
-    text: "Pokedex",
+    header: "Pokedex",
     links: [
       {
         url: "https://github.com/espitiaandres/pokedex",
@@ -125,7 +127,7 @@ export const achievementsList: Achievement[] = [
     // image: AstronautJellyfish,
   },
   {
-    text: "Fantasy Basketball MLR Analyzer",
+    header: "Fantasy Basketball MLR Analyzer",
     links: [
       {
         url: "https://github.com/espitiaandres/Multiple-Linear-Regression-Analyzer",

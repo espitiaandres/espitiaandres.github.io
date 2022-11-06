@@ -1,6 +1,6 @@
 // import "animate.css";
 import { useTitle } from "react-use";
-import { achievementsList, Achievement } from "./ProjectsHelpers";
+import { achievementsList } from "./ProjectsHelpers";
 import Card from "../Card/Card";
 
 const Achievements = () => {
@@ -15,13 +15,14 @@ const Achievements = () => {
       </div>
       <div className="grid lg:gap-x-8 gap-y-6 md:grid-cols-2 lg:grid-cols-3 mb-4">
         {achievementsList.map(
-          ({ text, links, description, image }: Achievement, i: number) => (
+          ({ header, links, description, image }, i: number) => (
             <Card
-              header={text}
+              key={i}
+              header={header}
               description={description}
               i={i}
-              key={i}
               links={links}
+              image={image}
             />
           )
         )}

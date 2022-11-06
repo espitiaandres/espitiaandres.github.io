@@ -1,5 +1,6 @@
 import Modal from "../Modal/Modal";
 import { Link } from "../Projects/ProjectsHelpers";
+import AstronautJellyfish from "../../assets/images/astronaut jellyfish.jpg";
 
 type CardProps = {
   header: string;
@@ -7,6 +8,7 @@ type CardProps = {
   buttonText?: string;
   i: number;
   links: Link[];
+  image?: string;
 };
 
 const Card = ({
@@ -15,11 +17,13 @@ const Card = ({
   buttonText = "See More",
   i,
   links,
+  image = AstronautJellyfish,
 }: CardProps) => {
   return (
     <div className="card bg-base-100 shadow-xl text-black w-8/12 md:w-11/12 lg:w-full">
       <figure>
-        <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+        {/* <img src="https://placeimg.com/400/225/arch" alt="Shoes" /> */}
+        <img src={image} />
       </figure>
       <div className="card-body h-64">
         <div className="text-2xl font-semibold truncate ...">{header}</div>

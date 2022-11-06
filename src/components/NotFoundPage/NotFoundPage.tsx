@@ -3,18 +3,16 @@ import { useNavigate } from "react-router-dom";
 import { Bars } from "react-loader-spinner";
 // import "animate.css";
 
-// import NotFoundGif from "../../images/gif/lostAstronaut.gif";
-
 const NotFoundPage = () => {
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     navigate("/", {
-  //       replace: true,
-  //     });
-  //   }, 5000);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      navigate("/", {
+        replace: true,
+      });
+    }, 5000);
+  }, []);
 
   return (
     <div
