@@ -1,58 +1,32 @@
-//
-//  Projects.tsx
-//  espitiaandres.github.io
-//
-//  Created by Andres Espitia.
-//  Copyright © 2020 Andres Espitia. All rights reserved.
-//
-
-import { useState, useEffect, useRef } from "react";
 // import "animate.css";
-import {
-  achievementsList,
-  IAchievement,
-  onExpandCollapse,
-} from "./AchievementsStaticData.ts";
-import Achievement from "./Achievement.tsx";
+import { useTitle } from "react-use";
+import { achievementsList } from "./ProjectsHelpers";
+import Card from "../Card/Card";
 
 const Achievements = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const inputsRef = useRef([]);
-
-  useEffect(() => {
-    inputsRef.current = inputsRef.current.slice(0, achievementsList.length);
-  }, []);
+  useTitle("Andres Espitia | Projects");
 
   return (
     <div
-      // className="animate__animated animate__fadeIn animate__delay-0.3s"
+    // className="animate__animated animate__fadeIn animate__delay-0.3s"
     >
-      <div className="text-black mb-4">
+      <div className="text-black mb-8 text-base md:text-lg">
         Here are some achievements and projects I've worked on:
       </div>
-      <div className="flex flex-row justify-end">
-        <button
-          className="btn btn-outline btn-primary border-2 -mt-2 mb-4 w-40"
-          onClick={() =>
-            onExpandCollapse({ inputsRef, isExpanded, setIsExpanded })
-          }
-        >
-          {isExpanded ? "Collapse" : "Expand"} All
-        </button>
+      <div className="grid lg:gap-x-8 gap-y-6 md:grid-cols-2 lg:grid-cols-3 mb-4">
+        {achievementsList.map(
+          ({ header, links, description, image }, i: number) => (
+            <Card
+              key={i}
+              header={header}
+              description={description}
+              i={i}
+              links={links}
+              image={image}
+            />
+          )
+        )}
       </div>
-      {achievementsList.map(
-        ({ text, links, description, image }: IAchievement, i: number) => (
-          <Achievement
-            text={text}
-            links={links}
-            description={description}
-            image={image}
-            inputsRef={inputsRef}
-            setIsExpanded={setIsExpanded}
-            i={i}
-          />
-        )
-      )}
     </div>
   );
 };
