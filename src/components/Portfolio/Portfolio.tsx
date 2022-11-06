@@ -15,25 +15,25 @@ const Portfolio = ({}) => {
       <Routes>
         <Route
           path="/projects"
-          exact
+          // exact={true}
           element={<LandingPage children={<Projects />} />}
         />
         <Route
           path="/personal"
-          exact
+          // exact
           // element={<LandingPage children={<Personal />} />}
           element={<LandingPage children={<Construction />} />}
         />
         <Route
           path="/"
-          exact
+          // exact
           element={<LandingPage children={<AboutMe />} />}
         />
         {/* HTTP Redirect to other FE projects hosted on espitiaandres.com */}
         {frontendNames.map((fe, i) => (
           <Route
             path={`/${fe}`}
-            exact
+            // exact
             element={<HrefLink route={fe} />}
             key={i}
           />
