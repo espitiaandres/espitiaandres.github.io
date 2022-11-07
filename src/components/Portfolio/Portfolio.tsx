@@ -7,6 +7,15 @@ import Projects from "../Projects/Projects";
 import Construction from "../Construction/Construction";
 // import Personal from "../Personal/Personal.tsx";
 
+/*
+Commands to deploy:
+
+pnpm run build
+git add dist -f
+git commit -m "my commit message here"
+git subtree push --prefix dist origin gh-pages
+*/
+
 const Portfolio = ({}) => {
   const frontendNames = ["studyfi", "pokedex"];
 
