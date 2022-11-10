@@ -30,7 +30,7 @@ export const achievementsList: Achievement[] = [
     links: [
       {
         url: "https://espitiaandres.com/studyfi/",
-        name: "See it live!",
+        name: "See it live",
       },
       {
         url: "https://github.com/espitiaandres/studyfi",

@@ -5,7 +5,6 @@ import NotFoundPage from "../NotFoundPage/NotFoundPage";
 import AboutMe from "../AboutMe/AboutMe";
 import Projects from "../Projects/Projects";
 import Construction from "../Construction/Construction";
-// import Personal from "../Personal/Personal.tsx";
 
 /*
 Commands to deploy:
