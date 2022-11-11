@@ -13,7 +13,7 @@ const Achievements = () => {
       <div className="text-black mb-8 text-base md:text-lg">
         Here are some achievements and projects I've worked on:
       </div>
-      <div className="grid lg:gap-x-8 gap-y-6 md:grid-cols-2 lg:grid-cols-3 mb-4">
+      <div className="grid lg:gap-x-8 gap-y-6 md:grid-cols-2 lg:grid-cols-3 mb-8">
         {achievementsList.map(
           ({ header, links, description, image }, i: number) => (
             <Card

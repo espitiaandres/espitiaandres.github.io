@@ -5,7 +5,7 @@ import { LandingPageProps, routes } from "./LandingPageHelpers";
 
 const LandingPage = ({ children }: LandingPageProps) => {
   return (
-    <div className="flex flex-col h-screen justify-between w-full pt-16 md:pt-16 px-12 md:px-32 lg:px-64 absolute top-0">
+    <div className="flex flex-col h-screen justify-between w-full pt-8 md:pt-16 lg:pt-32 px-12 md:px-32 lg:px-64 absolute top-0">
       <div className="flex flex-row justify-end mb-4 md:mb-8">
         {routes.map((route, i) => (
           <div
