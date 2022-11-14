@@ -6,6 +6,7 @@ type ModalProps = {
   buttonText?: string;
   i: number;
   links: Link[];
+  image?: string;
 };
 
 const Modal = ({
@@ -14,13 +15,20 @@ const Modal = ({
   buttonText = "Close",
   i,
   links,
+  image,
 }: ModalProps) => {
   return (
     <div>
-      {/* Put this part before </body> tag */}
       <input type="checkbox" id={`my-modal-${i}`} className="modal-toggle" />
       <div className="modal modal-bottom sm:modal-middle">
-        <div className="modal-box">
+        <div className="modal-box min-w-5xl">
+          <figure className="rounded">
+            <img
+              src={image}
+              className="object-cover h-28 sm:h-40 w-full"
+              alt={image}
+            />
+          </figure>
           <div className="font-bold text-3xl pt-8">{header}</div>
           <div className="py-4">{description}</div>
           {links.map((l) => (
@@ -40,7 +48,7 @@ const Modal = ({
               htmlFor={`my-modal-${i}`}
               className="btn btn-outline btn-primary"
             >
-              Close
+              {buttonText}
             </label>
           </div>
         </div>

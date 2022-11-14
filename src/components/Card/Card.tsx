@@ -53,7 +53,13 @@ const Card = ({
           </label>
         </div>
       </div>
-      <Modal header={header} description={description} i={i} links={links} />
+      <Modal
+        header={header}
+        description={description}
+        i={i}
+        links={links}
+        image={image}
+      />
     </div>
   );
 };
