@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        80: "20rem",
+        128: "32rem",
+      },
+    },
   },
   daisyui: {
     themes: [

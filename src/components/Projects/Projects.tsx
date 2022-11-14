@@ -23,6 +23,7 @@ const Achievements = () => {
               i={i}
               links={links}
               image={image}
+              shadow="normal"
             />
           )
         )}

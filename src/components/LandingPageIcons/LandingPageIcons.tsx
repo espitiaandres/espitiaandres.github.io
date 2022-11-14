@@ -22,7 +22,7 @@ const LandingPageIcons = () => {
               target="_blank"
               rel="noopener noreferrer"
               title={icon.href}
-              className="text-black truncate ... hover:underline hover:underline-offset-4 hover:decoration-primary"
+              className="text-primary truncate ... hover:underline hover:underline-offset-4 hover:decoration-primary"
             >
               {icon.label}
             </a>
