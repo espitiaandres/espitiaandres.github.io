@@ -2,13 +2,12 @@ import Modal from "../Modal/Modal";
 import { Link } from "../Projects/ProjectsHelpers";
 import AstronautJellyfish from "../../assets/images/astronaut jellyfish.jpg";
 
-export type Shadow = "light" | "normal" | "heavy";
+export type Shadow = "light" | "heavy";
 
 export type Size = "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
 
 export const shadowMap: Record<Shadow, Size> = {
   light: "md",
-  normal: "lg",
   heavy: "xl",
 };
 
@@ -29,7 +28,7 @@ const Card = ({
   i,
   links,
   image = AstronautJellyfish,
-  shadow = "normal",
+  shadow = "light",
 }: CardProps) => {
   return (
     <div
