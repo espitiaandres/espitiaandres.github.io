@@ -10,7 +10,6 @@ specifiers:
   '@types/react-dom': ^18.0.7
   '@vitejs/plugin-react': ^2.2.0
   autoprefixer: ^10.4.13
-  clsx: ^1.2.1
   daisyui: ^2.38.0
   gh-pages: ^4.0.0
   postcss: ^8.4.18
@@ -29,7 +28,6 @@ dependencies:
   '@fortawesome/free-solid-svg-icons': 6.2.0
   '@fortawesome/react-fontawesome': 0.2.0_6j2wdqxompc6mcokhxkpep2gqu
   '@tailwindcss/line-clamp': 0.4.2_tailwindcss@3.2.1
-  clsx: 1.2.1
   daisyui: 2.38.0_lycaqaeny3mp632atgvyvqdgwe
   gh-pages: 4.0.0
   react: 18.2.0
@@ -662,11 +660,6 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
-
-  /clsx/1.2.1:
-    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
-    engines: {node: '>=6'}
-    dev: false
 
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
