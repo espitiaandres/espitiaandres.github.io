@@ -1,8 +1,18 @@
 import { Link } from "react-router-dom";
+import Animator from "../Animator/Animator";
 import Footer from "../Footer/Footer";
 import { LandingPageProps, routes } from "./LandingPageHelpers";
 
+/*
+TODO:
+- Darkmode
+- Voxeldog
+- Framer-motion
+
+*/
+
 const LandingPage = ({ children }: LandingPageProps) => {
+  console.log("hi");
   return (
     <div className="flex flex-col h-screen justify-between w-full pt-8 md:pt-16 px-12 md:px-32 lg:px-64 xl:px-80 absolute top-0">
       <div className="flex flex-row justify-end mb-4 md:mb-8">

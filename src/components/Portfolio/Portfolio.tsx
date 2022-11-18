@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 import HrefLink from "../HrefLink/HrefLink";
 import LandingPage from "../LandingPage/LandingPage";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
@@ -19,41 +20,43 @@ const Portfolio = ({}) => {
   const frontendNames = ["studyfi", "pokedex"];
 
   return (
-    <Router basename="/">
-      <Routes>
-        <Route
-          path="/projects"
-          // exact={true}
-          element={<LandingPage children={<Projects />} />}
-        />
-        <Route
-          path="/personal"
-          // exact
-          // element={<LandingPage children={<Personal />} />}
-          element={<LandingPage children={<Construction />} />}
-        />
-        <Route
-          path="/"
-          // exact
-          element={<LandingPage children={<AboutMe />} />}
-        />
-        {/* HTTP Redirect to other FE projects hosted on espitiaandres.com */}
-        {frontendNames.map((fe, i) => (
+    <AnimatePresence>
+      <Router basename="/">
+        <Routes>
           <Route
-            path={`/${fe}`}
-            // exact
-            element={<HrefLink route={fe} />}
-            key={i}
+            path="/projects"
+            // exact={true}
+            element={<LandingPage children={<Projects />} />}
           />
-        ))}
-        {/* <Route path="/*" element={<NotFoundPage />} /> */}
-        <Route
-          // exact
-          path="/*"
-          element={<LandingPage children={<NotFoundPage />} />}
-        />
-      </Routes>
-    </Router>
+          <Route
+            path="/personal"
+            // exact
+            // element={<LandingPage children={<Personal />} />}
+            element={<LandingPage children={<Construction />} />}
+          />
+          <Route
+            path="/"
+            // exact
+            element={<LandingPage children={<AboutMe />} />}
+          />
+          {/* HTTP Redirect to other FE projects hosted on espitiaandres.com */}
+          {frontendNames.map((fe, i) => (
+            <Route
+              path={`/${fe}`}
+              // exact
+              element={<HrefLink route={fe} />}
+              key={i}
+            />
+          ))}
+          {/* <Route path="/*" element={<NotFoundPage />} /> */}
+          <Route
+            // exact
+            path="/*"
+            element={<LandingPage children={<NotFoundPage />} />}
+          />
+        </Routes>
+      </Router>
+    </AnimatePresence>
   );
 };
 
