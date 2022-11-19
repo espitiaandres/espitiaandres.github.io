@@ -6,7 +6,7 @@ const AboutMe = () => {
   useTitle("Andres Espitia | About Me");
 
   return (
-    <div className="text-black text-base md:text-lg">
+    <div>
       <div className="mb-2">Hi, I'm Andres!</div>
       <div className="mb-2">
         I'm a University of Waterloo Engineering '22 graduate interested in Full

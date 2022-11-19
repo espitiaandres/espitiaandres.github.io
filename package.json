@@ -14,6 +14,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@tailwindcss/line-clamp": "^0.4.2",
+    "clsx": "^1.2.1",
     "daisyui": "^2.38.0",
     "framer-motion": "^7.6.7",
     "gh-pages": "^4.0.0",
@@ -21,6 +22,7 @@
     "react-dom": "^18.2.0",
     "react-loader-spinner": "^5.3.4",
     "react-router-dom": "^6.4.3",
+    "react-toggle-dark-mode": "^1.1.1",
     "react-use": "^17.4.0"
   },
   "devDependencies": {

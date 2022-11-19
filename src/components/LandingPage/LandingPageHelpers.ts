@@ -1,7 +1,9 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 
 export type LandingPageProps = {
   children: ReactNode;
+  isDarkMode: boolean;
+  setIsDarkMode: (T: boolean) => void;
 };
 
 type RouteLink = {
@@ -23,3 +25,9 @@ export const routes: RouteLink[] = [
     label: "Personal",
   },
 ];
+
+export const useSetMode = (isDarkMode: Boolean) => {
+  useEffect(() => {
+    localStorage.setItem("theme", isDarkMode.toString());
+  }, [isDarkMode]);
+};

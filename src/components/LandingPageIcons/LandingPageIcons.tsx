@@ -8,8 +8,8 @@ const LandingPageIcons = () => {
   library.add(fab, fas);
 
   return (
-    <div className="text-base md:text-lg mb-2">
-      <div className="text-black mb-2">You can find me on these platforms:</div>
+    <div className="mb-2">
+      <div className="mb-2">You can find me on these platforms:</div>
       <div className="grid grid-cols-2 md:grid-cols-3 space-y-1">
         {icons.map((icon: Icon, i) => (
           <div className="flex flex-row items-center" key={i}>
