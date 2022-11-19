@@ -7,7 +7,6 @@ const AboutMe = () => {
 
   return (
     <div>
-      <div className="mb-2">Hi, I'm Andres!</div>
       <div className="mb-2">
         I'm a University of Waterloo Engineering '22 graduate interested in Full
         Stack Web Development, Machine Learning, and Optimization. Currently,

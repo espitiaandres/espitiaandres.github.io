@@ -23,27 +23,29 @@ const LandingPage = ({
         "dark:bg-slate-900"
       )}
     >
-      <div className="w-12 flex border-b-2 border-black dark:border-white p-2">
-        <DarkModeSwitch
-          checked={isDarkMode}
-          onChange={(checked: boolean) => setIsDarkMode(checked)}
-          size={32}
-        />
+      <div className="flex flex-row justify-end mb-2">
+        <div className="w-10 h-10 border-b-2 border-black dark:border-white p-2">
+          <DarkModeSwitch
+            checked={isDarkMode}
+            onChange={(checked: boolean) => setIsDarkMode(checked)}
+            size={24}
+          />
+        </div>
       </div>
-      <div className="flex flex-row justify-end">
+      <div className="flex flex-row justify-end mb-4">
         {routes.map((route, i) => (
           <div
-            className="mr-2 font-medium text-lg link link-primary link-hover md:mr-4"
+            className="ml-2 font-medium text-lg link link-primary link-hover"
             key={i}
           >
             <Link to={route.redirectLink}>{route.label}</Link>
           </div>
         ))}
       </div>
-      <div className="text-black text-6xl mb-4 font-medium dark:text-white">
+      <div className="text-black text-5xl md:text-6xl mb-4 font-medium dark:text-white">
         Andres Espitia
       </div>
-      <div className="text-zinc-500 text-3xl mb-8">
+      <div className="text-zinc-500 text-3xl mb-8 dark:text-zinc-400">
         Full-Stack Software Engineer
       </div>
       <div className="mb-auto pb-4 text-black text-base md:text-lg dark:text-white">
