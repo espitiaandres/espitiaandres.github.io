@@ -23,24 +23,22 @@ const LandingPage = ({
         "dark:bg-slate-900"
       )}
     >
-      <div className="flex flex-row mb-4 md:mb-8 justify-between items-center">
-        <div className="border-b-2 border-black dark:border-white p-2">
-          <DarkModeSwitch
-            checked={isDarkMode}
-            onChange={(checked: boolean) => setIsDarkMode(checked)}
-            size={32}
-          />
-        </div>
-        <div className="flex flex-row justify-end">
-          {routes.map((route, i) => (
-            <div
-              className="mr-2 font-medium text-lg link link-primary link-hover md:mr-4"
-              key={i}
-            >
-              <Link to={route.redirectLink}>{route.label}</Link>
-            </div>
-          ))}
-        </div>
+      <div className="w-12 flex border-b-2 border-black dark:border-white p-2">
+        <DarkModeSwitch
+          checked={isDarkMode}
+          onChange={(checked: boolean) => setIsDarkMode(checked)}
+          size={32}
+        />
+      </div>
+      <div className="flex flex-row justify-end">
+        {routes.map((route, i) => (
+          <div
+            className="mr-2 font-medium text-lg link link-primary link-hover md:mr-4"
+            key={i}
+          >
+            <Link to={route.redirectLink}>{route.label}</Link>
+          </div>
+        ))}
       </div>
       <div className="text-black text-6xl mb-4 font-medium dark:text-white">
         Andres Espitia
