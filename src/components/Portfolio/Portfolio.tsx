@@ -20,23 +20,10 @@ git subtree push --prefix dist origin gh-pages
 
 const Portfolio = ({}) => {
   const frontendNames = ["studyfi", "pokedex"];
-  console.log(localStorage.getItem("theme"));
+
   const [isDarkMode, setIsDarkMode] = useState<boolean>(
     JSON.parse(localStorage?.getItem("theme") || "false")
   );
-
-  // useEffect(() => {
-  //   const localStorageTheme = localStorage.getItem("theme");
-  //   console.log(localStorageTheme);
-  //   if (localStorageTheme) {
-  //     // setTheme(localStorageTheme);
-  //     setIsDarkMode(JSON.parse(localStorageTheme));
-  //   } else {
-  //     localStorage.setItem("theme", "false");
-  //     // setTheme(`light`);
-  //     setIsDarkMode(false);
-  //   }
-  // }, []);
 
   return (
     <div
@@ -49,7 +36,6 @@ const Portfolio = ({}) => {
           <Routes>
             <Route
               path="/projects"
-              // exact={true}
               element={
                 <LandingPage
                   children={<Projects />}
@@ -60,8 +46,6 @@ const Portfolio = ({}) => {
             />
             <Route
               path="/personal"
-              // exact
-              // element={<LandingPage children={<Personal />} />}
               element={
                 <LandingPage
                   children={<Construction />}
@@ -72,7 +56,6 @@ const Portfolio = ({}) => {
             />
             <Route
               path="/"
-              // exact
               element={
                 <LandingPage
                   children={<AboutMe />}
@@ -85,12 +68,10 @@ const Portfolio = ({}) => {
             {frontendNames.map((fe, i) => (
               <Route
                 path={`/${fe}`}
-                // exact
                 element={<HrefLink route={fe} />}
                 key={i}
               />
             ))}
-            {/* <Route path="/*" element={<NotFoundPage />} /> */}
             <Route
               // exact
               path="/*"
