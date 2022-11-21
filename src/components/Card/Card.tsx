@@ -19,6 +19,7 @@ type CardProps = {
   links: Link[];
   image?: string;
   shadow: Shadow;
+  withModal: boolean;
 };
 
 const Card = ({
@@ -29,10 +30,11 @@ const Card = ({
   links,
   image = AstronautJellyfish,
   shadow = "light",
+  withModal = false,
 }: CardProps) => {
   return (
     <div
-      className={`card bg-base-100 text-black w-8/12 md:w-11/12 lg:w-full shadow-${shadowMap[shadow]}`}
+      className={`card bg-base-100 border-base-200 text-black w-8/12 md:w-11/12 lg:w-full shadow-${shadowMap[shadow]}`}
     >
       <figure>
         <img src={image} className="object-cover h-40 w-full" alt={image} />
@@ -44,22 +46,26 @@ const Card = ({
         <div className="line-clamp-4" title={description}>
           {description}
         </div>
-        <div className="card-actions justify-end absolute bottom-4 right-4">
-          <label
-            htmlFor={`my-modal-${i}`}
-            className="btn btn-outline btn-primary"
-          >
-            {buttonText}
-          </label>
-        </div>
+        {withModal && (
+          <div className="card-actions justify-end absolute bottom-4 right-4">
+            <label
+              htmlFor={`my-modal-${i}`}
+              className="btn btn-outline btn-primary"
+            >
+              {buttonText}
+            </label>
+          </div>
+        )}
       </div>
-      <Modal
-        header={header}
-        description={description}
-        i={i}
-        links={links}
-        image={image}
-      />
+      {withModal && (
+        <Modal
+          header={header}
+          description={description}
+          i={i}
+          links={links}
+          image={image}
+        />
+      )}
     </div>
   );
 };

@@ -101,6 +101,10 @@ export const achievementsList: Achievement[] = [
         url: "https://www.udemy.com/certificate/UC-4cf5bf40-8b5b-4917-a0f7-d8a375650fff/",
         name: "Complete Machine Learning & Data Science Bootcamp 2023",
       },
+      {
+        url: "https://www.udemy.com/certificate/UC-ded2794d-f6e9-41b1-93f5-f1360e4ef8ea/",
+        name: "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
+      },
     ],
     description: "Some interesting courses I've completed that I recommend.",
     image: Udemy,

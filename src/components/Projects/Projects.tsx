@@ -22,6 +22,7 @@ const Achievements = () => {
               links={links}
               image={image}
               shadow="heavy"
+              withModal
             />
           )
         )}

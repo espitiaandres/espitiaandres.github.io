@@ -35,7 +35,7 @@ const LandingPage = ({
       <div className="flex flex-row justify-end mb-4">
         {routes.map((route, i) => (
           <div
-            className="ml-2 font-medium text-lg link link-primary link-hover"
+            className="ml-2 md:ml-4 font-medium text-lg link link-primary link-hover"
             key={i}
           >
             <Link to={route.redirectLink}>{route.label}</Link>
