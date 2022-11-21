@@ -34,7 +34,7 @@ const Card = ({
 }: CardProps) => {
   return (
     <div
-      className={`card bg-base-100 border-base-200 text-black w-8/12 md:w-11/12 lg:w-full shadow-${shadowMap[shadow]}`}
+      className={`card bg-base-100 w-8/12 md:w-11/12 lg:w-full shadow-${shadowMap[shadow]}`}
     >
       <figure>
         <img src={image} className="object-cover h-40 w-full" alt={image} />
