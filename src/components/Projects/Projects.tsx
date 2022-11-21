@@ -21,7 +21,6 @@ const Achievements = () => {
               i={i}
               links={links}
               image={image}
-              shadow="heavy"
               withModal
             />
           )
