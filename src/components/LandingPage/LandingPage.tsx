@@ -24,7 +24,7 @@ const LandingPage = ({
       )}
     >
       <div className="flex flex-row justify-end mb-2">
-        <div className="w-10 h-10 border-b-2 border-black dark:border-white p-2">
+        <div className="w-10 h-10 border-b-2 border-black dark:border-white p-2 rounded-sm">
           <DarkModeSwitch
             checked={isDarkMode}
             onChange={(checked: boolean) => setIsDarkMode(checked)}
