@@ -1,6 +1,6 @@
 import { useTitle } from "react-use";
-import LandingPageIcons from "../LandingPageIcons/LandingPageIcons";
-import Animator from "../Animator/Animator";
+import LandingPageIcons from "components/LandingPageIcons/LandingPageIcons";
+import Animator from "components/Animator";
 
 const AboutMe = () => {
   useTitle("Andres Espitia | About Me");

@@ -1,4 +1,4 @@
-import { Link } from "../Projects/ProjectsHelpers";
+import { Link } from "ui/common/types";
 
 type ModalProps = {
   header: string;

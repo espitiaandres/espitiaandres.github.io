@@ -4,8 +4,6 @@ export type Icon = {
   label: string;
 };
 
-// TODO: add twitter, medium...?
-
 export const icons: Icon[] = [
   {
     href: "https://github.com/espitiaandres",

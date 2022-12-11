@@ -1,6 +1,6 @@
-import Modal from "../Modal/Modal";
-import { Link } from "../Projects/ProjectsHelpers";
-import AstronautJellyfish from "../../assets/images/astronaut jellyfish.jpg";
+import Modal from "ui/components/Modal/Modal";
+import { Link } from "components/Projects/ProjectsHelpers";
+import AstronautJellyfish from "assets/images/astronaut jellyfish.jpg";
 
 type CardProps = {
   header: string;
@@ -22,7 +22,7 @@ const Card = ({
   withModal = false,
 }: CardProps) => {
   return (
-    <div className="card bg-base-100 w-8/12 md:w-11/12 lg:w-full shadow-xl">
+    <div className="card bg-base-100 w-8/12 md:w-11/12 lg:w-full shadow-xl dark:border-white dark:border-2 dark:text-black">
       <figure>
         <img src={image} className="object-cover h-40 w-full" alt={image} />
       </figure>

@@ -2,12 +2,13 @@ import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import clsx from "clsx";
-import HrefLink from "../HrefLink/HrefLink";
-import LandingPage from "../LandingPage/LandingPage";
-import NotFoundPage from "../NotFoundPage/NotFoundPage";
-import AboutMe from "../AboutMe/AboutMe";
-import Projects from "../Projects/Projects";
-import Construction from "../Construction/Construction";
+import HrefLink from "components/HrefLink";
+import LandingPage from "components/LandingPage";
+import NotFoundPage from "components/NotFoundPage";
+import AboutMe from "components/AboutMe";
+import Projects from "components/Projects";
+import Construction from "components/Construction";
+import Personal from "components/Personal";
 
 /*
 Commands to deploy:
@@ -48,7 +49,7 @@ const Portfolio = ({}) => {
               path="/personal"
               element={
                 <LandingPage
-                  children={<Construction />}
+                  children={<Personal />}
                   isDarkMode={isDarkMode}
                   setIsDarkMode={setIsDarkMode}
                 />

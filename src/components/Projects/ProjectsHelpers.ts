@@ -1,10 +1,10 @@
-import Studyfi from "../../assets/images/studyfi.png";
-import PenguinPyLogo from "../../assets/images/penguin_py_logo.jpg";
-import Porespy from "../../assets/images/porespy.png";
-import ResearchPaper from "../../assets/images/research_paper.png";
-import Pokeball from "../../assets/images/pokeball_icon.png";
-import Udemy from "../../assets/images/udemy.png";
-import FantasyBasketball from "../../assets/images/fantasy_basketball.png";
+import Studyfi from "assets/images/studyfi.png";
+import PenguinPyLogo from "assets/images/penguin_py_logo.jpg";
+import Porespy from "assets/images/porespy.png";
+import ResearchPaper from "assets/images/research_paper.png";
+import Pokeball from "assets/images/pokeball_icon.png";
+import Udemy from "assets/images/udemy.png";
+import FantasyBasketball from "assets/images/fantasy_basketball.png";
 
 export type Achievement = {
   header: string;

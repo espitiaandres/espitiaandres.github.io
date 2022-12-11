@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import clsx from "clsx";
-import Footer from "../Footer/Footer";
+import Footer from "components/Footer";
 import { LandingPageProps, routes, useSetMode } from "./LandingPageHelpers";
 
 /*
