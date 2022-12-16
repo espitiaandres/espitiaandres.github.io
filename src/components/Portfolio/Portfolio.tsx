@@ -49,7 +49,8 @@ const Portfolio = ({}) => {
               path="/personal"
               element={
                 <LandingPage
-                  children={<Personal />}
+                  // children={<Personal />}
+                  children={<Construction />}
                   isDarkMode={isDarkMode}
                   setIsDarkMode={setIsDarkMode}
                 />
