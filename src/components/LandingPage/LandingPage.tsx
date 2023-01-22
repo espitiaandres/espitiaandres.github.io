@@ -20,7 +20,7 @@ const LandingPage = ({
     <div
       className={clsx(
         "flex flex-col min-h-screen justify-between w-full pt-8 md:pt-16 px-12 md:px-32 lg:px-64 xl:px-80 absolute top-0",
-        "dark:bg-slate-900"
+        "dark:bg-zinc-900"
       )}
     >
       <div className="flex flex-row justify-end mb-2">
