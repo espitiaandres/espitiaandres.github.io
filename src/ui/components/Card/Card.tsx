@@ -1,6 +1,6 @@
 import Modal from "ui/components/Modal/Modal";
 import { Link } from "components/Projects/ProjectsHelpers";
-import AstronautJellyfish from "assets/images/astronaut jellyfish.jpg";
+import AstronautJellyfish from "assets/images/projects/astronaut jellyfish.jpg";
 
 type CardProps = {
   header: string;
