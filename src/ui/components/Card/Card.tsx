@@ -24,7 +24,12 @@ const Card = ({
   return (
     <div className="card bg-base-100 w-8/12 md:w-11/12 lg:w-full shadow-xl dark:border-white dark:border-2 dark:text-black">
       <figure>
-        <img src={image} className="object-cover h-40 w-full" alt={image} />
+        <img
+          src={image}
+          className="object-cover h-40 w-full"
+          alt={image}
+          loading="lazy"
+        />
       </figure>
       <div className="card-body h-64">
         <div className="text-2xl font-semibold truncate ..." title={header}>
