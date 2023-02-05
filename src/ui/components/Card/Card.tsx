@@ -1,16 +1,18 @@
 import Modal from "ui/components/Modal/Modal";
 import { Link } from "components/Projects/ProjectsHelpers";
 import AstronautJellyfish from "assets/images/projects/astronaut jellyfish.jpg";
+import clsx from "clsx";
 
 interface CardProps {
-  header: string;
-  description: string;
-  buttonText?: string;
   i: number;
+  header?: string;
+  description?: string;
+  buttonText?: string;
   links: Link[];
   image?: string;
-  withModal: boolean;
-};
+  withModal?: boolean;
+  withText?: boolean;
+}
 
 const Card = ({
   header,
@@ -20,35 +22,60 @@ const Card = ({
   links,
   image = AstronautJellyfish,
   withModal = false,
+  withText = false,
 }: CardProps) => {
   return (
-    <div className="card bg-base-100 w-8/12 md:w-11/12 lg:w-full shadow-xl dark:border-white dark:border-2 dark:text-black">
+    <div
+      className={clsx(
+        "card bg-base-100 shadow-xl dark:border-white dark:border-2 dark:text-black",
+        {
+          "w-8/12 md:w-11/12 lg:w-full": withText,
+          "w-full": !withText,
+        }
+      )}
+    >
       <figure>
-        <img
-          src={image}
-          className="object-cover h-40 w-full"
-          alt={image}
-          loading="lazy"
-        />
-      </figure>
-      <div className="card-body h-64">
-        <div className="text-2xl font-semibold truncate ..." title={header}>
-          {header}
-        </div>
-        <div className="line-clamp-4" title={description}>
-          {description}
-        </div>
-        {withModal && (
-          <div className="card-actions justify-end absolute bottom-4 right-4">
-            <label
-              htmlFor={`my-modal-${i}`}
-              className="btn btn-outline btn-primary"
-            >
-              {buttonText}
-            </label>
-          </div>
+        {!withText ? (
+          <label htmlFor={`my-modal-${i}`} className="w-full h-full">
+            <img
+              src={image}
+              className={clsx("object-cover w-full rounded-2xl", {
+                "h-40": withText,
+                "h-96": !withText,
+              })}
+              alt={image}
+              loading="lazy"
+            />
+          </label>
+        ) : (
+          <img
+            src={image}
+            className="object-cover w-full h-40"
+            alt={image}
+            loading="lazy"
+          />
         )}
-      </div>
+      </figure>
+      {withText && (
+        <div className="card-body h-64">
+          <div className="text-2xl font-semibold truncate ..." title={header}>
+            {header}
+          </div>
+          <div className="line-clamp-4" title={description}>
+            {description}
+          </div>
+          {withModal && (
+            <div className="card-actions justify-end absolute bottom-4 right-4">
+              <label
+                htmlFor={`my-modal-${i}`}
+                className="btn btn-outline btn-primary"
+              >
+                {buttonText}
+              </label>
+            </div>
+          )}
+        </div>
+      )}
       {withModal && (
         <Modal
           header={header}
@@ -56,6 +83,7 @@ const Card = ({
           i={i}
           links={links}
           image={image}
+          withText={withText}
         />
       )}
     </div>

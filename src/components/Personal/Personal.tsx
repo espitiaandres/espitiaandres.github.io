@@ -1,24 +1,21 @@
+import { useTitle } from "react-use";
+import Card from "ui/components/Card/Card";
+import { images } from "./PersonalHelpers";
+import Animator from "components/Animator";
+
 const Personal = () => {
+  useTitle("Andres Espitia | Personal");
+
   return (
     <div>
       <div className="mb-8">Here are some cool pictures I've taken:</div>
-      <div className="grid lg:gap-x-4 gap-y-4 md:grid-cols-2 mb-8">
-        {/* {achievementsList.map(
-          ({ header, links, description, image }, i: number) => (
-            <div>
-              <figure>
-                <img
-                  src={image}
-                  className="object-cover h-96 w-full rounded-xl"
-                  alt={image}
-                />
-              </figure>
-            </div>
-          )
-        )} */}
+      <div className="grid lg:gap-x-4 gap-y-6 md:grid-cols-2 mb-8">
+        {images.map((img, i) => (
+          <Card key={i} i={i} image={img} links={[]} withModal={true} />
+        ))}
       </div>
     </div>
   );
 };
 
-export default Personal;
+export default Animator(Personal);

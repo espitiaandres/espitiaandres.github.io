@@ -1,13 +1,15 @@
 import { Link } from "ui/common/types";
+import clsx from "clsx";
 
 interface ModalProps {
-  header: string;
-  description: string;
-  buttonText?: string;
   i: number;
+  header?: string;
+  description?: string;
+  buttonText?: string;
   links: Link[];
   image?: string;
-};
+  withText?: boolean;
+}
 
 const Modal = ({
   header,
@@ -16,6 +18,7 @@ const Modal = ({
   i,
   links,
   image,
+  withText = false,
 }: ModalProps) => {
   return (
     <div>
@@ -25,24 +28,31 @@ const Modal = ({
           <figure className="rounded">
             <img
               src={image}
-              className="object-cover h-28 sm:h-40 w-full"
+              className={clsx("object-cover w-full", {
+                "h-28 sm:h-40": withText,
+                "h-full": !withText,
+              })}
               alt={image}
             />
           </figure>
-          <div className="font-bold text-3xl pt-8">{header}</div>
-          <div className="py-4">{description}</div>
-          {links.map((l) => (
+          {withText && (
             <div>
-              <a
-                className="link link-primary link-hover font-medium"
-                href={l.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                - {l.name}
-              </a>
+              <div className="font-bold text-3xl pt-8">{header}</div>
+              <div className="py-4">{description}</div>
+              {links.map((l) => (
+                <div>
+                  <a
+                    className="link link-primary link-hover font-medium"
+                    href={l.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    - {l.name}
+                  </a>
+                </div>
+              ))}
             </div>
-          ))}
+          )}
           <div className="modal-action">
             <label
               htmlFor={`my-modal-${i}`}

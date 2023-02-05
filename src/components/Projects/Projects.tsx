@@ -21,7 +21,8 @@ const Achievements = () => {
               i={i}
               links={links}
               image={image}
-              withModal
+              withModal={true}
+              withText={true}
             />
           )
         )}
