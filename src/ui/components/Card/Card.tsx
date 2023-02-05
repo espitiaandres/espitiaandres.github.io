@@ -27,7 +27,7 @@ const Card = ({
   return (
     <div
       className={clsx(
-        "card bg-base-100 shadow-xl dark:border-white dark:border-2 dark:text-black",
+        "card bg-base-100 shadow-xl border-white border-2 dark:text-black",
         {
           "w-8/12 md:w-11/12 lg:w-full": withText,
           "w-full": !withText,

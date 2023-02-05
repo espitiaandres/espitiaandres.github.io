@@ -20,7 +20,7 @@ git subtree push --prefix dist origin gh-pages
 */
 
 // TODO: add imageAlt prop to CardProps
-//
+// TODO: add caption for imgs
 
 const Portfolio = ({}) => {
   const frontendNames = ["studyfi", "pokedex"];
