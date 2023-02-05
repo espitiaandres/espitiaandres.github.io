@@ -19,6 +19,9 @@ git commit -m "my commit message here"
 git subtree push --prefix dist origin gh-pages
 */
 
+// TODO: add imageAlt prop to CardProps
+//
+
 const Portfolio = ({}) => {
   const frontendNames = ["studyfi", "pokedex"];
 

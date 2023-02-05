@@ -8,7 +8,7 @@ const Personal = () => {
 
   return (
     <div>
-      <div className="mb-8">Here are some cool pictures I've taken:</div>
+      <div className="mb-8">{"Here are some cool pictures I've taken :)"}</div>
       <div className="grid lg:gap-x-4 gap-y-6 md:grid-cols-2 mb-8">
         {images.map((img, i) => (
           <Card key={i} i={i} image={img} links={[]} withModal={true} />
