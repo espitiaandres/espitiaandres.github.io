@@ -1,6 +1,6 @@
 import { Link } from "ui/common/types";
 
-type ModalProps = {
+interface ModalProps {
   header: string;
   description: string;
   buttonText?: string;

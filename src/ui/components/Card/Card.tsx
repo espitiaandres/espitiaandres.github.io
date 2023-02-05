@@ -2,7 +2,7 @@ import Modal from "ui/components/Modal/Modal";
 import { Link } from "components/Projects/ProjectsHelpers";
 import AstronautJellyfish from "assets/images/projects/astronaut jellyfish.jpg";
 
-type CardProps = {
+interface CardProps {
   header: string;
   description: string;
   buttonText?: string;

@@ -6,14 +6,14 @@ import Pokeball from "assets/images/projects/pokeball_icon.png";
 import Udemy from "assets/images/projects/udemy.png";
 import FantasyBasketball from "assets/images/projects/fantasy_basketball.png";
 
-export type Achievement = {
+export interface Achievement {
   header: string;
   links: Link[];
   description: string;
   image?: string;
 };
 
-export type Link = {
+export interface Link {
   url: string;
   name: string;
 };

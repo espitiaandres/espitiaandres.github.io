@@ -1,12 +1,12 @@
 import { ReactNode, useEffect } from "react";
 
-export type LandingPageProps = {
+export interface LandingPageProps {
   children: ReactNode;
   isDarkMode: boolean;
   setIsDarkMode: (T: boolean) => void;
 };
 
-type RouteLink = {
+interface RouteLink {
   redirectLink: string;
   label: string;
 };

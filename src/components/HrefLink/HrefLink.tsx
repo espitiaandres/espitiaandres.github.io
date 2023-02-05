@@ -1,4 +1,4 @@
-type HrefLinkProp = {
+interface HrefLinkProp {
   route: string;
 };
 

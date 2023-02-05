@@ -1,4 +1,4 @@
-export type Link = {
+export interface Link {
   url: string;
   name: string;
 };

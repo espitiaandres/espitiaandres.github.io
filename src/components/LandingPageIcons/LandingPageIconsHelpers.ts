@@ -1,4 +1,4 @@
-export type Icon = {
+export interface Icon {
   href: string;
   fontAwesome: string[] | any;
   label: string;
