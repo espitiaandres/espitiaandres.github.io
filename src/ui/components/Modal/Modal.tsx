@@ -30,13 +30,13 @@ const Modal = ({
               src={image}
               className={clsx("object-cover w-full", {
                 "h-28 sm:h-40": withText,
-                "h-128": !withText,
+                "h-full": !withText,
               })}
               alt={image}
             />
           </figure>
           <div>
-            <div className="font-bold text-3xl pt-8">{header}</div>
+            <div className="font-bold text-3xl pt-4">{header}</div>
             <div className="py-4">{description}</div>
             {links.map((l) => (
               <div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import clsx from "clsx";
@@ -20,14 +20,15 @@ git subtree push --prefix dist origin gh-pages
 */
 
 // TODO: add imageAlt prop to CardProps
-// TODO: add caption for imgs
 
 const Portfolio = ({}) => {
   const frontendNames = ["studyfi", "pokedex"];
 
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(
-    JSON.parse(localStorage?.getItem("theme") || "false")
-  );
+  const defaultDarkMode = useMemo(() => {
+    return JSON.parse(localStorage?.getItem("theme") || "false");
+  }, []);
+
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(defaultDarkMode);
 
   return (
     <div
