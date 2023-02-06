@@ -30,29 +30,27 @@ const Modal = ({
               src={image}
               className={clsx("object-cover w-full", {
                 "h-28 sm:h-40": withText,
-                "h-full": !withText,
+                "h-128": !withText,
               })}
               alt={image}
             />
           </figure>
-          {withText && (
-            <div>
-              <div className="font-bold text-3xl pt-8">{header}</div>
-              <div className="py-4">{description}</div>
-              {links.map((l) => (
-                <div>
-                  <a
-                    className="link link-primary link-hover font-medium"
-                    href={l.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    - {l.name}
-                  </a>
-                </div>
-              ))}
-            </div>
-          )}
+          <div>
+            <div className="font-bold text-3xl pt-8">{header}</div>
+            <div className="py-4">{description}</div>
+            {links.map((l) => (
+              <div>
+                <a
+                  className="link link-primary link-hover font-medium"
+                  href={l.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  - {l.name}
+                </a>
+              </div>
+            ))}
+          </div>
           <div className="modal-action">
             <label
               htmlFor={`my-modal-${i}`}

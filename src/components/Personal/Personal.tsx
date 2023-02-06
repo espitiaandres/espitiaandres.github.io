@@ -1,6 +1,6 @@
 import { useTitle } from "react-use";
 import Card from "ui/components/Card/Card";
-import { images } from "./PersonalHelpers";
+import { personalItems } from "./PersonalHelpers";
 import Animator from "components/Animator";
 
 const Personal = () => {
@@ -10,8 +10,16 @@ const Personal = () => {
     <div>
       <div className="mb-8">{"Here are some cool pictures I've taken :)"}</div>
       <div className="grid lg:gap-x-4 gap-y-6 md:grid-cols-2 mb-8">
-        {images.map((img, i) => (
-          <Card key={i} i={i} image={img} links={[]} withModal={true} />
+        {personalItems.map(({ description, header, image }, i) => (
+          <Card
+            key={i}
+            i={i}
+            image={image}
+            links={[]}
+            withModal={true}
+            description={description}
+            header={header}
+          />
         ))}
       </div>
     </div>
