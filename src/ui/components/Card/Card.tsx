@@ -1,6 +1,6 @@
 import Modal from "ui/components/Modal/Modal";
 import { Link } from "components/Projects/ProjectsHelpers";
-import AstronautJellyfish from "assets/images/projects/astronaut jellyfish.jpg";
+import AstronautJellyfish from "assets/images/projects/webp/astronaut jellyfish.webp";
 import clsx from "clsx";
 
 interface CardProps {
