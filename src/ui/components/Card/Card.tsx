@@ -15,10 +15,10 @@ interface CardProps {
 }
 
 export default function Card({
-  header,
-  description,
-  buttonText = "See More",
   i,
+  header = "",
+  description = "",
+  buttonText = "See More",
   links,
   image = AstronautJellyfish,
   withModal = false,
@@ -35,26 +35,17 @@ export default function Card({
       )}
     >
       <figure>
-        {!withText ? (
-          <label htmlFor={`my-modal-${i}`} className="w-full h-full">
-            <img
-              src={image}
-              className={clsx("object-cover w-full rounded-2xl", {
-                "h-40": withText,
-                "h-96": !withText,
-              })}
-              alt={image}
-              loading="lazy"
-            />
-          </label>
-        ) : (
+        <label htmlFor={`my-modal-${i}`} className="w-full h-full">
           <img
             src={image}
-            className="object-cover w-full h-40"
+            className={clsx("object-cover w-full rounded-2xl", {
+              "h-40": withText,
+              "h-96": !withText,
+            })}
             alt={image}
             loading="lazy"
           />
-        )}
+        </label>
       </figure>
       {withText && (
         <div className="card-body h-64">
