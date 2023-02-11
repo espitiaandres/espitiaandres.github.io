@@ -3,7 +3,7 @@ import Card from "ui/components/Card/Card";
 import { personalItems } from "./PersonalHelpers";
 import Animator from "components/Animator";
 
-const Personal = () => {
+function Personal() {
   useTitle("Andres Espitia | Personal");
 
   return (
@@ -24,6 +24,6 @@ const Personal = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Animator(Personal);

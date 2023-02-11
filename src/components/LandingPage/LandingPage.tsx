@@ -9,11 +9,11 @@ TODO:
 - Voxeldog animation
 */
 
-const LandingPage = ({
+export default function LandingPage({
   children,
   isDarkMode,
   setIsDarkMode,
-}: LandingPageProps) => {
+}: LandingPageProps) {
   useSetMode(isDarkMode);
 
   return (
@@ -54,6 +54,4 @@ const LandingPage = ({
       <Footer />
     </div>
   );
-};
-
-export default LandingPage;
+}

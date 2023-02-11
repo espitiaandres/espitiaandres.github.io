@@ -21,7 +21,7 @@ git subtree push --prefix dist origin gh-pages
 
 // TODO: add imageAlt prop to CardProps
 
-const Portfolio = ({}) => {
+export default function Portfolio() {
   const frontendNames = ["studyfi", "pokedex"];
 
   const defaultDarkMode = useMemo(() => {
@@ -94,6 +94,4 @@ const Portfolio = ({}) => {
       </AnimatePresence>
     </div>
   );
-};
-
-export default Portfolio;
+}

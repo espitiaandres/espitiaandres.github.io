@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Bars } from "react-loader-spinner";
 
-const NotFoundPage = () => {
+export default function NotFoundPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -32,6 +32,4 @@ const NotFoundPage = () => {
       </div>
     </div>
   );
-};
-
-export default NotFoundPage;
+}

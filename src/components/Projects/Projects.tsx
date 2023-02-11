@@ -3,7 +3,7 @@ import { achievementsList } from "./ProjectsHelpers";
 import Card from "ui/components/Card/Card";
 import Animator from "components/Animator";
 
-const Achievements = () => {
+function Achievements() {
   useTitle("Andres Espitia | Projects");
 
   return (
@@ -29,6 +29,6 @@ const Achievements = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Animator(Achievements);

@@ -4,7 +4,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { icons, Icon } from "./LandingPageIconsHelpers";
 
-const LandingPageIcons = () => {
+export default function LandingPageIcons() {
   library.add(fab, fas);
 
   return (
@@ -31,6 +31,4 @@ const LandingPageIcons = () => {
       </div>
     </div>
   );
-};
-
-export default LandingPageIcons;
+}

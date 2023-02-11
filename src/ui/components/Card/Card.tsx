@@ -14,7 +14,7 @@ interface CardProps {
   withText?: boolean;
 }
 
-const Card = ({
+export default function Card({
   header,
   description,
   buttonText = "See More",
@@ -23,7 +23,7 @@ const Card = ({
   image = AstronautJellyfish,
   withModal = false,
   withText = false,
-}: CardProps) => {
+}: CardProps) {
   return (
     <div
       className={clsx(
@@ -88,6 +88,4 @@ const Card = ({
       )}
     </div>
   );
-};
-
-export default Card;
+}

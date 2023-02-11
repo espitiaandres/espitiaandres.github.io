@@ -11,7 +11,7 @@ interface ModalProps {
   withText?: boolean;
 }
 
-const Modal = ({
+export default function Modal({
   header,
   description,
   buttonText = "Close",
@@ -19,7 +19,7 @@ const Modal = ({
   links,
   image,
   withText = false,
-}: ModalProps) => {
+}: ModalProps) {
   return (
     <div>
       <input type="checkbox" id={`my-modal-${i}`} className="modal-toggle" />
@@ -63,6 +63,4 @@ const Modal = ({
       </div>
     </div>
   );
-};
-
-export default Modal;
+}
