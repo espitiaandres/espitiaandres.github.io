@@ -2,7 +2,7 @@ import { useTitle } from "react-use";
 import LandingPageIcons from "components/LandingPageIcons/LandingPageIcons";
 import Animator from "components/Animator";
 
-const AboutMe = () => {
+function AboutMe() {
   useTitle("Andres Espitia | About Me");
 
   return (

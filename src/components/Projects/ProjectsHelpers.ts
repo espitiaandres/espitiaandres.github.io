@@ -1,22 +1,22 @@
-import Studyfi from "assets/images/projects/studyfi.png";
-import PenguinPyLogo from "assets/images/projects/penguin_py_logo.jpg";
-import Porespy from "assets/images/projects/porespy.png";
-import ResearchPaper from "assets/images/projects/research_paper.png";
-import Pokeball from "assets/images/projects/pokeball_icon.png";
-import Udemy from "assets/images/projects/udemy.png";
-import FantasyBasketball from "assets/images/projects/fantasy_basketball.png";
+import Studyfi from "assets/images/projects/webp/studyfi.webp";
+import PenguinPyLogo from "assets/images/projects/webp/penguin_py_logo.webp";
+import Porespy from "assets/images/projects/webp/porespy.webp";
+import ResearchPaper from "assets/images/projects/webp/research_paper.webp";
+import Pokeball from "assets/images/projects/webp/pokeball_icon.webp";
+import Udemy from "assets/images/projects/webp/udemy.webp";
+import FantasyBasketball from "assets/images/projects/webp/fantasy_basketball.webp";
 
 export interface Achievement {
   header: string;
   links: Link[];
   description: string;
   image?: string;
-};
+}
 
 export interface Link {
   url: string;
   name: string;
-};
+}
 
 /*
 TODO: 

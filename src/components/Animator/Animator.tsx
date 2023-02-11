@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-
-const Animator = (Component: React.ComponentType) => {
+export default function Animator(Component: React.ComponentType) {
   return (props: any) => (
     <motion.div
       initial={{ opacity: 0 }}
@@ -13,7 +12,4 @@ const Animator = (Component: React.ComponentType) => {
       <Component {...props} />
     </motion.div>
   );
-};
-
-
-export default Animator;
+}
