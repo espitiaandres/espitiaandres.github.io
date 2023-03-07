@@ -16,7 +16,7 @@ export const icons: Icon[] = [
     label: "LinkedIn",
   },
   {
-    href: "mailto:afespiti@edu.uwaterloo.ca",
+    href: "mailto:espitiaandres123@gmail.com",
     fontAwesome: ["fas", "envelope"],
     label: "Email",
   },
