@@ -1,8 +1,10 @@
+import { IconPrefix, IconName } from "@fortawesome/fontawesome-svg-core";
+
 export interface Icon {
   href: string;
-  fontAwesome: string[] | any;
+  fontAwesome: [IconPrefix, IconName];
   label: string;
-};
+}
 
 export const icons: Icon[] = [
   {
