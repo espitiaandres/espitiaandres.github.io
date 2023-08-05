@@ -107,6 +107,10 @@ export const achievementsList: Achievement[] = [
         url: "https://www.udemy.com/certificate/UC-ded2794d-f6e9-41b1-93f5-f1360e4ef8ea/",
         name: "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
       },
+      {
+        url: "https://app.cybrary.it/courses/api/certificate/CC-d9aa958f-e59e-4a68-bd5d-13fa37881507/view",
+        name: "End User Cyber Fundamentals",
+      },
     ],
     description: "Some interesting courses I've completed that I recommend.",
     image: Udemy,
