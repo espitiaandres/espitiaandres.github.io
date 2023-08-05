@@ -24,7 +24,7 @@ export default function Modal({
     <div>
       <input type="checkbox" id={`my-modal-${i}`} className="modal-toggle" />
       <div className="modal modal-bottom sm:modal-middle">
-        <div className="modal-box min-w-5xl">
+        <div className="modal-box min-w-5xl bg-white">
           <figure className="rounded">
             <img
               src={image}

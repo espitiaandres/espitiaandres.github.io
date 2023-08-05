@@ -181,6 +181,6 @@ export const achievementsList: Achievement[] = [
     ],
     description:
       "An Image Conversion script that uses python's multiprocessing and Wand libraries to convert images to jpg | png.",
-    image: GolangImageConversion,
+    image: PythonImageConversion,
   },
 ];
