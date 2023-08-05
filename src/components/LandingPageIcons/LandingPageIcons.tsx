@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { icons, Icon } from "./LandingPageIconsHelpers";
+import { socialIcons, Icon } from "./LandingPageIconsHelpers";
 
 export default function LandingPageIcons() {
   library.add(fab, fas);
@@ -11,7 +11,7 @@ export default function LandingPageIcons() {
     <div className="mb-2">
       <div className="mb-2">You can find me on these platforms:</div>
       <div className="grid grid-cols-2 md:grid-cols-3 space-y-1">
-        {icons.map((icon: Icon, i) => (
+        {socialIcons.map((icon: Icon, i) => (
           <div className="flex flex-row items-center" key={i}>
             <FontAwesomeIcon
               className="text-primary mr-2"

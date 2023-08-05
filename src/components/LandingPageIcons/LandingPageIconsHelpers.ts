@@ -6,7 +6,7 @@ export interface Icon {
   label: string;
 }
 
-export const icons: Icon[] = [
+export const socialIcons: Icon[] = [
   {
     href: "https://github.com/espitiaandres",
     fontAwesome: ["fab", "github-alt"],
