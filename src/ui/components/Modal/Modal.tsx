@@ -60,6 +60,7 @@ export default function Modal({
             </label>
           </div>
         </div>
+        <label className="modal-backdrop" htmlFor={`my-modal-${i}`}></label>
       </div>
     </div>
   );
