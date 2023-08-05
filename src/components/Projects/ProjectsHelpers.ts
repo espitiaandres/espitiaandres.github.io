@@ -5,6 +5,8 @@ import ResearchPaper from "assets/images/projects/webp/research_paper.webp";
 import Pokeball from "assets/images/projects/webp/pokeball_icon.webp";
 import Udemy from "assets/images/projects/webp/udemy.webp";
 import FantasyBasketball from "assets/images/projects/webp/fantasy_basketball.webp";
+import GolangImageConversion from "assets/images/projects/webp/golang_image_conversion.webp"
+import PythonImageConversion from "assets/images/projects/webp/python_image_conversion.webp";
 
 export interface Achievement {
   header: string;
@@ -152,5 +154,17 @@ export const achievementsList: Achievement[] = [
     description:
       "A multiple linear regression in C# and Python that analyzes a given set amount of regressors to one dependent variable. Using gnuplot, it also creates plots of each regressor with the dependent variable, and plots of how the regressors changed chronologically at different data points. I used this throughout the 2018-2019 fantasy basketball season and it helped me get 1st place!",
     image: FantasyBasketball,
+  },
+  {
+    header: "Go Image Conversion",
+    links: [
+      {
+        url: "https://github.com/espitiaandres/go-image-conversion",
+        name: "Github",
+      },
+    ],
+    description:
+      "An Image Conversion script that uses goroutines and waitgroups to convert .heic files to .jpg",
+    image: GolangImageConversion,
   },
 ];
