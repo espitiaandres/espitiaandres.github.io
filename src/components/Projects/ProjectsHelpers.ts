@@ -167,4 +167,16 @@ export const achievementsList: Achievement[] = [
       "An Image Conversion script that uses goroutines and waitgroups to convert .heic files to .jpg",
     image: GolangImageConversion,
   },
+  {
+    header: "Python Image Conversion",
+    links: [
+      {
+        url: "https://github.com/espitiaandres/python-image-conversion",
+        name: "Github",
+      },
+    ],
+    description:
+      "An Image Conversion script that uses python's multiprocessing and Wand libraries to convert images to jpg | png.",
+    image: GolangImageConversion,
+  },
 ];
