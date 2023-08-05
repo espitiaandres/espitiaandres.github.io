@@ -1,12 +1,17 @@
 import { IconPrefix, IconName } from "@fortawesome/fontawesome-svg-core";
 
-export interface Icon {
+interface SocialIcon {
   href: string;
   fontAwesome: [IconPrefix, IconName];
   label: string;
 }
 
-export const socialIcons: Icon[] = [
+interface toolIcon {
+  src: string;
+  className: string;
+}
+
+export const socialIcons: SocialIcon[] = [
   {
     href: "https://github.com/espitiaandres",
     fontAwesome: ["fab", "github-alt"],
@@ -36,5 +41,58 @@ export const socialIcons: Icon[] = [
     href: "https://stackoverflow.com/users/13973201/espitiaandres",
     fontAwesome: ["fab", "stack-overflow"],
     label: "Stack Overflow",
+  },
+];
+
+// TODO: figure out order to show these
+
+export const toolIcons: toolIcon[] = [
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original-wordmark.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain-wordmark.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+    className: "w-16 h-16",
   },
 ];
