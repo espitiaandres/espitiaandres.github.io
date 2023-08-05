@@ -12,7 +12,7 @@ export default function LandingPageIcons() {
       <div className="mb-2">You can find me on these platforms:</div>
       <div className="grid grid-cols-2 md:grid-cols-3 space-y-1 mb-4">
         {socialIcons.map((icon, i) => (
-          <div className="flex flex-row items-center" key={i}>
+          <div className="flex flex-row items-center justify-center" key={i}>
             <FontAwesomeIcon
               className="text-primary mr-2"
               icon={icon.fontAwesome}
@@ -35,7 +35,7 @@ export default function LandingPageIcons() {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 space-y-1">
         {toolIcons.map((icon, i) => (
-          <div className="flex flex-row items-center" key={i}>
+          <div className="flex flex-row items-center justify-center" key={i}>
             <img src={icon.src} className={icon.className} />
           </div>
         ))}

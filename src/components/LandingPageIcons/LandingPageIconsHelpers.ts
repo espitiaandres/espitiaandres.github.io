@@ -84,7 +84,7 @@ export const toolIcons: toolIcon[] = [
     className: "w-16 h-16",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
     className: "w-16 h-16",
   },
   {
