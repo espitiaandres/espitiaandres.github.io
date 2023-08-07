@@ -7,6 +7,10 @@ import { LandingPageProps, routes, useSetMode } from "./LandingPageHelpers";
 /*
 TODO:
 - Voxeldog animation
+- add imageAlt prop to CardProps
+- Projects: add:
+  - Waterloo math contests?
+  - IB Diploma?
 */
 
 export default function LandingPage({

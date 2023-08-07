@@ -5,7 +5,7 @@ import ResearchPaper from "assets/images/projects/webp/research_paper.webp";
 import Pokeball from "assets/images/projects/webp/pokeball_icon.webp";
 import Udemy from "assets/images/projects/webp/udemy.webp";
 import FantasyBasketball from "assets/images/projects/webp/fantasy_basketball.webp";
-import GolangImageConversion from "assets/images/projects/webp/golang_image_conversion.webp"
+import GolangImageConversion from "assets/images/projects/webp/golang_image_conversion.webp";
 import PythonImageConversion from "assets/images/projects/webp/python_image_conversion.webp";
 
 export interface Achievement {
@@ -19,12 +19,6 @@ export interface Link {
   url: string;
   name: string;
 }
-
-/*
-TODO: 
-- Waterloo math contests?
-- IB Diploma?
-*/
 
 export const achievementsList: Achievement[] = [
   {

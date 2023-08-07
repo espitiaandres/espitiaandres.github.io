@@ -19,8 +19,6 @@ git commit -m "my commit message here"
 git subtree push --prefix dist origin gh-pages
 */
 
-// TODO: add imageAlt prop to CardProps
-
 export default function Portfolio() {
   const frontendNames = ["studyfi", "pokedex"];
 
