@@ -44,31 +44,9 @@ export const socialIcons: SocialIcon[] = [
   },
 ];
 
-// TODO: figure out order to show these
-
 export const toolIcons: toolIcon[] = [
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original-wordmark.svg",
-    className: "w-16 h-16",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg",
-    className: "w-16 h-16",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg",
-    className: "w-16 h-16",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
-    className: "w-16 h-16",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
-    className: "w-16 h-16",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain-wordmark.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
     className: "w-16 h-16",
   },
   {
@@ -76,7 +54,23 @@ export const toolIcons: toolIcon[] = [
     className: "w-16 h-16",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain-wordmark.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
     className: "w-16 h-16",
   },
   {
@@ -88,7 +82,11 @@ export const toolIcons: toolIcon[] = [
     className: "w-16 h-16",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original-wordmark.svg",
+    className: "w-16 h-16",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg",
     className: "w-16 h-16",
   },
   {
