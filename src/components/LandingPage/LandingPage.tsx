@@ -23,7 +23,7 @@ export default function LandingPage({
   return (
     <div
       className={clsx(
-        "flex flex-col min-h-screen justify-between w-full pt-8 md:pt-16 px-12 md:px-32 lg:px-64 xl:px-80 absolute top-0",
+        "flex flex-col min-h-screen justify-between w-full pt-8 md:pt-12 px-12 md:px-32 lg:px-64 xl:px-80 absolute top-0",
         "dark:bg-zinc-900"
       )}
     >
