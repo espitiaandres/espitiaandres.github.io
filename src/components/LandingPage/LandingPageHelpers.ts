@@ -11,7 +11,7 @@ interface RouteLink {
   label: string;
 };
 
-export const routes: RouteLink[] = [
+export const routes: readonly RouteLink[] = [
   {
     redirectLink: "/",
     label: "About Me",

@@ -11,7 +11,7 @@ interface toolIcon {
   href: string;
 }
 
-export const socialIcons: SocialIcon[] = [
+export const socialIcons: readonly SocialIcon[] = [
   {
     href: "https://github.com/espitiaandres",
     fontAwesome: ["fab", "github-alt"],
@@ -44,7 +44,7 @@ export const socialIcons: SocialIcon[] = [
   },
 ];
 
-export const toolIcons: toolIcon[] = [
+export const toolIcons: readonly toolIcon[] = [
 	{
 		src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
 		href: "https://www.python.org/",
