@@ -47,7 +47,7 @@ export default function LandingPage({
         ))}
       </div>
       <div className="text-black text-5xl md:text-6xl mb-4 font-medium dark:text-white">
-        Andres Espitia
+        Hi, I'm Andres Espitia.
       </div>
       <div className="text-zinc-500 text-3xl mb-8 dark:text-zinc-400">
         Full-Stack Software Engineer
