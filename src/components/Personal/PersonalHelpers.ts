@@ -21,9 +21,9 @@ import SfAfternoon from "assets/images/personal/webp/sf_afternoon.webp";
 import SfBoardwalk from "assets/images/personal/webp/sf_boardwalk.webp";
 
 interface personalItem {
-  header: string;
-  description: string;
-  image?: string;
+	header: string;
+	description: string;
+	image?: string;
 }
 
 export const personalItems: readonly personalItem[] = [

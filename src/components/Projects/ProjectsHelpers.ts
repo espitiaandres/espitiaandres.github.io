@@ -9,15 +9,15 @@ import GolangImageConversion from "assets/images/projects/webp/golang_image_conv
 import PythonImageConversion from "assets/images/projects/webp/python_image_conversion.webp";
 
 export interface Achievement {
-  header: string;
-  links: Link[];
-  description: string;
-  image?: string;
+	header: string;
+	links: Link[];
+	description: string;
+	image?: string;
 }
 
 export interface Link {
-  url: string;
-  name: string;
+	url: string;
+	name: string;
 }
 
 export const achievementsList: readonly Achievement[] = [
