@@ -28,20 +28,17 @@ export default function Card({
 		<div
 			className={clsx(
 				"card bg-base-100 shadow-xl border-white border-2 dark:text-black",
-				{
-					"w-8/12 md:w-11/12 lg:w-full": withText,
-					"w-full": !withText,
-				},
+				withText ? "w-8/12 md:w-11/12 lg:w-full" : "w-full",
 			)}
 		>
 			<figure>
 				<label htmlFor={`my-modal-${i}`} className="w-full h-full">
 					<img
 						src={image}
-						className={clsx("object-cover w-full rounded-2xl", {
-							"h-40": withText,
-							"h-96": !withText,
-						})}
+						className={clsx(
+							"object-cover w-full rounded-2xl",
+							withText ? "h-40" : "h-96",
+						)}
 						alt={image}
 						loading="lazy"
 					/>
