@@ -21,60 +21,60 @@ import SfAfternoon from "assets/images/personal/webp/sf_afternoon.webp";
 import SfBoardwalk from "assets/images/personal/webp/sf_boardwalk.webp";
 
 interface personalItem {
-	header: string;
-	description: string;
-	image?: string;
+  header: string;
+  description: string;
+  image?: string;
 }
 
 export const personalItems: readonly personalItem[] = [
-	{
-		header: "Golden Gate Bridge",
-		description: "San Francisco, USA",
-		image: GoldenGateBridge,
-	},
-	{
-		header: "Golden Hour",
-		description: "Waterloo, Canada",
-		image: Ion,
-	},
-	{
-		header: "Eiffel Tower",
-		description: "Paris, France",
-		image: EiffelTower,
-	},
-	{
-		header: "Abbey Road Studios",
-		description: "London, UK",
-		image: AbbeyRoad,
-	},
-	{
-		header: "AGO",
-		description: "Toronto, Canada",
-		image: Ago,
-	},
-	{
-		header: "San Francisco Boardwalk",
-		description: "San Francisco, USA",
-		image: SfBoardwalk,
-	},
-	{
-		header: "Downtown San Francisco",
-		description: "San Francisco, USA",
-		image: DowntownSf,
-	},
-	{
-		header: "Molinos de Viento",
-		description: "Castilla La Mancha, Spain",
-		image: Molinos,
-	},
-	{
-		header: "Luis I Bridge",
-		description: "Porto, Portugal",
-		image: Porto,
-	},
-	{
-		header: "A San Francisco Afternoon",
-		description: "San Francisco, USA",
-		image: SfAfternoon,
-	},
+  {
+    header: "Golden Gate Bridge",
+    description: "San Francisco, USA",
+    image: GoldenGateBridge,
+  },
+  {
+    header: "Golden Hour",
+    description: "Waterloo, Canada",
+    image: Ion,
+  },
+  {
+    header: "Eiffel Tower",
+    description: "Paris, France",
+    image: EiffelTower,
+  },
+  {
+    header: "Abbey Road Studios",
+    description: "London, UK",
+    image: AbbeyRoad,
+  },
+  {
+    header: "AGO",
+    description: "Toronto, Canada",
+    image: Ago,
+  },
+  {
+    header: "San Francisco Boardwalk",
+    description: "San Francisco, USA",
+    image: SfBoardwalk,
+  },
+  {
+    header: "Downtown San Francisco",
+    description: "San Francisco, USA",
+    image: DowntownSf,
+  },
+  {
+    header: "Molinos de Viento",
+    description: "Castilla La Mancha, Spain",
+    image: Molinos,
+  },
+  {
+    header: "Luis I Bridge",
+    description: "Porto, Portugal",
+    image: Porto,
+  },
+  {
+    header: "A San Francisco Afternoon",
+    description: "San Francisco, USA",
+    image: SfAfternoon,
+  },
 ];
