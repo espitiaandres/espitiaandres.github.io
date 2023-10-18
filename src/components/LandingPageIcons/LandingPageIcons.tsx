@@ -9,10 +9,10 @@ export default function LandingPageIcons() {
 
   return (
     <div className="mb-2">
-      <div className="mb-4">You can find me on these platforms:</div>
-      <div className="grid grid-cols-2 md:grid-cols-3 space-y-1 mb-4">
+      <div className="mb-8">You can find me on these platforms:</div>
+      <div className="grid grid-cols-2 space-y-1 mb-4">
         {socialIcons.map((icon, i) => (
-          <div className="flex flex-row items-center justify-center" key={i}>
+          <div className="flex flex-row items-center justify-start" key={i}>
             <FontAwesomeIcon
               className="text-primary mr-2"
               icon={icon.fontAwesome}

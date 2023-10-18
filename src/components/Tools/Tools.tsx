@@ -9,11 +9,11 @@ function Tools() {
         I like using these tools/languages, but I'm always open to learning more
         😄.
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 space-y-2">
+      <div className="grid grid-cols-2 md:grid-cols-4 space-y-4 mb-8">
         {toolIcons.map((icon, i) => (
           <div className="flex flex-row items-center justify-center" key={i}>
             <a href={icon.href} target="_blank" rel="noopener noreferrer">
-              <img src={icon.src} className="w-16 h-16" />
+              <img src={icon.src} className="w-16 h-16 md:w-24 md:h-24" />
             </a>
           </div>
         ))}
