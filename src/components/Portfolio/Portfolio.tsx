@@ -9,6 +9,7 @@ import AboutMe from "components/AboutMe";
 import Projects from "components/Projects";
 import Construction from "components/Construction";
 import Personal from "components/Personal";
+import Tools from "components/Tools";
 
 /*
 Commands to deploy:
@@ -33,6 +34,17 @@ export default function Portfolio() {
       <AnimatePresence>
         <Router basename="/">
           <Routes>
+            <Route
+              path="/tools"
+              element={
+                <LandingPage
+                  children={<Tools />}
+                  // children={<Construction />}
+                  isDarkMode={isDarkMode}
+                  setIsDarkMode={setIsDarkMode}
+                />
+              }
+            />
             <Route
               path="/projects"
               element={

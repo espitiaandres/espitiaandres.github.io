@@ -17,6 +17,10 @@ export const routes: readonly RouteLink[] = [
     label: "About Me",
   },
   {
+    redirectLink: "/tools",
+    label: "Tools",
+  },
+  {
     redirectLink: "/projects",
     label: "Projects",
   },

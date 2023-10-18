@@ -8,6 +8,7 @@ function Achievements() {
 
   return (
     <div>
+      <div className="text-2xl mb-4 text-primary">Projects</div>
       <div className="mb-8">
         Here are some achievements and projects I've worked on:
       </div>
@@ -24,7 +25,7 @@ function Achievements() {
               withModal={true}
               withText={true}
             />
-          ),
+          )
         )}
       </div>
     </div>

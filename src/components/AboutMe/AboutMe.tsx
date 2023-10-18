@@ -7,6 +7,7 @@ function AboutMe() {
 
   return (
     <div>
+      <div className="text-2xl mb-4 text-primary">About Me</div>
       <div className="mb-2">
         I'm a University of Waterloo Engineering '22 graduate interested in Full
         Stack Web Development, Machine Learning, and Optimization. Currently,
