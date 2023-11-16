@@ -24,13 +24,13 @@ export default function Modal({
     <div>
       <input type="checkbox" id={`my-modal-${i}`} className="modal-toggle" />
       <div className="modal modal-bottom sm:modal-middle">
-        <div className="modal-box min-w-5xl bg-white">
+        <div className="modal-box min-w-5xl bg-white dark:bg-zinc-900">
           <figure className="rounded">
             <img
               src={image}
               className={clsx(
                 "object-cover w-full",
-                withText ? "h-28 sm:h-40" : "h-full",
+                withText ? "h-28 sm:h-40" : "h-full"
               )}
               alt={image}
             />
