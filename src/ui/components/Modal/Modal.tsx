@@ -29,7 +29,7 @@ export default function Modal({
             <img
               src={image}
               className={clsx(
-                "object-cover w-full",
+                "object-cover w-full rounded-lg",
                 withText ? "h-28 sm:h-40" : "h-full"
               )}
               alt={image}

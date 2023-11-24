@@ -7,6 +7,7 @@ import Udemy from "assets/images/projects/webp/udemy.webp";
 import FantasyBasketball from "assets/images/projects/webp/fantasy_basketball.webp";
 import GolangImageConversion from "assets/images/projects/webp/golang_image_conversion.webp";
 import PythonImageConversion from "assets/images/projects/webp/python_image_conversion.webp";
+import SpotifyPlaylistExport from "assets/images/projects/webp/spotify_playlist_exporter.webp";
 
 export interface Achievement {
   header: string;
@@ -55,8 +56,19 @@ export const achievementsList: readonly Achievement[] = [
     ],
     description:
       "Penguin is a lightweight, customizable stopwatch ⏱ decorator that helps you determine how long it takes for your functions to run. It supports both synchronous and asynchronous functions.",
-    // image: AstronautJellyfish,
     image: PenguinPyLogo,
+  },
+  {
+    header: "Spotify Playlist Exporter",
+    links: [
+      {
+        url: "https://github.com/espitiaandres/spotify-playlist-exporter",
+        name: "Github",
+      },
+    ],
+    description:
+      "A Go script that uses goroutines and waitgroups that converts a Spotify playlist into a .csv file.",
+    image: SpotifyPlaylistExport,
   },
   {
     header: "Porespy Web App",
