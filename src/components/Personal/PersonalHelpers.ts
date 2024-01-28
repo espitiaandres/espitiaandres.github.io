@@ -9,7 +9,7 @@ import Porto from "assets/images/personal/webp/porto.webp";
 import SfAfternoon from "assets/images/personal/webp/sf_afternoon.webp";
 import SfBoardwalk from "assets/images/personal/webp/sf_boardwalk.webp";
 
-import LondonCalling from "assets/images/personal/webp/london_calling.webp";
+import Westminster from "assets/images/personal/webp/westminster.webp";
 import ValleDelCocora from "assets/images/personal/webp/valle_del_cocora.webp";
 
 interface personalItem {
@@ -70,9 +70,9 @@ export const personalItems: readonly personalItem[] = [
     image: SfAfternoon,
   },
   {
-    header: "London Calling",
+    header: "Westminster",
     description: "London, UK",
-    image: LondonCalling,
+    image: Westminster,
   },
   {
     header: "Valle del Cocora",

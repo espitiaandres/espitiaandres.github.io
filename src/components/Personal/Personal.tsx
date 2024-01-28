@@ -10,7 +10,7 @@ function Personal() {
     <div>
       <div className="text-2xl mb-4 text-primary">Personal</div>
       <div className="mb-8">{"Here are some cool pictures I've taken :)"}</div>
-      <div className="grid lg:gap-x-4 gap-y-6 md:grid-cols-2 mb-8">
+      <div className="grid md:gap-x-4 gap-y-6 md:grid-cols-2 mb-8">
         {personalItems.map(({ description, header, image }, i) => (
           <Card
             key={i}
