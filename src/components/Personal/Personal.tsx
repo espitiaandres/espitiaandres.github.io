@@ -20,6 +20,7 @@ function Personal() {
             withModal={true}
             description={description}
             header={header}
+            roundedImage
           />
         ))}
       </div>

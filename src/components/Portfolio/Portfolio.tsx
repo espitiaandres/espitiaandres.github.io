@@ -30,7 +30,7 @@ export default function Portfolio() {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(defaultDarkMode);
 
   return (
-    <div className={clsx("", isDarkMode ? "dark" : "")}>
+    <div className={clsx(isDarkMode ? "dark" : "")}>
       <AnimatePresence>
         <Router basename="/">
           <Routes>

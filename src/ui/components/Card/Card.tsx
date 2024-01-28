@@ -12,6 +12,7 @@ interface CardProps {
   image?: string;
   withModal?: boolean;
   withText?: boolean;
+  roundedImage?: boolean;
 }
 
 export default function Card({
@@ -23,12 +24,14 @@ export default function Card({
   image = AstronautJellyfish,
   withModal = false,
   withText = false,
+  roundedImage = false,
 }: CardProps) {
   return (
     <div
       className={clsx(
-        "card bg-base-100 shadow-xl border-white border-2 dark:text-white",
+        "card bg-white shadow-xl dark:border-white dark:border-2 dark:text-white dark:bg-zinc-900",
         withText ? "w-8/12 md:w-11/12 lg:w-full" : "w-full"
+        // withModal ? "border-white border-2" : ""
       )}
     >
       <figure>
@@ -36,8 +39,9 @@ export default function Card({
           <img
             src={image}
             className={clsx(
-              "object-cover w-full rounded-2xl",
-              withText ? "h-40" : "h-96"
+              "object-cover w-full",
+              withText ? "h-40" : "h-96",
+              roundedImage ? "rounded-2xl" : ""
             )}
             alt={image}
             loading="lazy"
