@@ -12,6 +12,7 @@ import Personal from "components/Personal";
 import Tools from "components/Tools";
 
 /*
+TODO: don't need this anymore, just use the github deploy workflow
 Commands to deploy:
 
 pnpm run build
