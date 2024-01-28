@@ -5,11 +5,12 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [react(), tsconfigPaths()],
-	resolve: {
-		// alias: {
-		//   ui: path.resolve(__dirname, "src/ui"),
-		//   components: path.resolve(__dirname, "src/components"),
-		// },
-	},
+  plugins: [react(), tsconfigPaths()],
+  resolve: {
+    // alias: {
+    //   ui: path.resolve(__dirname, "src/ui"),
+    //   components: path.resolve(__dirname, "src/components"),
+    // },
+  },
+  base: "andres-website",
 });
