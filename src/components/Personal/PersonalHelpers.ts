@@ -75,7 +75,7 @@ export const personalItems: readonly personalItem[] = [
     image: Westminster,
   },
   {
-    header: "Valle del Cocora",
+    header: "Quindio wax palms in the Cocora Valley",
     description: "Quindio, Colombia",
     image: ValleDelCocora,
   },
