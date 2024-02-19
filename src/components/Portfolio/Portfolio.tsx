@@ -11,16 +11,6 @@ import Construction from "components/Construction";
 import Personal from "components/Personal";
 import Tools from "components/Tools";
 
-/*
-TODO: don't need this anymore, just use the github deploy workflow
-Commands to deploy:
-
-pnpm run build
-git add dist -f
-git commit -m "my commit message here"
-git subtree push --prefix dist origin gh-pages
-*/
-
 export default function Portfolio() {
   //
   const frontendNames = ["studyfi", "pokedex"] as const;
