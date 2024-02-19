@@ -1,13 +1,16 @@
+import clsx from "clsx";
 import { toolIcons } from "./ToolsHelpers";
 import Animator from "components/Animator";
+import { useTitle } from "react-use";
 
 function Tools() {
+  useTitle("Andres Espitia | Tools");
+
   return (
     <div>
       <div className="text-2xl mb-4 text-primary">Tools</div>
       <div className="mb-8">
-        I like using these tools/languages, but I'm always open to learning more
-        😄.
+        Here are some of the languages/tools I love to use!
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {toolIcons.map((icon, i) => (
@@ -16,7 +19,7 @@ function Tools() {
             key={i}
           >
             <a href={icon.href} target="_blank" rel="noopener noreferrer">
-              <img src={icon.src} className="w-16 h-16 md:w-28 md:h-28 p-2" />
+              <img src={icon.class} className="w-16 h-16 md:w-28 md:h-28 p-2" />
             </a>
           </div>
         ))}

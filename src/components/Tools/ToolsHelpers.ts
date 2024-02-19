@@ -1,55 +1,87 @@
 interface toolIcon {
-  src: string;
+  class: string;
   href: string;
 }
 
 export const toolIcons: readonly toolIcon[] = [
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
     href: "https://www.python.org/",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
     href: "https://nodejs.org/en",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
     href: "https://www.typescriptlang.org/",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg",
     href: "https://go.dev/",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg",
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg",
     href: "https://www.djangoproject.com/",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain-wordmark.svg",
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg",
     href: "https://nestjs.com/",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
     href: "https://graphql.org/",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     href: "https://react.dev/",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     href: "https://tailwindcss.com/",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original-wordmark.svg",
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg",
     href: "https://kafka.apache.org/",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg",
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
     href: "https://www.docker.com/",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
     href: "https://code.visualstudio.com/",
+  },
+  {
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
+    href: "https://www.prisma.io/",
+  },
+  {
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original.svg",
+    href: "https://docs.pytest.org/en/stable/",
+  },
+  {
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    href: "https://git-scm.com/",
+  },
+  {
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg",
+    href: "https://www.latex-project.org/",
   },
 ];

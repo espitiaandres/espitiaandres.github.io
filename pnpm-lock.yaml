@@ -29,6 +29,9 @@ dependencies:
   daisyui:
     specifier: ^3.5.1
     version: 3.5.1
+  devicon:
+    specifier: ^2.16.0
+    version: 2.16.0
   dist:
     specifier: ^0.1.2
     version: 0.1.2
@@ -3977,6 +3980,10 @@ packages:
       acorn-node: 1.8.2
       defined: 1.0.1
       minimist: 1.2.7
+
+  /devicon@2.16.0:
+    resolution: {integrity: sha512-PE5a2HBNeN4av+Iu975OiiWEwS8LJPw5HAvlv0JUHb62jZTdYxTpz4ga+cQyvdtb3x1side2P9Sr1mmOmUkO/g==}
+    dev: false
 
   /didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}

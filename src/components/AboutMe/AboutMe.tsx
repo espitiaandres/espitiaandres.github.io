@@ -8,7 +8,7 @@ function AboutMe() {
   return (
     <div>
       <div className="text-2xl mb-4 text-primary">About Me</div>
-      <div className="mb-2">
+      <div className="mb-4">
         I'm a University of Waterloo Engineering '22 graduate interested in Full
         Stack Web Development, Machine Learning, and Optimization. Currently,
         I'm working as a Full-Stack Software Engineer at&nbsp;
@@ -22,7 +22,7 @@ function AboutMe() {
         </a>
         , helping improve the underwriting workflow.
       </div>
-      <div className="mb-2">
+      <div className="mb-4">
         When I'm not coding I like to listen to music, play piano and violin,
         and play/watch basketball and soccer. Recently, I've been interested in
         Origami and Music Production.
