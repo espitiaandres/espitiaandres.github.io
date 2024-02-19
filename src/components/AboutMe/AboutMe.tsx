@@ -25,7 +25,7 @@ function AboutMe() {
       <div className="mb-4">
         When I'm not coding I like to listen to music, play piano and violin,
         and play/watch basketball and soccer. Recently, I've been interested in
-        Origami and Music Production.
+        origami and music production.
       </div>
       <LandingPageIcons />
     </div>
