@@ -134,7 +134,7 @@ export const achievementsList: readonly Achievement[] = [
       },
     ],
     description:
-      "Electrochemical Formation of Four Al-Li Phases (β-AlLi, Al2Li3, AlLi2−x, Al4Li9) at Intermediate Temperatures. Aluminum electrodes have been considered for use in lithium and lithium ion batteries for nearly four decades. Although the Al-Li equilibrium phase diagram contains multiple Al-Li phases, only β-AlLi forms during room temperature cycling. Al2Li3 can be formed when electrochemically inserting Li at temperatures above 400°C, and Al4Li9 is occasionally detected after extended room temperature cycling. Here, four equilibrium phases of Al-Li (β-AlLi, Al2Li3, AlLi2−x, Al4Li9) were produced by the electrochemical lithiation and delithiation of 1100-series aluminum foil at moderate to intermediate temperatures (30–150°C) using a carbonate-based electrolyte. Phase identification was performed using ex-situ X-ray diffraction and coulometry, after accounting for the consumption of lithium in electrolyte breakdown products. After overcoming an initial nucleation barrier, β-AlLi formed at all temperatures, Al2Li3 and AlLi2−x formed at temperatures above 60°C at moderate rates, and above 35°C at low rates, and Al4Li9 formed at temperatures above 100°C. All expected phases were also encountered during delithiation. The effects of nucleation and diffusion on observed phases and capacities are also discussed.",
+      "Electrochemical Formation of Four Al-Li Phases (β-AlLi, Al2Li3, AlLi2−x, Al4Li9) at Intermediate Temperatures",
     image: ResearchPaper,
   },
   {

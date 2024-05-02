@@ -9,9 +9,8 @@ function AboutMe() {
     <div>
       <div className="text-2xl mb-4 text-primary">About Me</div>
       <div className="mb-4">
-        I'm a University of Waterloo Engineering graduate interested in Full
-        Stack Web Development, Machine Learning, and Optimization. Currently,
-        I'm working as a Full-Stack Software Engineer at&nbsp;
+        I'm a University of Waterloo Engineering graduate currently working as a
+        Full-Stack Software Engineer at&nbsp;
         <a
           className="link link-primary link-hover font-medium"
           href="https://federato.ai"
@@ -20,7 +19,7 @@ function AboutMe() {
         >
           Federato
         </a>
-        , helping improve the underwriting workflow.
+        &nbsp;helping improve the underwriting workflow.
       </div>
       <div className="mb-4">
         When I'm not coding, I enjoy listening to music and playing badminton. I
