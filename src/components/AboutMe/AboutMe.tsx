@@ -19,7 +19,30 @@ function AboutMe() {
         >
           Federato
         </a>
-        &nbsp;helping improve the underwriting workflow.
+        , helping improve the underwriting workflow.
+      </div>
+      <div className="mb-4">
+        I've worked on a wide selection of projects, ranging from a workflow
+        automation tool to ETL pipelines. I also like to build open source
+        projects on my{" "}
+        <a
+          className="link link-primary link-hover font-medium"
+          href="https://github.com/espitiaandres"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Github
+        </a>{" "}
+        that are used&nbsp;
+        <a
+          className="link link-primary link-hover font-medium"
+          href="https://pypistats.org/packages/penguin-py"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          daily
+        </a>
+        .
       </div>
       <div className="mb-4">
         When I'm not coding, I enjoy listening to music and playing badminton. I
