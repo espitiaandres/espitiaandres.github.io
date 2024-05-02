@@ -22,16 +22,16 @@ export const socialIcons: readonly SocialIcon[] = [
     fontAwesome: ["fas", "envelope"],
     label: "Email",
   },
-  {
-    href: "https://dribbble.com/espitiaandres",
-    fontAwesome: ["fab", "dribbble"],
-    label: "Dribbble",
-  },
-  {
-    href: "https://medium.com/@espitiaandres123",
-    fontAwesome: ["fab", "medium"],
-    label: "Medium",
-  },
+  // {
+  //   href: "https://dribbble.com/espitiaandres",
+  //   fontAwesome: ["fab", "dribbble"],
+  //   label: "Dribbble",
+  // },
+  // {
+  //   href: "https://medium.com/@espitiaandres123",
+  //   fontAwesome: ["fab", "medium"],
+  //   label: "Medium",
+  // },
   {
     href: "https://stackoverflow.com/users/13973201/espitiaandres",
     fontAwesome: ["fab", "stack-overflow"],

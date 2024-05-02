@@ -10,7 +10,7 @@ function Tools() {
     <div>
       <div className="text-2xl mb-4 text-primary">Tools</div>
       <div className="mb-8">
-        Here are some of the languages/tools I love to use!
+        Here are some of the languages/tools I love to use.
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {toolIcons.map((icon, i) => (
