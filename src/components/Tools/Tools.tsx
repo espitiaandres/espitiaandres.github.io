@@ -9,10 +9,10 @@ function Tools() {
   return (
     <div>
       <div className="text-2xl mb-4 text-primary">Tools</div>
-      <div className="mb-8">
+      <div className="mb-4">
         Here are some of the languages/tools I love to use.
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
         {toolIcons.map((icon, i) => (
           <div
             className="flex flex-row items-center justify-center dark:bg-white dark:border-2 dark:rounded-lg"

@@ -84,4 +84,24 @@ export const toolIcons: readonly toolIcon[] = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg",
     href: "https://www.latex-project.org/",
   },
+  {
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pnpm/pnpm-original.svg",
+    href: "https://pnpm.io/",
+  },
+  {
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
+    href: "https://redis.io/",
+  },
+  {
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    href: "https://www.postgresql.org/",
+  },
+  {
+    class:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+    href: "https://www.postman.com/",
+  },
 ];
