@@ -52,7 +52,7 @@ dependencies:
     version: 18.3.1(react@18.3.1)
   react-loader-spinner:
     specifier: ^5.3.4
-    version: 5.5.0(@babel/core@7.28.0)(react-dom@18.3.1)(react@18.3.1)
+    version: 5.3.4(@babel/core@7.28.0)(react-dom@18.3.1)(react@18.3.1)
   react-router-dom:
     specifier: ^6.4.3
     version: 6.30.1(react-dom@18.3.1)(react@18.3.1)
@@ -5552,9 +5552,8 @@ packages:
       - '@types/react'
     dev: false
 
-  /react-loader-spinner@5.5.0(@babel/core@7.28.0)(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-3y+l6RPbkfW8EMs/X7MtfiPlAPwYp+WbCtls3gZn+fDJCt0SW4TakRoj2/lExbCVxSxA6Y5M8Nly+WfhNxnFcw==}
-    deprecated: Breaking changes was include so major version was use
+  /react-loader-spinner@5.3.4(@babel/core@7.28.0)(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-G2vw4ssX+RDZ/vfaeva06yfNqyFViv/u+tVZ3kFLy5TKNlNx2DbuwreBSpRtPespQA+VxinxUJsigwLwG9erOg==}
     peerDependencies:
       react: ^16.0.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
