@@ -1,24 +1,26 @@
+import Westminster from "assets/images/personal/webp/westminster.webp";
+
 import AbbeyRoad from "assets/images/personal/webp/abbey_road.webp";
 import Ago from "assets/images/personal/webp/ago.webp";
 import DowntownSf from "assets/images/personal/webp/dt_sf.webp";
 import EiffelTower from "assets/images/personal/webp/eiffel_tower.webp";
 import GoldenGateBridge from "assets/images/personal/webp/golden_gate_bridge.webp";
 import Ion from "assets/images/personal/webp/ion.webp";
+import LondonFromTheShard from "assets/images/personal/webp/london_from_the_shard.webp";
 import Molinos from "assets/images/personal/webp/molinos.webp";
 import Porto from "assets/images/personal/webp/porto.webp";
+import SeattleSkyline from "assets/images/personal/webp/seattle_skyline.webp";
 import SfAfternoon from "assets/images/personal/webp/sf_afternoon.webp";
 import SfBoardwalk from "assets/images/personal/webp/sf_boardwalk.webp";
-
-import Westminster from "assets/images/personal/webp/westminster.webp";
 import ValleDelCocora from "assets/images/personal/webp/valle_del_cocora.webp";
 
-interface personalItem {
+interface PersonalItem {
   header: string;
   description: string;
   image?: string;
 }
 
-export const personalItems: readonly personalItem[] = [
+export const personalItems: readonly PersonalItem[] = [
   {
     header: "Golden Gate Bridge",
     description: "San Francisco, USA",
@@ -78,5 +80,15 @@ export const personalItems: readonly personalItem[] = [
     header: "Quindio wax palms in the Cocora Valley",
     description: "Quindio, Colombia",
     image: ValleDelCocora,
+  },
+  {
+    header: "Seattle Skyline from Seacrest Park",
+    description: "Seattle, USA",
+    image: SeattleSkyline,
+  },
+  {
+    header: "London view from The Shard",
+    description: "London, UK",
+    image: LondonFromTheShard,
   },
 ];
