@@ -20,6 +20,10 @@ export default defineConfig([
       // "prettier",
     ],
     languageOptions: { globals: globals.browser },
+    rules: {
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-uses-react": "off",
+    },
   },
   pluginReact.configs.flat.recommended,
   {
