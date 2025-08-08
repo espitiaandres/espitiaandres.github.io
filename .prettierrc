@@ -1,5 +1,12 @@
 {
-  "printWidth": 80,
   "semi": true,
-  "singleQuote": false
+  "singleQuote": false,
+  "overrides": [
+    {
+      "files": "packages/**",
+      "options": {
+        "plugins": ["prettier-plugin-jsdoc"]
+      }
+    }
+  ]
 }

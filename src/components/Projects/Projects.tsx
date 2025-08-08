@@ -25,7 +25,7 @@ function Achievements() {
               withModal={true}
               withText={true}
             />
-          )
+          ),
         )}
       </div>
     </div>

@@ -22,6 +22,7 @@
     "daisyui": "^3.5.1",
     "devicon": "^2.16.0",
     "dist": "^0.1.2",
+    "eslint-plugin-prettier": "^5.5.4",
     "framer-motion": "^7.6.7",
     "gh-pages": "^4.0.0",
     "path": "^0.12.7",

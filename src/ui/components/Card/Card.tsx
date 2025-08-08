@@ -30,7 +30,7 @@ export default function Card({
     <div
       className={clsx(
         "card bg-white shadow-xl dark:border-white dark:border-2 dark:text-white dark:bg-zinc-900",
-        withText ? "w-8/12 md:w-11/12 lg:w-full" : "w-full"
+        withText ? "w-8/12 md:w-11/12 lg:w-full" : "w-full",
       )}
     >
       <figure>
@@ -40,7 +40,7 @@ export default function Card({
             className={clsx(
               "object-cover w-full",
               withText ? "h-40" : "h-96",
-              roundedImage ? "rounded-2xl" : ""
+              roundedImage ? "rounded-2xl" : "",
             )}
             alt={image}
             loading="lazy"
