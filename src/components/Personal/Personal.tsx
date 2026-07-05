@@ -24,6 +24,7 @@ function Personal() {
           />
         ))}
       </div>
+      <div className="font-kendrick">More adventures to come...</div>
     </div>
   );
 }

@@ -10,6 +10,9 @@ module.exports = {
         144: "36rem",
         160: "40rem",
       },
+      fontFamily: {
+        kendrick: ["King Kendrick", "sans-serif"],
+      },
     },
   },
   daisyui: {
